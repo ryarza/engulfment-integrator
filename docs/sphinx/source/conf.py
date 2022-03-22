@@ -59,14 +59,17 @@ exclude_patterns = []
 html_theme = "sphinx_rtd_theme"
 #html_theme = 'alabaster'
 html_theme_options = {
-    "collapse_navigation" : False,
+    "collapse_navigation" : False
+#    'github_url' : 'https://github.com/Pylons/pyramid',
 }
 html_logo = "insp.png"
 
 html_context = {
   'display_github': True,
   'github_user': 'ryarza',
-  'github_repo': 'engulfment-integrator'
+  'github_repo': 'engulfment-integrator',
+  "github_version": "main", # Version
+  "conf_py_path": "/docs/sphinx/source/"
 }
 
 # Add any paths that contain custom static files (such as style sheets) here,
