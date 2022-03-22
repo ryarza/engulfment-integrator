@@ -1,0 +1,122 @@
+\hypertarget{io_8h}{}\doxysection{io.\+h File Reference}
+\label{io_8h}\index{io.h@{io.h}}
+{\ttfamily \#include \char`\"{}global.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}model.\+h\char`\"{}}\newline
+Include dependency graph for io.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{io_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=235pt]{io_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{io_8h_aa30f39ea8db65e7e2b11e3ddf1636f72}{parse\+\_\+params}} (char $\ast$param\+\_\+file, struct \mbox{\hyperlink{structparameters}{parameters}} $\ast$parms)
+\begin{DoxyCompactList}\small\item\em Reads parameters from a text file. Based on Cholla. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{io_8h_a8d9485fd3054e691b09938ba0d4d0ec8}{read\+\_\+stellar\+\_\+profile}} (struct \mbox{\hyperlink{structparameters}{parameters}} P, struct \mbox{\hyperlink{structstar}{star}} $\ast$S)
+\begin{DoxyCompactList}\small\item\em Reads stellar profile from an HDF5 file. The path is contained in the parameter struct, and the properties of the profile are stored in the star struct. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{io_8h_ad265c996dc61a0416b2705dddd679087}{write\+\_\+scalars}} (struct \mbox{\hyperlink{structunits}{units}} U, struct \mbox{\hyperlink{structparameters}{parameters}} P)
+\begin{DoxyCompactList}\small\item\em One-\/time output operation that saves the simulation units and parameters. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{io_8h_af789b6233c9122901decdf3fe596d917}{write\+\_\+output}} (struct \mbox{\hyperlink{structunits}{units}} U, struct \mbox{\hyperlink{structrhs__terms}{rhs\+\_\+terms}} $\ast$rhs, double t, double $\ast$y)
+\begin{DoxyCompactList}\small\item\em Writes values of important variables for one step into the output text file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{io_8h_aa30f39ea8db65e7e2b11e3ddf1636f72}\label{io_8h_aa30f39ea8db65e7e2b11e3ddf1636f72}} 
+\index{io.h@{io.h}!parse\_params@{parse\_params}}
+\index{parse\_params@{parse\_params}!io.h@{io.h}}
+\doxysubsubsection{\texorpdfstring{parse\_params()}{parse\_params()}}
+{\footnotesize\ttfamily void parse\+\_\+params (\begin{DoxyParamCaption}\item[{char $\ast$}]{param\+\_\+file,  }\item[{struct \mbox{\hyperlink{structparameters}{parameters}} $\ast$}]{parms }\end{DoxyParamCaption})}
+
+
+
+Reads parameters from a text file. Based on Cholla. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=239pt]{io_8h_aa30f39ea8db65e7e2b11e3ddf1636f72_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=243pt]{io_8h_aa30f39ea8db65e7e2b11e3ddf1636f72_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{io_8h_a8d9485fd3054e691b09938ba0d4d0ec8}\label{io_8h_a8d9485fd3054e691b09938ba0d4d0ec8}} 
+\index{io.h@{io.h}!read\_stellar\_profile@{read\_stellar\_profile}}
+\index{read\_stellar\_profile@{read\_stellar\_profile}!io.h@{io.h}}
+\doxysubsubsection{\texorpdfstring{read\_stellar\_profile()}{read\_stellar\_profile()}}
+{\footnotesize\ttfamily int read\+\_\+stellar\+\_\+profile (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structparameters}{parameters}}}]{P,  }\item[{struct \mbox{\hyperlink{structstar}{star}} $\ast$}]{S }\end{DoxyParamCaption})}
+
+
+
+Reads stellar profile from an HDF5 file. The path is contained in the parameter struct, and the properties of the profile are stored in the star struct. 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=268pt]{io_8h_a8d9485fd3054e691b09938ba0d4d0ec8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{io_8h_af789b6233c9122901decdf3fe596d917}\label{io_8h_af789b6233c9122901decdf3fe596d917}} 
+\index{io.h@{io.h}!write\_output@{write\_output}}
+\index{write\_output@{write\_output}!io.h@{io.h}}
+\doxysubsubsection{\texorpdfstring{write\_output()}{write\_output()}}
+{\footnotesize\ttfamily int write\+\_\+output (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structunits}{units}}}]{U,  }\item[{struct \mbox{\hyperlink{structrhs__terms}{rhs\+\_\+terms}} $\ast$}]{rhs,  }\item[{double}]{t,  }\item[{double $\ast$}]{y }\end{DoxyParamCaption})}
+
+
+
+Writes values of important variables for one step into the output text file. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{io_8h_af789b6233c9122901decdf3fe596d917_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=235pt]{io_8h_af789b6233c9122901decdf3fe596d917_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{io_8h_ad265c996dc61a0416b2705dddd679087}\label{io_8h_ad265c996dc61a0416b2705dddd679087}} 
+\index{io.h@{io.h}!write\_scalars@{write\_scalars}}
+\index{write\_scalars@{write\_scalars}!io.h@{io.h}}
+\doxysubsubsection{\texorpdfstring{write\_scalars()}{write\_scalars()}}
+{\footnotesize\ttfamily int write\+\_\+scalars (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structunits}{units}}}]{U,  }\item[{struct \mbox{\hyperlink{structparameters}{parameters}}}]{P }\end{DoxyParamCaption})}
+
+
+
+One-\/time output operation that saves the simulation units and parameters. 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=238pt]{io_8h_ad265c996dc61a0416b2705dddd679087_icgraph}
+\end{center}
+\end{figure}

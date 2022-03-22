@@ -1,0 +1,299 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="main_8c" kind="file" language="C++">
+    <compoundname>main.c</compoundname>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">gsl/gsl_odeiv2.h</includes>
+    <includes local="no">gsl/gsl_errno.h</includes>
+    <includes refid="io_8h" local="yes">io.h</includes>
+    <includes refid="star_8h" local="yes">star.h</includes>
+    <includes refid="model_8h" local="yes">model.h</includes>
+    <includes refid="units_8h" local="yes">units.h</includes>
+    <includes refid="utils_8h" local="yes">utils.h</includes>
+    <includes refid="global_8h" local="yes">global.h</includes>
+    <includes local="no">gsl/gsl_math.h</includes>
+    <incdepgraph>
+      <node id="5">
+        <label>io.h</label>
+        <link refid="io_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>main.c</label>
+        <link refid="main_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>utils.h</label>
+        <link refid="utils_8h"/>
+      </node>
+      <node id="6">
+        <label>global.h</label>
+        <link refid="global_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>star.h</label>
+        <link refid="star_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>units.h</label>
+        <link refid="units_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>hdf5.h</label>
+      </node>
+      <node id="9">
+        <label>math.h</label>
+      </node>
+      <node id="7">
+        <label>gsl/gsl_math.h</label>
+      </node>
+      <node id="3">
+        <label>gsl/gsl_odeiv2.h</label>
+      </node>
+      <node id="2">
+        <label>stdio.h</label>
+      </node>
+      <node id="11">
+        <label>model.h</label>
+        <link refid="model_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>gsl/gsl_spline.h</label>
+      </node>
+      <node id="4">
+        <label>gsl/gsl_errno.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="main_8c_1a0ddf1224851353fc92bfbff6f499fa97" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int main</definition>
+        <argsstring>(int argc, char *argv[])</argsstring>
+        <name>main</name>
+        <param>
+          <type>int</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>argv</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/main.c" line="33" column="5" bodyfile="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/main.c" bodystart="33" bodyend="126"/>
+        <references refid="global_8h_1a7b76ae9f39a443e206a410c051e557fe" compoundref="star_8c" startline="25">acc_menc</references>
+        <references refid="structrhs__terms_1a303e005485ab20b9778d064fd43ded3f" compoundref="model_8h" startline="47">rhs_terms::drag_data_dims</references>
+        <references refid="structparameters_1a65676f4e46da862a87074caa262f7352" compoundref="global_8h" startline="46">parameters::f_buoyancy</references>
+        <references refid="structparameters_1a44b8f833c7ff07dc990a137b49d306f3" compoundref="global_8h" startline="44">parameters::f_grav</references>
+        <references refid="structparameters_1a6960e6f48d147c12441609628d186b35" compoundref="global_8h" startline="42">parameters::f_hydro</references>
+        <references refid="model_8c_1abca9d444b78fd82f9cfef8a367142d19" compoundref="model_8c" startline="140" endline="197">func</references>
+        <references refid="structunits_1ab46825a17a984286d00a3a09bdf28571" compoundref="global_8h" startline="89">units::G</references>
+        <references refid="model_8c_1a5820dd0dc3a4b0513ac690f4408dc410" compoundref="model_8c" startline="199" endline="317">init_model_params</references>
+        <references refid="star_8c_1ad5607f6cce0e1dfabd08a38eaa1a3798" compoundref="star_8c" startline="41" endline="61">init_stellar_profile_splines</references>
+        <references refid="structunits_1a195638052cff6af8ae117e2774b79551" compoundref="global_8h" startline="73">units::l_unit</references>
+        <references refid="structrhs__terms_1a8ad51f73f9fc24cb4b878d4ac5361cc7" compoundref="model_8h" startline="51">rhs_terms::log_eps_rho_vals</references>
+        <references refid="structrhs__terms_1a04fab25e61816a44ef263ff83e046519" compoundref="model_8h" startline="49">rhs_terms::log_q_vals</references>
+        <references refid="structrhs__terms_1a77180908c43f26b69a47d40d2c081a92" compoundref="model_8h" startline="53">rhs_terms::log_rp_over_ra_vals</references>
+        <references refid="structunits_1a658fc25ca175a048deec5ea31f66cf94" compoundref="global_8h" startline="71">units::m_unit</references>
+        <references refid="structstar_1a0b482cc62f5872828e9f9b53da186c23" compoundref="global_8h" startline="30">star::menc</references>
+        <references refid="structparameters_1ab5115d22be6204fdc5bbf6445269efa0" compoundref="global_8h" startline="48">parameters::Msb</references>
+        <references refid="structunits_1af4d47f3749923d5153bdb1ae128eb049" compoundref="global_8h" startline="84">units::MSUN_CGS</references>
+        <references refid="structstar_1aee104a290f877136a610e2e5d8044fae" compoundref="global_8h" startline="22">star::ncells</references>
+        <references refid="io_8c_1aa30f39ea8db65e7e2b11e3ddf1636f72" compoundref="io_8c" startline="46" endline="102">parse_params</references>
+        <references refid="structstar_1a54cc4e813708a93c56465e96269a0fe7" compoundref="global_8h" startline="24">star::r</references>
+        <references refid="structparameters_1ad05bdbed10f508a28eced6b3f2479081" compoundref="global_8h" startline="54">parameters::r0</references>
+        <references refid="io_8c_1a8d9485fd3054e691b09938ba0d4d0ec8" compoundref="io_8c" startline="104" endline="154">read_stellar_profile</references>
+        <references refid="structparameters_1a44dd01bc440a7226465b0e38310929b1" compoundref="global_8h" startline="50">parameters::Rsb</references>
+        <references refid="structunits_1ab7382fdcac9d6ee2c6f455351a0f2366" compoundref="global_8h" startline="86">units::RSUN_CGS</references>
+        <references refid="units_8c_1af86fb32334a75c01bd1fd4689b8e118f" compoundref="units_8c" startline="22" endline="62">set_units</references>
+        <references refid="global_8h_1abb8a871881d465e7625f07eddffa6785" compoundref="star_8c" startline="35">spline_menc</references>
+        <references refid="structparameters_1ab8ff76e9250a51d11724566a9fe840ca" compoundref="global_8h" startline="61">parameters::use_drag_coefficients</references>
+        <references refid="io_8c_1af789b6233c9122901decdf3fe596d917" compoundref="io_8c" startline="173" endline="204">write_output</references>
+        <references refid="io_8c_1ad265c996dc61a0416b2705dddd679087" compoundref="io_8c" startline="156" endline="171">write_scalars</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Copyright<sp/>2021<sp/>Ricardo<sp/>Yarza.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>orbit-integrator</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>orbit-integrator<sp/>is<sp/>free<sp/>software:<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>the<sp/>Free<sp/>Software<sp/>Foundation,<sp/>either<sp/>version<sp/>3<sp/>of<sp/>the<sp/>License,<sp/>or</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/>orbit-integrator<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//<sp/>along<sp/>with<sp/>orbit-integrator.<sp/><sp/>If<sp/>not,<sp/>see<sp/>&lt;https://www.gnu.org/licenses/&gt;.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;gsl/gsl_odeiv2.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;gsl/gsl_errno.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="io_8h" kindref="compound">io.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="star_8h" kindref="compound">star.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="model_8h" kindref="compound">model.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="units_8h" kindref="compound">units.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="utils_8h" kindref="compound">utils.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="global_8h" kindref="compound">global.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>M_PI</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Make<sp/>sure<sp/>M_PI<sp/>is<sp/>defined</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;gsl/gsl_math.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="main_8c_1a0ddf1224851353fc92bfbff6f499fa97" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="main_8c_1a0ddf1224851353fc92bfbff6f499fa97" kindref="member">main</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*argv[]){</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Read<sp/>arguments</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*param_file;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(argc<sp/>!=<sp/>2){</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Usage:<sp/>%s<sp/>&lt;parameter<sp/>file&gt;\n&quot;</highlight><highlight class="normal">,<sp/>argv[0]);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>exit(-1);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>param_file<sp/>=<sp/>argv[1];</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structparameters" kindref="compound">parameters</ref><sp/>P;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structstar" kindref="compound">star</ref><sp/>S;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structunits" kindref="compound">units</ref><sp/>U;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structrhs__terms" kindref="compound">rhs_terms</ref><sp/>rhs;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Reading<sp/>input<sp/>file<sp/>%s...\n&quot;</highlight><highlight class="normal">,<sp/>param_file);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><ref refid="io_8c_1aa30f39ea8db65e7e2b11e3ddf1636f72" kindref="member">parse_params</ref><sp/>(param_file,<sp/>&amp;P);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Parameters:\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;<sp/><sp/>Msb<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>%.10e<sp/>g\n&quot;</highlight><highlight class="normal">,<sp/>P.<ref refid="structparameters_1ab5115d22be6204fdc5bbf6445269efa0" kindref="member">Msb</ref>);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;<sp/><sp/>Rsb<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>%.10e<sp/>cm\n&quot;</highlight><highlight class="normal">,<sp/>P.<ref refid="structparameters_1a44dd01bc440a7226465b0e38310929b1" kindref="member">Rsb</ref>);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;<sp/><sp/>r0<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>%.10e<sp/>L_unit\n&quot;</highlight><highlight class="normal">,<sp/>P.<ref refid="structparameters_1ad05bdbed10f508a28eced6b3f2479081" kindref="member">r0</ref>);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;<sp/><sp/>f_hydro<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>%d\n&quot;</highlight><highlight class="normal">,<sp/>P.<ref refid="structparameters_1a6960e6f48d147c12441609628d186b35" kindref="member">f_hydro</ref>);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;<sp/><sp/>f_grav<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>%d\n&quot;</highlight><highlight class="normal">,<sp/>P.<ref refid="structparameters_1a44b8f833c7ff07dc990a137b49d306f3" kindref="member">f_grav</ref>);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;<sp/><sp/>f_buoyancy<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>%d\n&quot;</highlight><highlight class="normal">,<sp/>P.<ref refid="structparameters_1a65676f4e46da862a87074caa262f7352" kindref="member">f_buoyancy</ref>);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;<sp/><sp/>use_drag_coefficients<sp/>=<sp/>%d\n&quot;</highlight><highlight class="normal">,<sp/>P.<ref refid="structparameters_1a65676f4e46da862a87074caa262f7352" kindref="member">f_buoyancy</ref>);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><ref refid="io_8c_1a8d9485fd3054e691b09938ba0d4d0ec8" kindref="member">read_stellar_profile</ref>(P,<sp/>&amp;S);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><ref refid="units_8c_1af86fb32334a75c01bd1fd4689b8e118f" kindref="member">set_units</ref>(&amp;P,<sp/>&amp;S,<sp/>&amp;U);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><ref refid="io_8c_1ad265c996dc61a0416b2705dddd679087" kindref="member">write_scalars</ref>(U,<sp/>P);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><ref refid="star_8c_1ad5607f6cce0e1dfabd08a38eaa1a3798" kindref="member">init_stellar_profile_splines</ref>(S);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Loaded<sp/>stellar<sp/>profile:\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;<sp/><sp/>Number<sp/>of<sp/>cells:<sp/>%d\n&quot;</highlight><highlight class="normal">,<sp/>S.<ref refid="structstar_1aee104a290f877136a610e2e5d8044fae" kindref="member">ncells</ref>);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;<sp/><sp/>Star<sp/>mass:<sp/>%.2e<sp/>MSun\n&quot;</highlight><highlight class="normal">,<sp/>S.<ref refid="structstar_1a0b482cc62f5872828e9f9b53da186c23" kindref="member">menc</ref>[S.<ref refid="structstar_1aee104a290f877136a610e2e5d8044fae" kindref="member">ncells</ref>-1]<sp/>*<sp/>U.<ref refid="structunits_1a658fc25ca175a048deec5ea31f66cf94" kindref="member">m_unit</ref><sp/>/<sp/>U.<ref refid="structunits_1af4d47f3749923d5153bdb1ae128eb049" kindref="member">MSUN_CGS</ref>);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;<sp/><sp/>Star<sp/>radius:<sp/>%.2e<sp/>RSun\n&quot;</highlight><highlight class="normal">,<sp/>S.<ref refid="structstar_1a54cc4e813708a93c56465e96269a0fe7" kindref="member">r</ref>[S.<ref refid="structstar_1aee104a290f877136a610e2e5d8044fae" kindref="member">ncells</ref>-1]<sp/>*<sp/>U.<ref refid="structunits_1a195638052cff6af8ae117e2774b79551" kindref="member">l_unit</ref><sp/>/<sp/>U.<ref refid="structunits_1ab7382fdcac9d6ee2c6f455351a0f2366" kindref="member">RSUN_CGS</ref><sp/>);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Initialize<sp/>model<sp/>(setup<sp/>RHS,<sp/>GSL<sp/>system<sp/>and<sp/>driver)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><ref refid="model_8c_1a5820dd0dc3a4b0513ac690f4408dc410" kindref="member">init_model_params</ref>(P,<sp/>S,<sp/>U,<sp/>&amp;rhs);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/>gsl_odeiv2_system<sp/>sys<sp/>=<sp/>{<ref refid="model_8c_1abca9d444b78fd82f9cfef8a367142d19" kindref="member">func</ref>,<sp/>NULL,<sp/>4,<sp/>&amp;rhs};</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/>gsl_odeiv2_driver<sp/>*<sp/>d<sp/>=<sp/>gsl_odeiv2_driver_alloc_y_new<sp/>(&amp;sys,<sp/>gsl_odeiv2_step_rk8pd,<sp/>1.e-10,<sp/>1.e-13,<sp/>0.);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>gsl_odeiv2_driver<sp/>*<sp/>d<sp/>=<sp/>gsl_odeiv2_driver_alloc_y_new<sp/>(&amp;sys,<sp/>gsl_odeiv2_step_rk8pd,<sp/>1.e-10,<sp/>0.,<sp/>1.e-8);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>gsl_odeiv2_system<sp/>sys<sp/>=<sp/>{func,<sp/>jac,<sp/>4,<sp/>&amp;rhs};</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>gsl_odeiv2_driver<sp/>*<sp/>d<sp/>=<sp/>gsl_odeiv2_driver_alloc_y_new<sp/>(&amp;sys,<sp/>gsl_odeiv2_step_bsimp,<sp/>1.e-3,<sp/>0.,<sp/>1.e-13);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>gsl_odeiv2_driver<sp/>*<sp/>d<sp/>=<sp/>gsl_odeiv2_driver_alloc_y_new<sp/>(&amp;sys,<sp/>gsl_odeiv2_step_bsimp,<sp/>1.e-10,<sp/>0.,<sp/>1.e-15);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>gsl_odeiv2_driver<sp/>*<sp/>d<sp/>=<sp/>gsl_odeiv2_driver_alloc_y_new<sp/>(&amp;sys,<sp/>gsl_odeiv2_step_bsimp,<sp/>1.e-10,<sp/>0.,<sp/>5.e-7);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>gsl_odeiv2_driver<sp/>*<sp/>d<sp/>=<sp/>gsl_odeiv2_driver_alloc_y_new<sp/>(&amp;sys,<sp/>gsl_odeiv2_step_bsimp,<sp/>1.e-10,<sp/>0.,<sp/>1.e-4);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>P.<ref refid="structparameters_1ab8ff76e9250a51d11724566a9fe840ca" kindref="member">use_drag_coefficients</ref><sp/>==<sp/>1<sp/>){</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Using<sp/>drag<sp/>coefficients:\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;<sp/><sp/>%i<sp/>log(<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>q)<sp/>values<sp/>from<sp/>%.2e<sp/>to<sp/>%.2e\n&quot;</highlight><highlight class="normal">,<sp/>rhs.<ref refid="structrhs__terms_1a303e005485ab20b9778d064fd43ded3f" kindref="member">drag_data_dims</ref>[0],<sp/>rhs.<ref refid="structrhs__terms_1a04fab25e61816a44ef263ff83e046519" kindref="member">log_q_vals</ref>[0],<sp/>rhs.<ref refid="structrhs__terms_1a04fab25e61816a44ef263ff83e046519" kindref="member">log_q_vals</ref>[-1]);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;<sp/><sp/>%i<sp/>log(<sp/><sp/><sp/>eps_rho)<sp/>values<sp/>from<sp/>%.2e<sp/>to<sp/>%.2e\n&quot;</highlight><highlight class="normal">,<sp/>rhs.<ref refid="structrhs__terms_1a303e005485ab20b9778d064fd43ded3f" kindref="member">drag_data_dims</ref>[1],<sp/>rhs.<ref refid="structrhs__terms_1a8ad51f73f9fc24cb4b878d4ac5361cc7" kindref="member">log_eps_rho_vals</ref>[0],<sp/>rhs.<ref refid="structrhs__terms_1a8ad51f73f9fc24cb4b878d4ac5361cc7" kindref="member">log_eps_rho_vals</ref>[-1]);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;<sp/><sp/>%i<sp/>log(rp_over_ra)<sp/>values<sp/>from<sp/>%.2e<sp/>to<sp/>%.2e\n&quot;</highlight><highlight class="normal">,<sp/>rhs.<ref refid="structrhs__terms_1a303e005485ab20b9778d064fd43ded3f" kindref="member">drag_data_dims</ref>[2],<sp/>rhs.<ref refid="structrhs__terms_1a77180908c43f26b69a47d40d2c081a92" kindref="member">log_rp_over_ra_vals</ref>[0],<sp/>rhs.<ref refid="structrhs__terms_1a77180908c43f26b69a47d40d2c081a92" kindref="member">log_rp_over_ra_vals</ref>[-1]);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Initial<sp/>conditions:<sp/>Keplerian<sp/>rotation<sp/>at<sp/>r0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>menc<sp/>=<sp/>gsl_spline_eval(<ref refid="global_8h_1abb8a871881d465e7625f07eddffa6785" kindref="member">spline_menc</ref>,<sp/>P.<ref refid="structparameters_1ad05bdbed10f508a28eced6b3f2479081" kindref="member">r0</ref>,<sp/><ref refid="global_8h_1a7b76ae9f39a443e206a410c051e557fe" kindref="member">acc_menc</ref>);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>thetadot<sp/>=<sp/>sqrt(U.<ref refid="structunits_1ab46825a17a984286d00a3a09bdf28571" kindref="member">G</ref><sp/>*<sp/>menc<sp/>/<sp/>P.<ref refid="structparameters_1ad05bdbed10f508a28eced6b3f2479081" kindref="member">r0</ref>)<sp/>/<sp/>P.<ref refid="structparameters_1ad05bdbed10f508a28eced6b3f2479081" kindref="member">r0</ref>;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>y[4]<sp/>=<sp/>{P.<ref refid="structparameters_1ad05bdbed10f508a28eced6b3f2479081" kindref="member">r0</ref>,<sp/>0.0,<sp/>0.,<sp/>thetadot};</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>t<sp/>=<sp/>0.0;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>ti<sp/>=<sp/>0.;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>period,<sp/>vr,<sp/>vtheta,<sp/>v,<sp/>a;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/>FILE<sp/>*fp;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/>fp<sp/>=<sp/>fopen(</highlight><highlight class="stringliteral">&quot;output.txt&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;w+&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Write<sp/>headers</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/>fprintf(fp,<sp/></highlight><highlight class="stringliteral">&quot;%22s<sp/>%22s<sp/>%22s<sp/>%22s<sp/>%22s<sp/>%22s<sp/>%22s<sp/>%22s<sp/>%22s<sp/>%22s<sp/>%22s<sp/>%22s<sp/>%22s<sp/>%22s\n&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;time&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;r&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;theta&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;rdot&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;thetadot&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;menc&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;rho&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;q&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;eps_rho&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;rp_over_ra&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;cp&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;cg&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;f_grav&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;f_ram&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/>fclose(fp);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>status<sp/>=<sp/>GSL_SUCCESS;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Starting<sp/>integration...\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(<sp/>status<sp/>==<sp/>GSL_SUCCESS<sp/>&amp;&amp;<sp/>y[0]<sp/>&gt;<sp/>P.<ref refid="structparameters_1a44dd01bc440a7226465b0e38310929b1" kindref="member">Rsb</ref><sp/>){</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/>menc<sp/>=<sp/>gsl_spline_eval(<ref refid="global_8h_1abb8a871881d465e7625f07eddffa6785" kindref="member">spline_menc</ref>,<sp/>y[0],<sp/><ref refid="global_8h_1a7b76ae9f39a443e206a410c051e557fe" kindref="member">acc_menc</ref>);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/>vr<sp/>=<sp/>y[2];</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/>vtheta<sp/>=<sp/>y[0]<sp/>*<sp/>y[3];</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/>v<sp/>=<sp/>sqrt(vr<sp/>*<sp/>vr<sp/>+<sp/>vtheta<sp/>*<sp/>vtheta);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/>a<sp/>=<sp/>U.<ref refid="structunits_1ab46825a17a984286d00a3a09bdf28571" kindref="member">G</ref><sp/>*<sp/>menc<sp/>*<sp/>y[0]<sp/>/<sp/>(<sp/>2<sp/>*<sp/>U.<ref refid="structunits_1ab46825a17a984286d00a3a09bdf28571" kindref="member">G</ref><sp/>*<sp/>menc<sp/>-<sp/>y[0]<sp/>*<sp/>v<sp/>*<sp/>v<sp/>);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/>period<sp/>=<sp/>sqrt(pow(a,<sp/>3.)<sp/>/<sp/>U.<ref refid="structunits_1ab46825a17a984286d00a3a09bdf28571" kindref="member">G</ref><sp/>/<sp/>menc);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="io_8c_1af789b6233c9122901decdf3fe596d917" kindref="member">write_output</ref>(U,<sp/>&amp;rhs,<sp/>t,<sp/>y);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>ti<sp/>+=<sp/>1.e-2<sp/>*<sp/>fmin(<sp/>fabs(<sp/>y[0]<sp/>/<sp/>y[2]<sp/>),<sp/>period);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>status<sp/>=<sp/>gsl_odeiv2_driver_apply<sp/>(d,<sp/>&amp;t,<sp/>ti,<sp/>y);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/>printf<sp/>(</highlight><highlight class="stringliteral">&quot;Integration<sp/>stopped<sp/>at<sp/>r<sp/>=<sp/>%.2e<sp/>L_unit,<sp/>with<sp/>return<sp/>value<sp/>%i\n&quot;</highlight><highlight class="normal">,<sp/>y[0],<sp/>status);</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/>gsl_odeiv2_driver_free<sp/>(d);</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/main.c"/>
+  </compounddef>
+</doxygen>

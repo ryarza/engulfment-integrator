@@ -1,0 +1,281 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structrhs__terms" kind="struct" language="C++" prot="public">
+    <compoundname>rhs_terms</compoundname>
+    <includes refid="model_8h" local="no">model.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structrhs__terms_1ac13ca99dc6b23ea6aefc0b4d8c063341" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int rhs_terms::f_hydro</definition>
+        <argsstring></argsstring>
+        <name>f_hydro</name>
+        <briefdescription>
+<para>Whether to include hydrodynamical drag. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/model.h" line="27" column="7" bodyfile="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/model.h" bodystart="27" bodyend="-1"/>
+        <referencedby refid="model_8c_1abca9d444b78fd82f9cfef8a367142d19" compoundref="model_8c" startline="140" endline="197">func</referencedby>
+        <referencedby refid="model_8c_1a5820dd0dc3a4b0513ac690f4408dc410" compoundref="model_8c" startline="199" endline="317">init_model_params</referencedby>
+        <referencedby refid="io_8c_1af789b6233c9122901decdf3fe596d917" compoundref="io_8c" startline="173" endline="204">write_output</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structrhs__terms_1abe610e4b414ddeede219782c0248c991" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int rhs_terms::f_grav</definition>
+        <argsstring></argsstring>
+        <name>f_grav</name>
+        <briefdescription>
+<para>Whether to include gravitational drag. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/model.h" line="29" column="7" bodyfile="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/model.h" bodystart="29" bodyend="-1"/>
+        <referencedby refid="model_8c_1abca9d444b78fd82f9cfef8a367142d19" compoundref="model_8c" startline="140" endline="197">func</referencedby>
+        <referencedby refid="model_8c_1a5820dd0dc3a4b0513ac690f4408dc410" compoundref="model_8c" startline="199" endline="317">init_model_params</referencedby>
+        <referencedby refid="io_8c_1af789b6233c9122901decdf3fe596d917" compoundref="io_8c" startline="173" endline="204">write_output</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structrhs__terms_1a8e88fe897d46f15c82e2d9a35078d646" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int rhs_terms::f_buoyancy</definition>
+        <argsstring></argsstring>
+        <name>f_buoyancy</name>
+        <briefdescription>
+<para>Whether to include gravitational drag. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/model.h" line="31" column="7" bodyfile="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/model.h" bodystart="31" bodyend="-1"/>
+        <referencedby refid="model_8c_1abca9d444b78fd82f9cfef8a367142d19" compoundref="model_8c" startline="140" endline="197">func</referencedby>
+        <referencedby refid="model_8c_1a5820dd0dc3a4b0513ac690f4408dc410" compoundref="model_8c" startline="199" endline="317">init_model_params</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structrhs__terms_1ab2616c315e3e04aeeb268ad0a5cd2723" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double rhs_terms::sigma_hydro</definition>
+        <argsstring></argsstring>
+        <name>sigma_hydro</name>
+        <briefdescription>
+<para>Geometrical cross section of the embedded object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/model.h" line="33" column="10" bodyfile="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/model.h" bodystart="33" bodyend="-1"/>
+        <referencedby refid="model_8c_1af133e6d3b99c19b9b1ffba51e05adc50" compoundref="model_8c" startline="115" endline="124">f_hydro</referencedby>
+        <referencedby refid="model_8c_1a5820dd0dc3a4b0513ac690f4408dc410" compoundref="model_8c" startline="199" endline="317">init_model_params</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structrhs__terms_1a2da4d507d1c55b7c925c8440ad059d87" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double rhs_terms::Rsb</definition>
+        <argsstring></argsstring>
+        <name>Rsb</name>
+        <briefdescription>
+<para>Radius of the embedded object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/model.h" line="35" column="10" bodyfile="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/model.h" bodystart="35" bodyend="-1"/>
+        <referencedby refid="model_8c_1a7413b3adbedc8ce3474a78d49a6b9721" compoundref="model_8c" startline="126" endline="138">compute_flow_parameters</referencedby>
+        <referencedby refid="model_8c_1abca9d444b78fd82f9cfef8a367142d19" compoundref="model_8c" startline="140" endline="197">func</referencedby>
+        <referencedby refid="model_8c_1a5820dd0dc3a4b0513ac690f4408dc410" compoundref="model_8c" startline="199" endline="317">init_model_params</referencedby>
+        <referencedby refid="model_8c_1a90c59eea1bc597d21ec511441cc3c925" compoundref="model_8c" startline="26" endline="102">jac</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structrhs__terms_1a23f99710c6e1d093311561f0c6df46ae" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double rhs_terms::Msb</definition>
+        <argsstring></argsstring>
+        <name>Msb</name>
+        <briefdescription>
+<para>Mass of the embedded object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/model.h" line="37" column="10" bodyfile="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/model.h" bodystart="37" bodyend="-1"/>
+        <referencedby refid="model_8c_1a7413b3adbedc8ce3474a78d49a6b9721" compoundref="model_8c" startline="126" endline="138">compute_flow_parameters</referencedby>
+        <referencedby refid="model_8c_1a52123df6ff7716db1b9bc37a231b9705" compoundref="model_8c" startline="104" endline="113">f_grav</referencedby>
+        <referencedby refid="model_8c_1abca9d444b78fd82f9cfef8a367142d19" compoundref="model_8c" startline="140" endline="197">func</referencedby>
+        <referencedby refid="model_8c_1a5820dd0dc3a4b0513ac690f4408dc410" compoundref="model_8c" startline="199" endline="317">init_model_params</referencedby>
+        <referencedby refid="model_8c_1a90c59eea1bc597d21ec511441cc3c925" compoundref="model_8c" startline="26" endline="102">jac</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structrhs__terms_1a58e190d6c49e164fd7a2861bb2661586" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double rhs_terms::G</definition>
+        <argsstring></argsstring>
+        <name>G</name>
+        <briefdescription>
+<para>Gravitational constant in simulation units. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/model.h" line="39" column="10" bodyfile="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/model.h" bodystart="39" bodyend="-1"/>
+        <referencedby refid="model_8c_1a7413b3adbedc8ce3474a78d49a6b9721" compoundref="model_8c" startline="126" endline="138">compute_flow_parameters</referencedby>
+        <referencedby refid="model_8c_1a52123df6ff7716db1b9bc37a231b9705" compoundref="model_8c" startline="104" endline="113">f_grav</referencedby>
+        <referencedby refid="model_8c_1abca9d444b78fd82f9cfef8a367142d19" compoundref="model_8c" startline="140" endline="197">func</referencedby>
+        <referencedby refid="model_8c_1a5820dd0dc3a4b0513ac690f4408dc410" compoundref="model_8c" startline="199" endline="317">init_model_params</referencedby>
+        <referencedby refid="model_8c_1a90c59eea1bc597d21ec511441cc3c925" compoundref="model_8c" startline="26" endline="102">jac</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structrhs__terms_1ac364a399b048a1b67d986844d0fc7c99" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int rhs_terms::use_drag_coefficients</definition>
+        <argsstring></argsstring>
+        <name>use_drag_coefficients</name>
+        <briefdescription>
+<para>Whether to use numerical drag coefficients. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/model.h" line="41" column="7" bodyfile="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/model.h" bodystart="41" bodyend="-1"/>
+        <referencedby refid="model_8c_1a52123df6ff7716db1b9bc37a231b9705" compoundref="model_8c" startline="104" endline="113">f_grav</referencedby>
+        <referencedby refid="model_8c_1af133e6d3b99c19b9b1ffba51e05adc50" compoundref="model_8c" startline="115" endline="124">f_hydro</referencedby>
+        <referencedby refid="model_8c_1a5820dd0dc3a4b0513ac690f4408dc410" compoundref="model_8c" startline="199" endline="317">init_model_params</referencedby>
+        <referencedby refid="io_8c_1af789b6233c9122901decdf3fe596d917" compoundref="io_8c" startline="173" endline="204">write_output</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structrhs__terms_1a63081a901688a91090165ce0f54aa353" prot="public" static="no" mutable="no">
+        <type>double ***</type>
+        <definition>double*** rhs_terms::cg_data</definition>
+        <argsstring></argsstring>
+        <name>cg_data</name>
+        <briefdescription>
+<para>Gravitational drag coefficient data. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/model.h" line="43" column="10" bodyfile="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/model.h" bodystart="43" bodyend="-1"/>
+        <referencedby refid="model_8c_1a52123df6ff7716db1b9bc37a231b9705" compoundref="model_8c" startline="104" endline="113">f_grav</referencedby>
+        <referencedby refid="model_8c_1a5820dd0dc3a4b0513ac690f4408dc410" compoundref="model_8c" startline="199" endline="317">init_model_params</referencedby>
+        <referencedby refid="io_8c_1af789b6233c9122901decdf3fe596d917" compoundref="io_8c" startline="173" endline="204">write_output</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structrhs__terms_1aebefffdf507433a4e958bf302c49df65" prot="public" static="no" mutable="no">
+        <type>double ***</type>
+        <definition>double*** rhs_terms::cp_data</definition>
+        <argsstring></argsstring>
+        <name>cp_data</name>
+        <briefdescription>
+<para>Ram pressure drag coefficient data. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/model.h" line="45" column="10" bodyfile="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/model.h" bodystart="45" bodyend="-1"/>
+        <referencedby refid="model_8c_1af133e6d3b99c19b9b1ffba51e05adc50" compoundref="model_8c" startline="115" endline="124">f_hydro</referencedby>
+        <referencedby refid="model_8c_1a5820dd0dc3a4b0513ac690f4408dc410" compoundref="model_8c" startline="199" endline="317">init_model_params</referencedby>
+        <referencedby refid="io_8c_1af789b6233c9122901decdf3fe596d917" compoundref="io_8c" startline="173" endline="204">write_output</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structrhs__terms_1a303e005485ab20b9778d064fd43ded3f" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int rhs_terms::drag_data_dims[3]</definition>
+        <argsstring>[3]</argsstring>
+        <name>drag_data_dims</name>
+        <briefdescription>
+<para>Dimensions of the grid in which the drag coefficient data is sampled. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/model.h" line="47" column="7" bodyfile="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/model.h" bodystart="47" bodyend="-1"/>
+        <referencedby refid="model_8c_1a52123df6ff7716db1b9bc37a231b9705" compoundref="model_8c" startline="104" endline="113">f_grav</referencedby>
+        <referencedby refid="model_8c_1af133e6d3b99c19b9b1ffba51e05adc50" compoundref="model_8c" startline="115" endline="124">f_hydro</referencedby>
+        <referencedby refid="model_8c_1a5820dd0dc3a4b0513ac690f4408dc410" compoundref="model_8c" startline="199" endline="317">init_model_params</referencedby>
+        <referencedby refid="main_8c_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="main_8c" startline="33" endline="126">main</referencedby>
+        <referencedby refid="io_8c_1af789b6233c9122901decdf3fe596d917" compoundref="io_8c" startline="173" endline="204">write_output</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structrhs__terms_1a04fab25e61816a44ef263ff83e046519" prot="public" static="no" mutable="no">
+        <type>double *</type>
+        <definition>double* rhs_terms::log_q_vals</definition>
+        <argsstring></argsstring>
+        <name>log_q_vals</name>
+        <briefdescription>
+<para>Mass ratio values at which the drag coefficient data is sampled. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/model.h" line="49" column="10" bodyfile="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/model.h" bodystart="49" bodyend="-1"/>
+        <referencedby refid="model_8c_1a52123df6ff7716db1b9bc37a231b9705" compoundref="model_8c" startline="104" endline="113">f_grav</referencedby>
+        <referencedby refid="model_8c_1af133e6d3b99c19b9b1ffba51e05adc50" compoundref="model_8c" startline="115" endline="124">f_hydro</referencedby>
+        <referencedby refid="model_8c_1a5820dd0dc3a4b0513ac690f4408dc410" compoundref="model_8c" startline="199" endline="317">init_model_params</referencedby>
+        <referencedby refid="main_8c_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="main_8c" startline="33" endline="126">main</referencedby>
+        <referencedby refid="io_8c_1af789b6233c9122901decdf3fe596d917" compoundref="io_8c" startline="173" endline="204">write_output</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structrhs__terms_1a8ad51f73f9fc24cb4b878d4ac5361cc7" prot="public" static="no" mutable="no">
+        <type>double *</type>
+        <definition>double* rhs_terms::log_eps_rho_vals</definition>
+        <argsstring></argsstring>
+        <name>log_eps_rho_vals</name>
+        <briefdescription>
+<para>Density gradient values at which the drag coefficient data is sampled. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/model.h" line="51" column="10" bodyfile="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/model.h" bodystart="51" bodyend="-1"/>
+        <referencedby refid="model_8c_1a52123df6ff7716db1b9bc37a231b9705" compoundref="model_8c" startline="104" endline="113">f_grav</referencedby>
+        <referencedby refid="model_8c_1af133e6d3b99c19b9b1ffba51e05adc50" compoundref="model_8c" startline="115" endline="124">f_hydro</referencedby>
+        <referencedby refid="model_8c_1a5820dd0dc3a4b0513ac690f4408dc410" compoundref="model_8c" startline="199" endline="317">init_model_params</referencedby>
+        <referencedby refid="main_8c_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="main_8c" startline="33" endline="126">main</referencedby>
+        <referencedby refid="io_8c_1af789b6233c9122901decdf3fe596d917" compoundref="io_8c" startline="173" endline="204">write_output</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structrhs__terms_1a77180908c43f26b69a47d40d2c081a92" prot="public" static="no" mutable="no">
+        <type>double *</type>
+        <definition>double* rhs_terms::log_rp_over_ra_vals</definition>
+        <argsstring></argsstring>
+        <name>log_rp_over_ra_vals</name>
+        <briefdescription>
+<para>Rp / Ra values at which the drag coefficient data is sampled. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/model.h" line="53" column="10" bodyfile="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/model.h" bodystart="53" bodyend="-1"/>
+        <referencedby refid="model_8c_1a52123df6ff7716db1b9bc37a231b9705" compoundref="model_8c" startline="104" endline="113">f_grav</referencedby>
+        <referencedby refid="model_8c_1af133e6d3b99c19b9b1ffba51e05adc50" compoundref="model_8c" startline="115" endline="124">f_hydro</referencedby>
+        <referencedby refid="model_8c_1a5820dd0dc3a4b0513ac690f4408dc410" compoundref="model_8c" startline="199" endline="317">init_model_params</referencedby>
+        <referencedby refid="main_8c_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="main_8c" startline="33" endline="126">main</referencedby>
+        <referencedby refid="io_8c_1af789b6233c9122901decdf3fe596d917" compoundref="io_8c" startline="173" endline="204">write_output</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Parameters needed when evaluating the right-hand-side of the GSL ODE system. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/model.h" line="24" column="1" bodyfile="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/model.h" bodystart="24" bodyend="56"/>
+    <listofallmembers>
+      <member refid="structrhs__terms_1a63081a901688a91090165ce0f54aa353" prot="public" virt="non-virtual"><scope>rhs_terms</scope><name>cg_data</name></member>
+      <member refid="structrhs__terms_1aebefffdf507433a4e958bf302c49df65" prot="public" virt="non-virtual"><scope>rhs_terms</scope><name>cp_data</name></member>
+      <member refid="structrhs__terms_1a303e005485ab20b9778d064fd43ded3f" prot="public" virt="non-virtual"><scope>rhs_terms</scope><name>drag_data_dims</name></member>
+      <member refid="structrhs__terms_1a8e88fe897d46f15c82e2d9a35078d646" prot="public" virt="non-virtual"><scope>rhs_terms</scope><name>f_buoyancy</name></member>
+      <member refid="structrhs__terms_1abe610e4b414ddeede219782c0248c991" prot="public" virt="non-virtual"><scope>rhs_terms</scope><name>f_grav</name></member>
+      <member refid="structrhs__terms_1ac13ca99dc6b23ea6aefc0b4d8c063341" prot="public" virt="non-virtual"><scope>rhs_terms</scope><name>f_hydro</name></member>
+      <member refid="structrhs__terms_1a58e190d6c49e164fd7a2861bb2661586" prot="public" virt="non-virtual"><scope>rhs_terms</scope><name>G</name></member>
+      <member refid="structrhs__terms_1a8ad51f73f9fc24cb4b878d4ac5361cc7" prot="public" virt="non-virtual"><scope>rhs_terms</scope><name>log_eps_rho_vals</name></member>
+      <member refid="structrhs__terms_1a04fab25e61816a44ef263ff83e046519" prot="public" virt="non-virtual"><scope>rhs_terms</scope><name>log_q_vals</name></member>
+      <member refid="structrhs__terms_1a77180908c43f26b69a47d40d2c081a92" prot="public" virt="non-virtual"><scope>rhs_terms</scope><name>log_rp_over_ra_vals</name></member>
+      <member refid="structrhs__terms_1a23f99710c6e1d093311561f0c6df46ae" prot="public" virt="non-virtual"><scope>rhs_terms</scope><name>Msb</name></member>
+      <member refid="structrhs__terms_1a2da4d507d1c55b7c925c8440ad059d87" prot="public" virt="non-virtual"><scope>rhs_terms</scope><name>Rsb</name></member>
+      <member refid="structrhs__terms_1ab2616c315e3e04aeeb268ad0a5cd2723" prot="public" virt="non-virtual"><scope>rhs_terms</scope><name>sigma_hydro</name></member>
+      <member refid="structrhs__terms_1ac364a399b048a1b67d986844d0fc7c99" prot="public" virt="non-virtual"><scope>rhs_terms</scope><name>use_drag_coefficients</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.1" xml:lang="en-US">
+  <compound refid="structparameters" kind="struct"><name>parameters</name>
+    <member refid="structparameters_1a6960e6f48d147c12441609628d186b35" kind="variable"><name>f_hydro</name></member>
+    <member refid="structparameters_1a44b8f833c7ff07dc990a137b49d306f3" kind="variable"><name>f_grav</name></member>
+    <member refid="structparameters_1a65676f4e46da862a87074caa262f7352" kind="variable"><name>f_buoyancy</name></member>
+    <member refid="structparameters_1ab5115d22be6204fdc5bbf6445269efa0" kind="variable"><name>Msb</name></member>
+    <member refid="structparameters_1a44dd01bc440a7226465b0e38310929b1" kind="variable"><name>Rsb</name></member>
+    <member refid="structparameters_1ad3fbd800d02ad97f32af7c8daf157dfa" kind="variable"><name>rho_av_sb</name></member>
+    <member refid="structparameters_1ad05bdbed10f508a28eced6b3f2479081" kind="variable"><name>r0</name></member>
+    <member refid="structparameters_1a6d652c74fe298f831dd1e8f1b3cecbe2" kind="variable"><name>mesa_profile_path</name></member>
+    <member refid="structparameters_1ab8ff76e9250a51d11724566a9fe840ca" kind="variable"><name>use_drag_coefficients</name></member>
+    <member refid="structparameters_1a222e7500d94731b8efdae777c71ca8d9" kind="variable"><name>drag_data_path</name></member>
+  </compound>
+  <compound refid="structrhs__terms" kind="struct"><name>rhs_terms</name>
+    <member refid="structrhs__terms_1ac13ca99dc6b23ea6aefc0b4d8c063341" kind="variable"><name>f_hydro</name></member>
+    <member refid="structrhs__terms_1abe610e4b414ddeede219782c0248c991" kind="variable"><name>f_grav</name></member>
+    <member refid="structrhs__terms_1a8e88fe897d46f15c82e2d9a35078d646" kind="variable"><name>f_buoyancy</name></member>
+    <member refid="structrhs__terms_1ab2616c315e3e04aeeb268ad0a5cd2723" kind="variable"><name>sigma_hydro</name></member>
+    <member refid="structrhs__terms_1a2da4d507d1c55b7c925c8440ad059d87" kind="variable"><name>Rsb</name></member>
+    <member refid="structrhs__terms_1a23f99710c6e1d093311561f0c6df46ae" kind="variable"><name>Msb</name></member>
+    <member refid="structrhs__terms_1a58e190d6c49e164fd7a2861bb2661586" kind="variable"><name>G</name></member>
+    <member refid="structrhs__terms_1ac364a399b048a1b67d986844d0fc7c99" kind="variable"><name>use_drag_coefficients</name></member>
+    <member refid="structrhs__terms_1a63081a901688a91090165ce0f54aa353" kind="variable"><name>cg_data</name></member>
+    <member refid="structrhs__terms_1aebefffdf507433a4e958bf302c49df65" kind="variable"><name>cp_data</name></member>
+    <member refid="structrhs__terms_1a303e005485ab20b9778d064fd43ded3f" kind="variable"><name>drag_data_dims</name></member>
+    <member refid="structrhs__terms_1a04fab25e61816a44ef263ff83e046519" kind="variable"><name>log_q_vals</name></member>
+    <member refid="structrhs__terms_1a8ad51f73f9fc24cb4b878d4ac5361cc7" kind="variable"><name>log_eps_rho_vals</name></member>
+    <member refid="structrhs__terms_1a77180908c43f26b69a47d40d2c081a92" kind="variable"><name>log_rp_over_ra_vals</name></member>
+  </compound>
+  <compound refid="structstar" kind="struct"><name>star</name>
+    <member refid="structstar_1aee104a290f877136a610e2e5d8044fae" kind="variable"><name>ncells</name></member>
+    <member refid="structstar_1a54cc4e813708a93c56465e96269a0fe7" kind="variable"><name>r</name></member>
+    <member refid="structstar_1ab3f45e19f98283cc73f8f890db888dbb" kind="variable"><name>rho</name></member>
+    <member refid="structstar_1aa3d46671aba75d6d247013090b96f003" kind="variable"><name>drhodr</name></member>
+    <member refid="structstar_1a0b482cc62f5872828e9f9b53da186c23" kind="variable"><name>menc</name></member>
+    <member refid="structstar_1a5065d00361a69ec6809704e3ee2c5ad2" kind="variable"><name>cs</name></member>
+    <member refid="structstar_1a83c0290c8527de09a6cf98bc33c2b177" kind="variable"><name>hrho</name></member>
+  </compound>
+  <compound refid="structunits" kind="struct"><name>units</name>
+    <member refid="structunits_1a658fc25ca175a048deec5ea31f66cf94" kind="variable"><name>m_unit</name></member>
+    <member refid="structunits_1a195638052cff6af8ae117e2774b79551" kind="variable"><name>l_unit</name></member>
+    <member refid="structunits_1a70648d8ac5326c3a89f1a25e9216d71e" kind="variable"><name>t_unit</name></member>
+    <member refid="structunits_1a2de6f919eae3f6c3b9d88a8b3ada21b8" kind="variable"><name>v_unit</name></member>
+    <member refid="structunits_1a42e5d4fc00fc1bac25c3169de1379b4c" kind="variable"><name>rho_unit</name></member>
+    <member refid="structunits_1abd2211536105655e894177c38bea584f" kind="variable"><name>G_CGS</name></member>
+    <member refid="structunits_1af4d47f3749923d5153bdb1ae128eb049" kind="variable"><name>MSUN_CGS</name></member>
+    <member refid="structunits_1ab7382fdcac9d6ee2c6f455351a0f2366" kind="variable"><name>RSUN_CGS</name></member>
+    <member refid="structunits_1ab46825a17a984286d00a3a09bdf28571" kind="variable"><name>G</name></member>
+  </compound>
+  <compound refid="global_8h" kind="file"><name>global.h</name>
+    <member refid="global_8h_1ae6648cd71a8bd49d58ae8ed33ba910d1" kind="define"><name>MAXLEN</name></member>
+    <member refid="global_8h_1acf79bf70f986b203fe7fd8eb3e91a634" kind="variable"><name>acc_rho</name></member>
+    <member refid="global_8h_1aedeba8fd92b0077b7c6724c0309ea62e" kind="variable"><name>acc_drhodr</name></member>
+    <member refid="global_8h_1a7b76ae9f39a443e206a410c051e557fe" kind="variable"><name>acc_menc</name></member>
+    <member refid="global_8h_1a8c5a521dd2cb882da9a99937f79f5837" kind="variable"><name>acc_cs</name></member>
+    <member refid="global_8h_1a4f47520db4595782a0ea2d8dbceb7f48" kind="variable"><name>acc_hrho</name></member>
+    <member refid="global_8h_1a78d5a9eaea222c102b5f9ead2eba41ef" kind="variable"><name>spline_rho</name></member>
+    <member refid="global_8h_1a4c4bdddddcd903509ed2ecf7c9cff218" kind="variable"><name>spline_drhodr</name></member>
+    <member refid="global_8h_1abb8a871881d465e7625f07eddffa6785" kind="variable"><name>spline_menc</name></member>
+    <member refid="global_8h_1adebc07be0db5cfee6bf35217cc1f8936" kind="variable"><name>spline_cs</name></member>
+    <member refid="global_8h_1ad9933c0d0863db02128a37ab15bccd56" kind="variable"><name>spline_hrho</name></member>
+    <member refid="global_8h_1ad2753c8a41f8a7a0f8b707fe3316f2dd" kind="function"><name>h5safecall</name></member>
+  </compound>
+  <compound refid="io_8h" kind="file"><name>io.h</name>
+    <member refid="io_8h_1aa30f39ea8db65e7e2b11e3ddf1636f72" kind="function"><name>parse_params</name></member>
+    <member refid="io_8h_1a8d9485fd3054e691b09938ba0d4d0ec8" kind="function"><name>read_stellar_profile</name></member>
+    <member refid="io_8h_1ad265c996dc61a0416b2705dddd679087" kind="function"><name>write_scalars</name></member>
+    <member refid="io_8h_1af789b6233c9122901decdf3fe596d917" kind="function"><name>write_output</name></member>
+  </compound>
+  <compound refid="model_8h" kind="file"><name>model.h</name>
+    <member refid="model_8h_1a90c59eea1bc597d21ec511441cc3c925" kind="function"><name>jac</name></member>
+    <member refid="model_8h_1abca9d444b78fd82f9cfef8a367142d19" kind="function"><name>func</name></member>
+    <member refid="model_8h_1a5820dd0dc3a4b0513ac690f4408dc410" kind="function"><name>init_model_params</name></member>
+    <member refid="model_8h_1a82bb8aa8ea3780f15e983b5c17a4ebb3" kind="function"><name>f_hydro</name></member>
+    <member refid="model_8h_1aed72b2356c55894dc0a75d5e8d99a536" kind="function"><name>f_grav</name></member>
+    <member refid="model_8h_1a7413b3adbedc8ce3474a78d49a6b9721" kind="function"><name>compute_flow_parameters</name></member>
+  </compound>
+  <compound refid="star_8h" kind="file"><name>star.h</name>
+    <member refid="star_8h_1ad5607f6cce0e1dfabd08a38eaa1a3798" kind="function"><name>init_stellar_profile_splines</name></member>
+  </compound>
+  <compound refid="units_8h" kind="file"><name>units.h</name>
+    <member refid="units_8h_1af86fb32334a75c01bd1fd4689b8e118f" kind="function"><name>set_units</name></member>
+  </compound>
+  <compound refid="utils_8h" kind="file"><name>utils.h</name>
+    <member refid="utils_8h_1aca537472aac6353e383c279ab1cff9ff" kind="function"><name>trilinear_interp</name></member>
+    <member refid="utils_8h_1a8f3cba07aa75b7320ae8bd6c0aeac498" kind="function"><name>sign</name></member>
+  </compound>
+  <compound refid="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir"><name>/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src</name>
+  </compound>
+</doxygenindex>

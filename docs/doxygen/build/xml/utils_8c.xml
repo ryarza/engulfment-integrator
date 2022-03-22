@@ -1,0 +1,238 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="utils_8c" kind="file" language="C++">
+    <compoundname>utils.c</compoundname>
+    <includes refid="utils_8h" local="yes">utils.h</includes>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">stdlib.h</includes>
+    <incdepgraph>
+      <node id="4">
+        <label>stdlib.h</label>
+      </node>
+      <node id="1">
+        <label>utils.c</label>
+        <link refid="utils_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>utils.h</label>
+        <link refid="utils_8h"/>
+      </node>
+      <node id="3">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="utils_8c_1afe5376e117581ef16fbb5155a7242d60" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int bounding_indices</definition>
+        <argsstring>(double value, double *array, int length, int *indices)</argsstring>
+        <name>bounding_indices</name>
+        <param>
+          <type>double</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>array</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>length</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>indices</declname>
+        </param>
+        <briefdescription>
+<para>Indices in array that enclose a given real number. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/utils.c" line="23" column="5" bodyfile="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/utils.c" bodystart="23" bodyend="49"/>
+        <referencedby refid="utils_8c_1aca537472aac6353e383c279ab1cff9ff" compoundref="utils_8c" startline="51" endline="89">trilinear_interp</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="utils_8c_1aca537472aac6353e383c279ab1cff9ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double trilinear_interp</definition>
+        <argsstring>(double ***f_vals, double *x_vals, double *y_vals, double *z_vals, int *dims, double x, double y, double z)</argsstring>
+        <name>trilinear_interp</name>
+        <param>
+          <type>double ***</type>
+          <declname>f_vals</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>x_vals</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>y_vals</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>z_vals</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>dims</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>z</declname>
+        </param>
+        <briefdescription>
+<para>Trilinear interpolation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/utils.c" line="51" column="8" bodyfile="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/utils.c" bodystart="51" bodyend="89"/>
+        <references refid="utils_8c_1afe5376e117581ef16fbb5155a7242d60" compoundref="utils_8c" startline="23" endline="49">bounding_indices</references>
+        <referencedby refid="model_8c_1a52123df6ff7716db1b9bc37a231b9705" compoundref="model_8c" startline="104" endline="113">f_grav</referencedby>
+        <referencedby refid="model_8c_1af133e6d3b99c19b9b1ffba51e05adc50" compoundref="model_8c" startline="115" endline="124">f_hydro</referencedby>
+        <referencedby refid="io_8c_1af789b6233c9122901decdf3fe596d917" compoundref="io_8c" startline="173" endline="204">write_output</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="utils_8c_1a8f3cba07aa75b7320ae8bd6c0aeac498" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double sign</definition>
+        <argsstring>(double x)</argsstring>
+        <name>sign</name>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+<para>Sign function. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/utils.c" line="91" column="8" bodyfile="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/utils.c" bodystart="91" bodyend="98"/>
+        <referencedby refid="model_8c_1a52123df6ff7716db1b9bc37a231b9705" compoundref="model_8c" startline="104" endline="113">f_grav</referencedby>
+        <referencedby refid="model_8c_1af133e6d3b99c19b9b1ffba51e05adc50" compoundref="model_8c" startline="115" endline="124">f_hydro</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Copyright<sp/>2021<sp/>Ricardo<sp/>Yarza.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>orbit-integrator</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>orbit-integrator<sp/>is<sp/>free<sp/>software:<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>the<sp/>Free<sp/>Software<sp/>Foundation,<sp/>either<sp/>version<sp/>3<sp/>of<sp/>the<sp/>License,<sp/>or</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/>orbit-integrator<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//<sp/>along<sp/>with<sp/>orbit-integrator.<sp/><sp/>If<sp/>not,<sp/>see<sp/>&lt;https://www.gnu.org/licenses/&gt;.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="utils_8h" kindref="compound">utils.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="utils_8c_1afe5376e117581ef16fbb5155a7242d60" refkind="member"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="utils_8c_1afe5376e117581ef16fbb5155a7242d60" kindref="member">bounding_indices</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>value,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*array,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>length,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*indices){</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>L<sp/>=<sp/>array[length<sp/>-<sp/>1]<sp/>-<sp/>array[0];</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>test_idx<sp/>=<sp/>(int)<sp/>(<sp/>(<sp/>value<sp/>-<sp/>array[0]<sp/>)<sp/>*<sp/>(<sp/>length<sp/>-<sp/>1<sp/>)<sp/>/<sp/>L<sp/>);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>value<sp/>&gt;<sp/>array[length<sp/>-<sp/>1]<sp/>){</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>indices[0]<sp/>=<sp/>length<sp/>-<sp/>1;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>indices[1]<sp/>=<sp/>length<sp/>-<sp/>1;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>value<sp/>&lt;<sp/>array[0]<sp/>){</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>indices[0]<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>indices[1]<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(array[test_idx]<sp/>&gt;<sp/>value){</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>indices[0]<sp/>=<sp/>test_idx<sp/>-<sp/>1;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>indices[1]<sp/>=<sp/>test_idx;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>indices[0]<sp/>=<sp/>test_idx;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>indices[1]<sp/>=<sp/>test_idx<sp/>+<sp/>1;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="utils_8c_1aca537472aac6353e383c279ab1cff9ff" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="utils_8c_1aca537472aac6353e383c279ab1cff9ff" kindref="member">trilinear_interp</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>***f_vals,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*x_vals,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*y_vals,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*z_vals,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*dims,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>z){</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>xhat,<sp/>yhat,<sp/>zhat;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x_bounds[2],<sp/>y_bounds[2],<sp/>z_bounds[2];</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>c3[2][2][2];</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>c00,<sp/>c01,<sp/>c10,<sp/>c11;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>c0,<sp/>c1;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><ref refid="utils_8c_1afe5376e117581ef16fbb5155a7242d60" kindref="member">bounding_indices</ref>(x,<sp/>x_vals,<sp/>dims[0],<sp/>x_bounds);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><ref refid="utils_8c_1afe5376e117581ef16fbb5155a7242d60" kindref="member">bounding_indices</ref>(y,<sp/>y_vals,<sp/>dims[1],<sp/>y_bounds);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><ref refid="utils_8c_1afe5376e117581ef16fbb5155a7242d60" kindref="member">bounding_indices</ref>(z,<sp/>z_vals,<sp/>dims[2],<sp/>z_bounds);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>2;<sp/>i++<sp/>){</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j<sp/>=<sp/>0;<sp/>j<sp/>&lt;<sp/>2;<sp/>j++<sp/>){</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>k<sp/>=<sp/>0;<sp/>k<sp/>&lt;<sp/>2;<sp/>k++<sp/>){</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>c3[i][j][k]<sp/>=<sp/>f_vals[<sp/>x_bounds[i]<sp/>][<sp/>y_bounds[j]<sp/>][<sp/>z_bounds[k]<sp/>];</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/>xhat<sp/>=<sp/>0.;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/>yhat<sp/>=<sp/>0.;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/>zhat<sp/>=<sp/>0.;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>x_bounds[0]<sp/>!=<sp/>x_bounds[1]<sp/>)<sp/>xhat<sp/>=<sp/>(<sp/>x<sp/>-<sp/>x_vals[x_bounds[0]]<sp/>)<sp/>/<sp/>(<sp/>x_vals[x_bounds[1]]<sp/>-<sp/>x_vals[x_bounds[0]]<sp/>);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>y_bounds[0]<sp/>!=<sp/>y_bounds[1]<sp/>)<sp/>yhat<sp/>=<sp/>(<sp/>y<sp/>-<sp/>y_vals[y_bounds[0]]<sp/>)<sp/>/<sp/>(<sp/>y_vals[y_bounds[1]]<sp/>-<sp/>y_vals[y_bounds[0]]<sp/>);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>z_bounds[0]<sp/>!=<sp/>z_bounds[1]<sp/>)<sp/>zhat<sp/>=<sp/>(<sp/>z<sp/>-<sp/>z_vals[z_bounds[0]]<sp/>)<sp/>/<sp/>(<sp/>z_vals[z_bounds[1]]<sp/>-<sp/>z_vals[z_bounds[0]]<sp/>);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/>c00<sp/>=<sp/>c3[0][0][0]<sp/>*<sp/>(<sp/>1<sp/>-<sp/>xhat<sp/>)<sp/>+<sp/>c3[1][0][0]<sp/>*<sp/>xhat;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/>c01<sp/>=<sp/>c3[0][0][1]<sp/>*<sp/>(<sp/>1<sp/>-<sp/>xhat<sp/>)<sp/>+<sp/>c3[1][0][1]<sp/>*<sp/>xhat;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/>c10<sp/>=<sp/>c3[0][1][0]<sp/>*<sp/>(<sp/>1<sp/>-<sp/>xhat<sp/>)<sp/>+<sp/>c3[1][1][0]<sp/>*<sp/>xhat;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/>c11<sp/>=<sp/>c3[0][1][1]<sp/>*<sp/>(<sp/>1<sp/>-<sp/>xhat<sp/>)<sp/>+<sp/>c3[1][1][1]<sp/>*<sp/>xhat;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/>c0<sp/>=<sp/>c00<sp/>*<sp/>(<sp/>1<sp/>-<sp/>yhat<sp/>)<sp/>+<sp/>c10<sp/>*<sp/>yhat;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/>c1<sp/>=<sp/>c01<sp/>*<sp/>(<sp/>1<sp/>-<sp/>yhat<sp/>)<sp/>+<sp/>c11<sp/>*<sp/>yhat;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>c0<sp/>*<sp/>(<sp/>1<sp/>-<sp/>zhat<sp/>)<sp/>+<sp/>c1<sp/>*<sp/>zhat;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91" refid="utils_8c_1a8f3cba07aa75b7320ae8bd6c0aeac498" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="utils_8c_1a8f3cba07aa75b7320ae8bd6c0aeac498" kindref="member">sign</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>x){</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>x<sp/>&gt;=<sp/>0.){</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1.;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1.;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="98"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/utils.c"/>
+  </compounddef>
+</doxygen>

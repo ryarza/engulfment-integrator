@@ -1,0 +1,87 @@
+\hypertarget{utils_8c}{}\doxysection{utils.\+c File Reference}
+\label{utils_8c}\index{utils.c@{utils.c}}
+{\ttfamily \#include \char`\"{}utils.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+Include dependency graph for utils.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=267pt]{utils_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{utils_8c_afe5376e117581ef16fbb5155a7242d60}{bounding\+\_\+indices}} (double value, double $\ast$array, int length, int $\ast$indices)
+\begin{DoxyCompactList}\small\item\em Indices in array that enclose a given real number. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{utils_8c_aca537472aac6353e383c279ab1cff9ff}{trilinear\+\_\+interp}} (double $\ast$$\ast$$\ast$f\+\_\+vals, double $\ast$x\+\_\+vals, double $\ast$y\+\_\+vals, double $\ast$z\+\_\+vals, int $\ast$dims, double x, double y, double z)
+\begin{DoxyCompactList}\small\item\em Trilinear interpolation. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{utils_8c_a8f3cba07aa75b7320ae8bd6c0aeac498}{sign}} (double x)
+\begin{DoxyCompactList}\small\item\em Sign function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{utils_8c_afe5376e117581ef16fbb5155a7242d60}\label{utils_8c_afe5376e117581ef16fbb5155a7242d60}} 
+\index{utils.c@{utils.c}!bounding\_indices@{bounding\_indices}}
+\index{bounding\_indices@{bounding\_indices}!utils.c@{utils.c}}
+\doxysubsubsection{\texorpdfstring{bounding\_indices()}{bounding\_indices()}}
+{\footnotesize\ttfamily int bounding\+\_\+indices (\begin{DoxyParamCaption}\item[{double}]{value,  }\item[{double $\ast$}]{array,  }\item[{int}]{length,  }\item[{int $\ast$}]{indices }\end{DoxyParamCaption})}
+
+
+
+Indices in array that enclose a given real number. 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{utils_8c_afe5376e117581ef16fbb5155a7242d60_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{utils_8c_a8f3cba07aa75b7320ae8bd6c0aeac498}\label{utils_8c_a8f3cba07aa75b7320ae8bd6c0aeac498}} 
+\index{utils.c@{utils.c}!sign@{sign}}
+\index{sign@{sign}!utils.c@{utils.c}}
+\doxysubsubsection{\texorpdfstring{sign()}{sign()}}
+{\footnotesize\ttfamily double sign (\begin{DoxyParamCaption}\item[{double}]{x }\end{DoxyParamCaption})}
+
+
+
+Sign function. 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{utils_8c_a8f3cba07aa75b7320ae8bd6c0aeac498_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{utils_8c_aca537472aac6353e383c279ab1cff9ff}\label{utils_8c_aca537472aac6353e383c279ab1cff9ff}} 
+\index{utils.c@{utils.c}!trilinear\_interp@{trilinear\_interp}}
+\index{trilinear\_interp@{trilinear\_interp}!utils.c@{utils.c}}
+\doxysubsubsection{\texorpdfstring{trilinear\_interp()}{trilinear\_interp()}}
+{\footnotesize\ttfamily double trilinear\+\_\+interp (\begin{DoxyParamCaption}\item[{double $\ast$$\ast$$\ast$}]{f\+\_\+vals,  }\item[{double $\ast$}]{x\+\_\+vals,  }\item[{double $\ast$}]{y\+\_\+vals,  }\item[{double $\ast$}]{z\+\_\+vals,  }\item[{int $\ast$}]{dims,  }\item[{double}]{x,  }\item[{double}]{y,  }\item[{double}]{z }\end{DoxyParamCaption})}
+
+
+
+Trilinear interpolation. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=306pt]{utils_8c_aca537472aac6353e383c279ab1cff9ff_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{utils_8c_aca537472aac6353e383c279ab1cff9ff_icgraph}
+\end{center}
+\end{figure}

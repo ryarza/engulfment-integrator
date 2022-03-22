@@ -1,0 +1,163 @@
+\hypertarget{star_8c}{}\doxysection{star.\+c File Reference}
+\label{star_8c}\index{star.c@{star.c}}
+{\ttfamily \#include \char`\"{}star.\+h\char`\"{}}\newline
+Include dependency graph for star.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{star_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{star_8c_ad5607f6cce0e1dfabd08a38eaa1a3798}{init\+\_\+stellar\+\_\+profile\+\_\+splines}} (struct \mbox{\hyperlink{structstar}{star}} S)
+\begin{DoxyCompactList}\small\item\em Uses profile data to initialize GSL splines. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+gsl\+\_\+interp\+\_\+accel $\ast$ \mbox{\hyperlink{star_8c_acf79bf70f986b203fe7fd8eb3e91a634}{acc\+\_\+rho}}
+\begin{DoxyCompactList}\small\item\em Globally accessible GSL interpolation accelerator for the density spline. \end{DoxyCompactList}\item 
+gsl\+\_\+interp\+\_\+accel $\ast$ \mbox{\hyperlink{star_8c_aedeba8fd92b0077b7c6724c0309ea62e}{acc\+\_\+drhodr}}
+\begin{DoxyCompactList}\small\item\em Globally accessible GSL interpolation accelerator for the density gradient spline. \end{DoxyCompactList}\item 
+gsl\+\_\+interp\+\_\+accel $\ast$ \mbox{\hyperlink{star_8c_a7b76ae9f39a443e206a410c051e557fe}{acc\+\_\+menc}}
+\begin{DoxyCompactList}\small\item\em Globally accessible GSL interpolation accelerator for the mass spline. \end{DoxyCompactList}\item 
+gsl\+\_\+interp\+\_\+accel $\ast$ \mbox{\hyperlink{star_8c_a8c5a521dd2cb882da9a99937f79f5837}{acc\+\_\+cs}}
+\begin{DoxyCompactList}\small\item\em Globally accessible GSL interpolation accelerator for the sound speed spline. \end{DoxyCompactList}\item 
+gsl\+\_\+interp\+\_\+accel $\ast$ \mbox{\hyperlink{star_8c_a4f47520db4595782a0ea2d8dbceb7f48}{acc\+\_\+hrho}}
+\begin{DoxyCompactList}\small\item\em Globally accessible GSL interpolation accelerator for the density scale height spline. \end{DoxyCompactList}\item 
+gsl\+\_\+spline $\ast$ \mbox{\hyperlink{star_8c_a78d5a9eaea222c102b5f9ead2eba41ef}{spline\+\_\+rho}}
+\begin{DoxyCompactList}\small\item\em Globally accessible GSL density spline. \end{DoxyCompactList}\item 
+gsl\+\_\+spline $\ast$ \mbox{\hyperlink{star_8c_a4c4bdddddcd903509ed2ecf7c9cff218}{spline\+\_\+drhodr}}
+\begin{DoxyCompactList}\small\item\em Globally accessible GSL density gradient spline. \end{DoxyCompactList}\item 
+gsl\+\_\+spline $\ast$ \mbox{\hyperlink{star_8c_abb8a871881d465e7625f07eddffa6785}{spline\+\_\+menc}}
+\begin{DoxyCompactList}\small\item\em Globally accessible GSL enclosed mass spline. \end{DoxyCompactList}\item 
+gsl\+\_\+spline $\ast$ \mbox{\hyperlink{star_8c_adebc07be0db5cfee6bf35217cc1f8936}{spline\+\_\+cs}}
+\begin{DoxyCompactList}\small\item\em Globally accessible GSL sound speed spline. \end{DoxyCompactList}\item 
+gsl\+\_\+spline $\ast$ \mbox{\hyperlink{star_8c_ad9933c0d0863db02128a37ab15bccd56}{spline\+\_\+hrho}}
+\begin{DoxyCompactList}\small\item\em Globally accessible GSL density scale height spline. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{star_8c_ad5607f6cce0e1dfabd08a38eaa1a3798}\label{star_8c_ad5607f6cce0e1dfabd08a38eaa1a3798}} 
+\index{star.c@{star.c}!init\_stellar\_profile\_splines@{init\_stellar\_profile\_splines}}
+\index{init\_stellar\_profile\_splines@{init\_stellar\_profile\_splines}!star.c@{star.c}}
+\doxysubsubsection{\texorpdfstring{init\_stellar\_profile\_splines()}{init\_stellar\_profile\_splines()}}
+{\footnotesize\ttfamily int init\+\_\+stellar\+\_\+profile\+\_\+splines (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structstar}{star}}}]{S }\end{DoxyParamCaption})}
+
+
+
+Uses profile data to initialize GSL splines. 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=262pt]{star_8c_ad5607f6cce0e1dfabd08a38eaa1a3798_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{star_8c_a8c5a521dd2cb882da9a99937f79f5837}\label{star_8c_a8c5a521dd2cb882da9a99937f79f5837}} 
+\index{star.c@{star.c}!acc\_cs@{acc\_cs}}
+\index{acc\_cs@{acc\_cs}!star.c@{star.c}}
+\doxysubsubsection{\texorpdfstring{acc\_cs}{acc\_cs}}
+{\footnotesize\ttfamily gsl\+\_\+interp\+\_\+accel$\ast$ acc\+\_\+cs}
+
+
+
+Globally accessible GSL interpolation accelerator for the sound speed spline. 
+
+\mbox{\Hypertarget{star_8c_aedeba8fd92b0077b7c6724c0309ea62e}\label{star_8c_aedeba8fd92b0077b7c6724c0309ea62e}} 
+\index{star.c@{star.c}!acc\_drhodr@{acc\_drhodr}}
+\index{acc\_drhodr@{acc\_drhodr}!star.c@{star.c}}
+\doxysubsubsection{\texorpdfstring{acc\_drhodr}{acc\_drhodr}}
+{\footnotesize\ttfamily gsl\+\_\+interp\+\_\+accel$\ast$ acc\+\_\+drhodr}
+
+
+
+Globally accessible GSL interpolation accelerator for the density gradient spline. 
+
+\mbox{\Hypertarget{star_8c_a4f47520db4595782a0ea2d8dbceb7f48}\label{star_8c_a4f47520db4595782a0ea2d8dbceb7f48}} 
+\index{star.c@{star.c}!acc\_hrho@{acc\_hrho}}
+\index{acc\_hrho@{acc\_hrho}!star.c@{star.c}}
+\doxysubsubsection{\texorpdfstring{acc\_hrho}{acc\_hrho}}
+{\footnotesize\ttfamily gsl\+\_\+interp\+\_\+accel$\ast$ acc\+\_\+hrho}
+
+
+
+Globally accessible GSL interpolation accelerator for the density scale height spline. 
+
+\mbox{\Hypertarget{star_8c_a7b76ae9f39a443e206a410c051e557fe}\label{star_8c_a7b76ae9f39a443e206a410c051e557fe}} 
+\index{star.c@{star.c}!acc\_menc@{acc\_menc}}
+\index{acc\_menc@{acc\_menc}!star.c@{star.c}}
+\doxysubsubsection{\texorpdfstring{acc\_menc}{acc\_menc}}
+{\footnotesize\ttfamily gsl\+\_\+interp\+\_\+accel$\ast$ acc\+\_\+menc}
+
+
+
+Globally accessible GSL interpolation accelerator for the mass spline. 
+
+\mbox{\Hypertarget{star_8c_acf79bf70f986b203fe7fd8eb3e91a634}\label{star_8c_acf79bf70f986b203fe7fd8eb3e91a634}} 
+\index{star.c@{star.c}!acc\_rho@{acc\_rho}}
+\index{acc\_rho@{acc\_rho}!star.c@{star.c}}
+\doxysubsubsection{\texorpdfstring{acc\_rho}{acc\_rho}}
+{\footnotesize\ttfamily gsl\+\_\+interp\+\_\+accel$\ast$ acc\+\_\+rho}
+
+
+
+Globally accessible GSL interpolation accelerator for the density spline. 
+
+\mbox{\Hypertarget{star_8c_adebc07be0db5cfee6bf35217cc1f8936}\label{star_8c_adebc07be0db5cfee6bf35217cc1f8936}} 
+\index{star.c@{star.c}!spline\_cs@{spline\_cs}}
+\index{spline\_cs@{spline\_cs}!star.c@{star.c}}
+\doxysubsubsection{\texorpdfstring{spline\_cs}{spline\_cs}}
+{\footnotesize\ttfamily gsl\+\_\+spline$\ast$ spline\+\_\+cs}
+
+
+
+Globally accessible GSL sound speed spline. 
+
+\mbox{\Hypertarget{star_8c_a4c4bdddddcd903509ed2ecf7c9cff218}\label{star_8c_a4c4bdddddcd903509ed2ecf7c9cff218}} 
+\index{star.c@{star.c}!spline\_drhodr@{spline\_drhodr}}
+\index{spline\_drhodr@{spline\_drhodr}!star.c@{star.c}}
+\doxysubsubsection{\texorpdfstring{spline\_drhodr}{spline\_drhodr}}
+{\footnotesize\ttfamily gsl\+\_\+spline$\ast$ spline\+\_\+drhodr}
+
+
+
+Globally accessible GSL density gradient spline. 
+
+\mbox{\Hypertarget{star_8c_ad9933c0d0863db02128a37ab15bccd56}\label{star_8c_ad9933c0d0863db02128a37ab15bccd56}} 
+\index{star.c@{star.c}!spline\_hrho@{spline\_hrho}}
+\index{spline\_hrho@{spline\_hrho}!star.c@{star.c}}
+\doxysubsubsection{\texorpdfstring{spline\_hrho}{spline\_hrho}}
+{\footnotesize\ttfamily gsl\+\_\+spline$\ast$ spline\+\_\+hrho}
+
+
+
+Globally accessible GSL density scale height spline. 
+
+\mbox{\Hypertarget{star_8c_abb8a871881d465e7625f07eddffa6785}\label{star_8c_abb8a871881d465e7625f07eddffa6785}} 
+\index{star.c@{star.c}!spline\_menc@{spline\_menc}}
+\index{spline\_menc@{spline\_menc}!star.c@{star.c}}
+\doxysubsubsection{\texorpdfstring{spline\_menc}{spline\_menc}}
+{\footnotesize\ttfamily gsl\+\_\+spline$\ast$ spline\+\_\+menc}
+
+
+
+Globally accessible GSL enclosed mass spline. 
+
+\mbox{\Hypertarget{star_8c_a78d5a9eaea222c102b5f9ead2eba41ef}\label{star_8c_a78d5a9eaea222c102b5f9ead2eba41ef}} 
+\index{star.c@{star.c}!spline\_rho@{spline\_rho}}
+\index{spline\_rho@{spline\_rho}!star.c@{star.c}}
+\doxysubsubsection{\texorpdfstring{spline\_rho}{spline\_rho}}
+{\footnotesize\ttfamily gsl\+\_\+spline$\ast$ spline\+\_\+rho}
+
+
+
+Globally accessible GSL density spline. 
+

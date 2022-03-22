@@ -1,0 +1,198 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="io_8h" kind="file" language="C++">
+    <compoundname>io.h</compoundname>
+    <includes refid="global_8h" local="yes">global.h</includes>
+    <includes refid="model_8h" local="yes">model.h</includes>
+    <includedby refid="units_8h" local="yes">/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/units.h</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/io.h</label>
+        <link refid="io_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>global.h</label>
+        <link refid="global_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>hdf5.h</label>
+      </node>
+      <node id="5">
+        <label>math.h</label>
+      </node>
+      <node id="3">
+        <label>gsl/gsl_math.h</label>
+      </node>
+      <node id="7">
+        <label>model.h</label>
+        <link refid="model_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>gsl/gsl_spline.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/io.h</label>
+        <link refid="io_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/units.h</label>
+        <link refid="units_8h_source"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="io_8h_1aa30f39ea8db65e7e2b11e3ddf1636f72" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void parse_params</definition>
+        <argsstring>(char *param_file, struct parameters *parms)</argsstring>
+        <name>parse_params</name>
+        <param>
+          <type>char *</type>
+          <declname>param_file</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structparameters" kindref="compound">parameters</ref> *</type>
+          <declname>parms</declname>
+        </param>
+        <briefdescription>
+<para>Reads parameters from a text file. Based on Cholla. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/io.h" line="25" column="6" declfile="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/io.h" declline="25" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="io_8h_1a8d9485fd3054e691b09938ba0d4d0ec8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int read_stellar_profile</definition>
+        <argsstring>(struct parameters P, struct star *S)</argsstring>
+        <name>read_stellar_profile</name>
+        <param>
+          <type>struct <ref refid="structparameters" kindref="compound">parameters</ref></type>
+          <declname>P</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structstar" kindref="compound">star</ref> *</type>
+          <declname>S</declname>
+        </param>
+        <briefdescription>
+<para>Reads stellar profile from an HDF5 file. The path is contained in the parameter struct, and the properties of the profile are stored in the star struct. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/io.h" line="28" column="5" declfile="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/io.h" declline="28" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="io_8h_1ad265c996dc61a0416b2705dddd679087" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int write_scalars</definition>
+        <argsstring>(struct units U, struct parameters P)</argsstring>
+        <name>write_scalars</name>
+        <param>
+          <type>struct <ref refid="structunits" kindref="compound">units</ref></type>
+          <declname>U</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structparameters" kindref="compound">parameters</ref></type>
+          <declname>P</declname>
+        </param>
+        <briefdescription>
+<para>One-time output operation that saves the simulation units and parameters. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/io.h" line="31" column="5" declfile="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/io.h" declline="31" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="io_8h_1af789b6233c9122901decdf3fe596d917" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int write_output</definition>
+        <argsstring>(struct units U, struct rhs_terms *rhs, double t, double *y)</argsstring>
+        <name>write_output</name>
+        <param>
+          <type>struct <ref refid="structunits" kindref="compound">units</ref></type>
+          <declname>U</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structrhs__terms" kindref="compound">rhs_terms</ref> *</type>
+          <declname>rhs</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>Writes values of important variables for one step into the output text file. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/io.h" line="34" column="5" declfile="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/io.h" declline="34" declcolumn="5"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Copyright<sp/>2021<sp/>Ricardo<sp/>Yarza.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>orbit-integrator</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>orbit-integrator<sp/>is<sp/>free<sp/>software:<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>the<sp/>Free<sp/>Software<sp/>Foundation,<sp/>either<sp/>version<sp/>3<sp/>of<sp/>the<sp/>License,<sp/>or</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/>orbit-integrator<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//<sp/>along<sp/>with<sp/>orbit-integrator.<sp/><sp/>If<sp/>not,<sp/>see<sp/>&lt;https://www.gnu.org/licenses/&gt;.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>IO_HEADER</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IO_HEADER</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;global.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;model.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>parse_params<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*param_file,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structparameters" kindref="compound">parameters</ref><sp/>*<sp/>parms);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>read_stellar_profile(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structparameters" kindref="compound">parameters</ref><sp/>P,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structstar" kindref="compound">star</ref><sp/>*S);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>write_scalars(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structunits" kindref="compound">units</ref><sp/>U,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structparameters" kindref="compound">parameters</ref><sp/>P);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>write_output(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structunits" kindref="compound">units</ref><sp/>U,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structrhs__terms" kindref="compound">rhs_terms</ref><sp/>*rhs,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>t,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*y);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/io.h"/>
+  </compounddef>
+</doxygen>

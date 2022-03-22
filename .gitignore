@@ -1,7 +1,5 @@
-# Build files
-build
-
-# Standard C ignores below
+# Build folder
+/build
 
 # Prerequisites
 *.d

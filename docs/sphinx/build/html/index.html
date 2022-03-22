@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Getting started &mdash; engulfment-integrator  documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Header files" href="files.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="#" class="icon icon-home"> engulfment-integrator
+            <img src="_static/insp.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="files.html">Header files</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="global.html">global.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="io.html">io.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="model.html">model.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="star.html">star.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="units.html">units.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="utils.html">utils.h</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="files.html#indices-and-tables">Indices and tables</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">engulfment-integrator</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="#" class="icon icon-home"></a> &raquo;</li>
+      <li>Getting started</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/ryarza/engulfment-integrator/blob/index.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <p>Integrator for the equation of motion of an object embedded in a stellar envelope, subject to hydrodynamical and gravitational forces.</p>
+<p>Automatically generated documentation and call graphs from Doxygen are available at <a class="reference external" href="../../../doxygen/build/html/index.html">Link text</a></p>
+<section id="getting-started">
+<h1>Getting started<a class="headerlink" href="#getting-started" title="Permalink to this headline"></a></h1>
+<section id="prerequisites">
+<h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Permalink to this headline"></a></h2>
+<p>The requirements are:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>GNU scientific library, which provides the ODE integrator.</p></li>
+<li><p>HDF5, for I/O.</p></li>
+</ul>
+</div></blockquote>
+</section>
+<section id="compiling-and-testing">
+<h2>Compiling and testing<a class="headerlink" href="#compiling-and-testing" title="Permalink to this headline"></a></h2>
+<p>You can run basic automated tests (Keplerian orbits) with:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">mkdir</span> <span class="n">build</span>
+<span class="n">cd</span> <span class="n">build</span>
+<span class="n">cmake</span> <span class="o">..</span>
+<span class="n">make</span>
+<span class="n">ctest</span>
+</pre></div>
+</div>
+<p>To compile the code, just run <code class="docutils literal notranslate"><span class="pre">make</span></code> on the top directory.</p>
+</section>
+<section id="integrating-an-inspiral">
+<h2>Integrating an inspiral<a class="headerlink" href="#integrating-an-inspiral" title="Permalink to this headline"></a></h2>
+<p>The <code class="docutils literal notranslate"><span class="pre">extras</span></code> folder has a sample <code class="docutils literal notranslate"><span class="pre">input.txt</span></code> that will integrate the trajectory of a Jupiter-like planet inside the envelope of a model of the Sun evolved to ten solar radii. You might need to edit <code class="docutils literal notranslate"><span class="pre">input.txt</span></code> so that it points to the actual path of the model on your system. After that, run the code with:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">engulfment</span><span class="o">-</span><span class="n">integrator</span> <span class="nb">input</span><span class="o">.</span><span class="n">txt</span>
+</pre></div>
+</div>
+<p>The code will produce a file called <code class="docutils literal notranslate"><span class="pre">output.txt</span></code>, containing important variables as a function of time, and a file called <code class="docutils literal notranslate"><span class="pre">scalars.txt</span></code>, containing CGS values for the simulation units as well as values for some input parameters. The columns in <code class="docutils literal notranslate"><span class="pre">output.txt</span></code> are</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 11%" />
+<col style="width: 89%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Column</p></th>
+<th class="head"><p>Meaning</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>time</p></td>
+<td><p>time</p></td>
+</tr>
+<tr class="row-odd"><td><p>r</p></td>
+<td><p>radial coordinate</p></td>
+</tr>
+<tr class="row-even"><td><p>theta</p></td>
+<td><p>angular coordinate</p></td>
+</tr>
+<tr class="row-odd"><td><p>rdot</p></td>
+<td><p>rate of change of the radial coordinate</p></td>
+</tr>
+<tr class="row-even"><td><p>thetadot</p></td>
+<td><p>rate of change of the angular coordinate</p></td>
+</tr>
+<tr class="row-odd"><td><p>menc</p></td>
+<td><p>stellar mass enclosed within <code class="docutils literal notranslate"><span class="pre">r</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>rho</p></td>
+<td><p>stellar density at <code class="docutils literal notranslate"><span class="pre">r</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>q</p></td>
+<td><p>mass ratio between the engulfed object and the enclosed mass at <code class="docutils literal notranslate"><span class="pre">r</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>eps_rho</p></td>
+<td><p>dimensionless density gradient (number of density scale heights per accretion radius)</p></td>
+</tr>
+<tr class="row-odd"><td><p>rp_over_ra</p></td>
+<td><p>ratio between geometrical and gravitational radii of the engulfed object</p></td>
+</tr>
+<tr class="row-even"><td><p>cp</p></td>
+<td><p>ram pressure drag coefficient</p></td>
+</tr>
+<tr class="row-odd"><td><p>cg</p></td>
+<td><p>gravitational drag coefficient</p></td>
+</tr>
+<tr class="row-even"><td><p>f_ram</p></td>
+<td><p>ram pressure drag force</p></td>
+</tr>
+<tr class="row-odd"><td><p>f_grav</p></td>
+<td><p>gravitational drag force</p></td>
+</tr>
+</tbody>
+</table>
+<p>All outputs are in simulation units.</p>
+</section>
+</section>
+<section id="contents">
+<h1>Contents<a class="headerlink" href="#contents" title="Permalink to this headline"></a></h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="files.html">Header files</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="global.html">global.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="io.html">io.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="model.html">model.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="star.html">star.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="units.html">units.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="utils.html">utils.h</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="files.html#indices-and-tables">Indices and tables</a></li>
+</ul>
+</div>
+</section>
+<section id="indices-and-tables">
+<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline"></a></h1>
+<ul class="simple">
+<li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
+</ul>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="files.html" class="btn btn-neutral float-right" title="Header files" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Ricardo Yarza.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

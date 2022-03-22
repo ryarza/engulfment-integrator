@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>model.h &mdash; engulfment-integrator  documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="star.h" href="star.html" />
+    <link rel="prev" title="io.h" href="io.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> engulfment-integrator
+            <img src="_static/insp.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="files.html">Header files</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="global.html">global.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="io.html">io.h</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">model.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="star.html">star.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="units.html">units.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="utils.html">utils.h</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="files.html#indices-and-tables">Indices and tables</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">engulfment-integrator</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="files.html">Header files</a> &raquo;</li>
+      <li>model.h</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/ryarza/engulfment-integrator/blob/model.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="model-h">
+<h1>model.h<a class="headerlink" href="#model-h" title="Permalink to this headline"></a></h1>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-functions">Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv43jacdA_KdPdA_dPv">
+<span id="_CPPv33jacdA_KdPdA_dPv"></span><span id="_CPPv23jacdA_KdPdA_dPv"></span><span id="jac__double.doubleCA.doubleP.doubleA.voidP"></span><span class="target" id="model_8h_1a90c59eea1bc597d21ec511441cc3c925"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">jac</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">t</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">y</span></span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">]</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">dfdy</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">dfdt</span></span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">]</span></span>, <span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">params</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv43jacdA_KdPdA_dPv" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Jacobian of the system of equations. Useful for ODE integrators that require it. Untested! </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv44funcdA_KdA_dPv">
+<span id="_CPPv34funcdA_KdA_dPv"></span><span id="_CPPv24funcdA_KdA_dPv"></span><span id="func__double.doubleCA.doubleA.voidP"></span><span class="target" id="model_8h_1abca9d444b78fd82f9cfef8a367142d19"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">func</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">t</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">y</span></span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">]</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">f</span></span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">]</span></span>, <span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">params</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv44funcdA_KdA_dPv" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Evaluates the vector right-hand-side of the GSL ODE system. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv417init_model_params10parameters4star5unitsP9rhs_terms">
+<span id="_CPPv317init_model_params10parameters4star5unitsP9rhs_terms"></span><span id="_CPPv217init_model_params10parameters4star5unitsP9rhs_terms"></span><span id="init_model_params__parameters.star.units.rhs_termsP"></span><span class="target" id="model_8h_1a5820dd0dc3a4b0513ac690f4408dc410"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">init_model_params</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="global.html#_CPPv410parameters" title="parameters"><span class="n"><span class="pre">parameters</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">P</span></span>, <span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="global.html#_CPPv44star" title="star"><span class="n"><span class="pre">star</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">S</span></span>, <span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="global.html#_CPPv45units" title="units"><span class="n"><span class="pre">units</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">U</span></span>, <span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv49rhs_terms" title="rhs_terms"><span class="n"><span class="pre">rhs_terms</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">rhs</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv417init_model_params10parameters4star5unitsP9rhs_terms" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Initializes the right-hand-side parameter struct and copies the required parameters from other structs. Members of this struct are never modified and hold the value they had in the struct they were read from. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv47f_hydroP9rhs_termsddddd">
+<span id="_CPPv37f_hydroP9rhs_termsddddd"></span><span id="_CPPv27f_hydroP9rhs_termsddddd"></span><span id="f_hydro__rhs_termsP.double.double.double.double.double"></span><span class="target" id="model_8h_1a82bb8aa8ea3780f15e983b5c17a4ebb3"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">f_hydro</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv49rhs_terms" title="rhs_terms"><span class="n"><span class="pre">rhs_terms</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">rhs</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">rho</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">v_theta</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">menc</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">eps_rho</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">ra</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv47f_hydroP9rhs_termsddddd" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Ram pressure drag force. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv46f_gravP9rhs_termsddddd">
+<span id="_CPPv36f_gravP9rhs_termsddddd"></span><span id="_CPPv26f_gravP9rhs_termsddddd"></span><span id="f_grav__rhs_termsP.double.double.double.double.double"></span><span class="target" id="model_8h_1aed72b2356c55894dc0a75d5e8d99a536"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">f_grav</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv49rhs_terms" title="rhs_terms"><span class="n"><span class="pre">rhs_terms</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">rhs</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">rho</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">v_theta</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">menc</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">eps_rho</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">ra</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv46f_gravP9rhs_termsddddd" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Gravitational drag force. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv423compute_flow_parametersP9rhs_termsPKdddPdPdPd">
+<span id="_CPPv323compute_flow_parametersP9rhs_termsPKdddPdPdPd"></span><span id="_CPPv223compute_flow_parametersP9rhs_termsPKdddPdPdPd"></span><span id="compute_flow_parameters__rhs_termsP.doubleCP.double.double.doubleP.doubleP.doubleP"></span><span class="target" id="model_8h_1a7413b3adbedc8ce3474a78d49a6b9721"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">compute_flow_parameters</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv49rhs_terms" title="rhs_terms"><span class="n"><span class="pre">rhs_terms</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">rhs</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">y</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">menc</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">hrho</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">q</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">eps_rho</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">rp_over_ra</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv423compute_flow_parametersP9rhs_termsPKdddPdPdPd" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Relevant dimensionless flow parameters (mass ratio, density gradient, and ratio between geometrical and gravitational radii) </p>
+</dd></dl>
+
+</div>
+<dl class="cpp struct">
+<dt class="sig sig-object cpp" id="_CPPv49rhs_terms">
+<span id="_CPPv39rhs_terms"></span><span id="_CPPv29rhs_terms"></span><span id="rhs_terms"></span><span class="target" id="structrhs__terms"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">rhs_terms</span></span></span><a class="headerlink" href="#_CPPv49rhs_terms" title="Permalink to this definition"></a><br /></dt>
+<dd><em>#include &lt;model.h&gt;</em><p>Parameters needed when evaluating the right-hand-side of the GSL ODE system. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9rhs_terms7f_hydroE">
+<span id="_CPPv3N9rhs_terms7f_hydroE"></span><span id="_CPPv2N9rhs_terms7f_hydroE"></span><span id="rhs_terms::f_hydro__i"></span><span class="target" id="structrhs__terms_1ac13ca99dc6b23ea6aefc0b4d8c063341"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">f_hydro</span></span></span><a class="headerlink" href="#_CPPv4N9rhs_terms7f_hydroE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Whether to include hydrodynamical drag. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9rhs_terms6f_gravE">
+<span id="_CPPv3N9rhs_terms6f_gravE"></span><span id="_CPPv2N9rhs_terms6f_gravE"></span><span id="rhs_terms::f_grav__i"></span><span class="target" id="structrhs__terms_1abe610e4b414ddeede219782c0248c991"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">f_grav</span></span></span><a class="headerlink" href="#_CPPv4N9rhs_terms6f_gravE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Whether to include gravitational drag. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9rhs_terms10f_buoyancyE">
+<span id="_CPPv3N9rhs_terms10f_buoyancyE"></span><span id="_CPPv2N9rhs_terms10f_buoyancyE"></span><span id="rhs_terms::f_buoyancy__i"></span><span class="target" id="structrhs__terms_1a8e88fe897d46f15c82e2d9a35078d646"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">f_buoyancy</span></span></span><a class="headerlink" href="#_CPPv4N9rhs_terms10f_buoyancyE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Whether to include gravitational drag. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9rhs_terms11sigma_hydroE">
+<span id="_CPPv3N9rhs_terms11sigma_hydroE"></span><span id="_CPPv2N9rhs_terms11sigma_hydroE"></span><span id="rhs_terms::sigma_hydro__double"></span><span class="target" id="structrhs__terms_1ab2616c315e3e04aeeb268ad0a5cd2723"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">sigma_hydro</span></span></span><a class="headerlink" href="#_CPPv4N9rhs_terms11sigma_hydroE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Geometrical cross section of the embedded object. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9rhs_terms3RsbE">
+<span id="_CPPv3N9rhs_terms3RsbE"></span><span id="_CPPv2N9rhs_terms3RsbE"></span><span id="rhs_terms::Rsb__double"></span><span class="target" id="structrhs__terms_1a2da4d507d1c55b7c925c8440ad059d87"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Rsb</span></span></span><a class="headerlink" href="#_CPPv4N9rhs_terms3RsbE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Radius of the embedded object. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9rhs_terms3MsbE">
+<span id="_CPPv3N9rhs_terms3MsbE"></span><span id="_CPPv2N9rhs_terms3MsbE"></span><span id="rhs_terms::Msb__double"></span><span class="target" id="structrhs__terms_1a23f99710c6e1d093311561f0c6df46ae"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Msb</span></span></span><a class="headerlink" href="#_CPPv4N9rhs_terms3MsbE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Mass of the embedded object. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9rhs_terms1GE">
+<span id="_CPPv3N9rhs_terms1GE"></span><span id="_CPPv2N9rhs_terms1GE"></span><span id="rhs_terms::G__double"></span><span class="target" id="structrhs__terms_1a58e190d6c49e164fd7a2861bb2661586"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">G</span></span></span><a class="headerlink" href="#_CPPv4N9rhs_terms1GE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Gravitational constant in simulation units. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9rhs_terms21use_drag_coefficientsE">
+<span id="_CPPv3N9rhs_terms21use_drag_coefficientsE"></span><span id="_CPPv2N9rhs_terms21use_drag_coefficientsE"></span><span id="rhs_terms::use_drag_coefficients__i"></span><span class="target" id="structrhs__terms_1ac364a399b048a1b67d986844d0fc7c99"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">use_drag_coefficients</span></span></span><a class="headerlink" href="#_CPPv4N9rhs_terms21use_drag_coefficientsE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Whether to use numerical drag coefficients. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9rhs_terms7cg_dataE">
+<span id="_CPPv3N9rhs_terms7cg_dataE"></span><span id="_CPPv2N9rhs_terms7cg_dataE"></span><span id="rhs_terms::cg_data__doublePPP"></span><span class="target" id="structrhs__terms_1a63081a901688a91090165ce0f54aa353"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">cg_data</span></span></span><a class="headerlink" href="#_CPPv4N9rhs_terms7cg_dataE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Gravitational drag coefficient data. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9rhs_terms7cp_dataE">
+<span id="_CPPv3N9rhs_terms7cp_dataE"></span><span id="_CPPv2N9rhs_terms7cp_dataE"></span><span id="rhs_terms::cp_data__doublePPP"></span><span class="target" id="structrhs__terms_1aebefffdf507433a4e958bf302c49df65"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">cp_data</span></span></span><a class="headerlink" href="#_CPPv4N9rhs_terms7cp_dataE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Ram pressure drag coefficient data. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9rhs_terms14drag_data_dimsE">
+<span id="_CPPv3N9rhs_terms14drag_data_dimsE"></span><span id="_CPPv2N9rhs_terms14drag_data_dimsE"></span><span id="rhs_terms::drag_data_dims__iA"></span><span class="target" id="structrhs__terms_1a303e005485ab20b9778d064fd43ded3f"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">drag_data_dims</span></span></span><span class="p"><span class="pre">[</span></span><span class="m"><span class="pre">3</span></span><span class="p"><span class="pre">]</span></span><a class="headerlink" href="#_CPPv4N9rhs_terms14drag_data_dimsE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Dimensions of the grid in which the drag coefficient data is sampled. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9rhs_terms10log_q_valsE">
+<span id="_CPPv3N9rhs_terms10log_q_valsE"></span><span id="_CPPv2N9rhs_terms10log_q_valsE"></span><span id="rhs_terms::log_q_vals__doubleP"></span><span class="target" id="structrhs__terms_1a04fab25e61816a44ef263ff83e046519"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">log_q_vals</span></span></span><a class="headerlink" href="#_CPPv4N9rhs_terms10log_q_valsE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Mass ratio values at which the drag coefficient data is sampled. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9rhs_terms16log_eps_rho_valsE">
+<span id="_CPPv3N9rhs_terms16log_eps_rho_valsE"></span><span id="_CPPv2N9rhs_terms16log_eps_rho_valsE"></span><span id="rhs_terms::log_eps_rho_vals__doubleP"></span><span class="target" id="structrhs__terms_1a8ad51f73f9fc24cb4b878d4ac5361cc7"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">log_eps_rho_vals</span></span></span><a class="headerlink" href="#_CPPv4N9rhs_terms16log_eps_rho_valsE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Density gradient values at which the drag coefficient data is sampled. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9rhs_terms19log_rp_over_ra_valsE">
+<span id="_CPPv3N9rhs_terms19log_rp_over_ra_valsE"></span><span id="_CPPv2N9rhs_terms19log_rp_over_ra_valsE"></span><span id="rhs_terms::log_rp_over_ra_vals__doubleP"></span><span class="target" id="structrhs__terms_1a77180908c43f26b69a47d40d2c081a92"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">log_rp_over_ra_vals</span></span></span><a class="headerlink" href="#_CPPv4N9rhs_terms19log_rp_over_ra_valsE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Rp / Ra values at which the drag coefficient data is sampled. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="io.html" class="btn btn-neutral float-left" title="io.h" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="star.html" class="btn btn-neutral float-right" title="star.h" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Ricardo Yarza.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

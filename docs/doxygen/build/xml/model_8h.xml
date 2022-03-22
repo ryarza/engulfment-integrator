@@ -1,0 +1,453 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="model_8h" kind="file" language="C++">
+    <compoundname>model.h</compoundname>
+    <includes refid="global_8h" local="yes">global.h</includes>
+    <includedby refid="io_8h" local="yes">io.h</includedby>
+    <includedby refid="main_8c" local="yes">main.c</includedby>
+    <includedby refid="model_8c" local="yes">model.c</includedby>
+    <includedby refid="units_8h" local="yes">units.h</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>global.h</label>
+        <link refid="global_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>hdf5.h</label>
+      </node>
+      <node id="5">
+        <label>math.h</label>
+      </node>
+      <node id="3">
+        <label>gsl/gsl_math.h</label>
+      </node>
+      <node id="1">
+        <label>model.h</label>
+        <link refid="model_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>gsl/gsl_spline.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3">
+        <label>io.c</label>
+        <link refid="io_8c"/>
+      </node>
+      <node id="2">
+        <label>io.h</label>
+        <link refid="io_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>main.c</label>
+        <link refid="main_8c"/>
+      </node>
+      <node id="6">
+        <label>units.c</label>
+        <link refid="units_8c"/>
+      </node>
+      <node id="5">
+        <label>units.h</label>
+        <link refid="units_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>model.c</label>
+        <link refid="model_8c"/>
+      </node>
+      <node id="1">
+        <label>model.h</label>
+        <link refid="model_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structrhs__terms" prot="public">rhs_terms</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="model_8h_1a90c59eea1bc597d21ec511441cc3c925" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int jac</definition>
+        <argsstring>(double t, const double y[], double *dfdy, double dfdt[], void *params)</argsstring>
+        <name>jac</name>
+        <param>
+          <type>double</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>const double</type>
+          <declname>y</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>dfdy</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>dfdt</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>params</declname>
+        </param>
+        <briefdescription>
+<para>Jacobian of the system of equations. Useful for ODE integrators that require it. Untested! </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/model.h" line="59" column="5" bodyfile="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/model.c" bodystart="26" bodyend="102" declfile="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/model.h" declline="59" declcolumn="5"/>
+        <references refid="global_8h_1aedeba8fd92b0077b7c6724c0309ea62e" compoundref="star_8c" startline="23">acc_drhodr</references>
+        <references refid="global_8h_1a7b76ae9f39a443e206a410c051e557fe" compoundref="star_8c" startline="25">acc_menc</references>
+        <references refid="global_8h_1acf79bf70f986b203fe7fd8eb3e91a634" compoundref="star_8c" startline="21">acc_rho</references>
+        <references refid="structrhs__terms_1a58e190d6c49e164fd7a2861bb2661586" compoundref="model_8h" startline="39">rhs_terms::G</references>
+        <references refid="structrhs__terms_1a23f99710c6e1d093311561f0c6df46ae" compoundref="model_8h" startline="37">rhs_terms::Msb</references>
+        <references refid="structrhs__terms_1a2da4d507d1c55b7c925c8440ad059d87" compoundref="model_8h" startline="35">rhs_terms::Rsb</references>
+        <references refid="global_8h_1a4c4bdddddcd903509ed2ecf7c9cff218" compoundref="star_8c" startline="33">spline_drhodr</references>
+        <references refid="global_8h_1abb8a871881d465e7625f07eddffa6785" compoundref="star_8c" startline="35">spline_menc</references>
+        <references refid="global_8h_1a78d5a9eaea222c102b5f9ead2eba41ef" compoundref="star_8c" startline="31">spline_rho</references>
+      </memberdef>
+      <memberdef kind="function" id="model_8h_1abca9d444b78fd82f9cfef8a367142d19" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int func</definition>
+        <argsstring>(double t, const double y[], double f[], void *params)</argsstring>
+        <name>func</name>
+        <param>
+          <type>double</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>const double</type>
+          <declname>y</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>f</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>params</declname>
+        </param>
+        <briefdescription>
+<para>Evaluates the vector right-hand-side of the GSL ODE system. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/model.h" line="62" column="5" bodyfile="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/model.c" bodystart="140" bodyend="197" declfile="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/model.h" declline="62" declcolumn="5"/>
+        <references refid="global_8h_1a8c5a521dd2cb882da9a99937f79f5837" compoundref="star_8c" startline="27">acc_cs</references>
+        <references refid="global_8h_1a4f47520db4595782a0ea2d8dbceb7f48" compoundref="star_8c" startline="29">acc_hrho</references>
+        <references refid="global_8h_1a7b76ae9f39a443e206a410c051e557fe" compoundref="star_8c" startline="25">acc_menc</references>
+        <references refid="global_8h_1acf79bf70f986b203fe7fd8eb3e91a634" compoundref="star_8c" startline="21">acc_rho</references>
+        <references refid="model_8c_1a7413b3adbedc8ce3474a78d49a6b9721" compoundref="model_8c" startline="126" endline="138">compute_flow_parameters</references>
+        <references refid="structrhs__terms_1a8e88fe897d46f15c82e2d9a35078d646" compoundref="model_8h" startline="31">rhs_terms::f_buoyancy</references>
+        <references refid="model_8c_1a52123df6ff7716db1b9bc37a231b9705" compoundref="model_8c" startline="104" endline="113">f_grav</references>
+        <references refid="structrhs__terms_1abe610e4b414ddeede219782c0248c991" compoundref="model_8h" startline="29">rhs_terms::f_grav</references>
+        <references refid="model_8c_1af133e6d3b99c19b9b1ffba51e05adc50" compoundref="model_8c" startline="115" endline="124">f_hydro</references>
+        <references refid="structrhs__terms_1ac13ca99dc6b23ea6aefc0b4d8c063341" compoundref="model_8h" startline="27">rhs_terms::f_hydro</references>
+        <references refid="structrhs__terms_1a58e190d6c49e164fd7a2861bb2661586" compoundref="model_8h" startline="39">rhs_terms::G</references>
+        <references refid="structrhs__terms_1a23f99710c6e1d093311561f0c6df46ae" compoundref="model_8h" startline="37">rhs_terms::Msb</references>
+        <references refid="structrhs__terms_1a2da4d507d1c55b7c925c8440ad059d87" compoundref="model_8h" startline="35">rhs_terms::Rsb</references>
+        <references refid="global_8h_1adebc07be0db5cfee6bf35217cc1f8936" compoundref="star_8c" startline="37">spline_cs</references>
+        <references refid="global_8h_1ad9933c0d0863db02128a37ab15bccd56" compoundref="star_8c" startline="39">spline_hrho</references>
+        <references refid="global_8h_1abb8a871881d465e7625f07eddffa6785" compoundref="star_8c" startline="35">spline_menc</references>
+        <references refid="global_8h_1a78d5a9eaea222c102b5f9ead2eba41ef" compoundref="star_8c" startline="31">spline_rho</references>
+        <referencedby refid="main_8c_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="main_8c" startline="33" endline="126">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="model_8h_1a5820dd0dc3a4b0513ac690f4408dc410" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int init_model_params</definition>
+        <argsstring>(struct parameters P, struct star S, struct units U, struct rhs_terms *rhs)</argsstring>
+        <name>init_model_params</name>
+        <param>
+          <type>struct <ref refid="structparameters" kindref="compound">parameters</ref></type>
+          <declname>P</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structstar" kindref="compound">star</ref></type>
+          <declname>S</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structunits" kindref="compound">units</ref></type>
+          <declname>U</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structrhs__terms" kindref="compound">rhs_terms</ref> *</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Initializes the right-hand-side parameter struct and copies the required parameters from other structs. Members of this struct are never modified and hold the value they had in the struct they were read from. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/model.h" line="65" column="5" bodyfile="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/model.c" bodystart="199" bodyend="317" declfile="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/model.h" declline="65" declcolumn="5"/>
+        <references refid="structrhs__terms_1a63081a901688a91090165ce0f54aa353" compoundref="model_8h" startline="43">rhs_terms::cg_data</references>
+        <references refid="structrhs__terms_1aebefffdf507433a4e958bf302c49df65" compoundref="model_8h" startline="45">rhs_terms::cp_data</references>
+        <references refid="structrhs__terms_1a303e005485ab20b9778d064fd43ded3f" compoundref="model_8h" startline="47">rhs_terms::drag_data_dims</references>
+        <references refid="structparameters_1a222e7500d94731b8efdae777c71ca8d9" compoundref="global_8h" startline="63">parameters::drag_data_path</references>
+        <references refid="structparameters_1a65676f4e46da862a87074caa262f7352" compoundref="global_8h" startline="46">parameters::f_buoyancy</references>
+        <references refid="structrhs__terms_1a8e88fe897d46f15c82e2d9a35078d646" compoundref="model_8h" startline="31">rhs_terms::f_buoyancy</references>
+        <references refid="structparameters_1a44b8f833c7ff07dc990a137b49d306f3" compoundref="global_8h" startline="44">parameters::f_grav</references>
+        <references refid="structrhs__terms_1abe610e4b414ddeede219782c0248c991" compoundref="model_8h" startline="29">rhs_terms::f_grav</references>
+        <references refid="structparameters_1a6960e6f48d147c12441609628d186b35" compoundref="global_8h" startline="42">parameters::f_hydro</references>
+        <references refid="structrhs__terms_1ac13ca99dc6b23ea6aefc0b4d8c063341" compoundref="model_8h" startline="27">rhs_terms::f_hydro</references>
+        <references refid="structunits_1ab46825a17a984286d00a3a09bdf28571" compoundref="global_8h" startline="89">units::G</references>
+        <references refid="structrhs__terms_1a58e190d6c49e164fd7a2861bb2661586" compoundref="model_8h" startline="39">rhs_terms::G</references>
+        <references refid="global_8h_1ad2753c8a41f8a7a0f8b707fe3316f2dd" compoundref="io_8c" startline="206" endline="208">h5safecall</references>
+        <references refid="structrhs__terms_1a8ad51f73f9fc24cb4b878d4ac5361cc7" compoundref="model_8h" startline="51">rhs_terms::log_eps_rho_vals</references>
+        <references refid="structrhs__terms_1a04fab25e61816a44ef263ff83e046519" compoundref="model_8h" startline="49">rhs_terms::log_q_vals</references>
+        <references refid="structrhs__terms_1a77180908c43f26b69a47d40d2c081a92" compoundref="model_8h" startline="53">rhs_terms::log_rp_over_ra_vals</references>
+        <references refid="structparameters_1ab5115d22be6204fdc5bbf6445269efa0" compoundref="global_8h" startline="48">parameters::Msb</references>
+        <references refid="structrhs__terms_1a23f99710c6e1d093311561f0c6df46ae" compoundref="model_8h" startline="37">rhs_terms::Msb</references>
+        <references refid="structparameters_1a44dd01bc440a7226465b0e38310929b1" compoundref="global_8h" startline="50">parameters::Rsb</references>
+        <references refid="structrhs__terms_1a2da4d507d1c55b7c925c8440ad059d87" compoundref="model_8h" startline="35">rhs_terms::Rsb</references>
+        <references refid="structrhs__terms_1ab2616c315e3e04aeeb268ad0a5cd2723" compoundref="model_8h" startline="33">rhs_terms::sigma_hydro</references>
+        <references refid="structparameters_1ab8ff76e9250a51d11724566a9fe840ca" compoundref="global_8h" startline="61">parameters::use_drag_coefficients</references>
+        <references refid="structrhs__terms_1ac364a399b048a1b67d986844d0fc7c99" compoundref="model_8h" startline="41">rhs_terms::use_drag_coefficients</references>
+        <referencedby refid="main_8c_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="main_8c" startline="33" endline="126">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="model_8h_1a82bb8aa8ea3780f15e983b5c17a4ebb3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double f_hydro</definition>
+        <argsstring>(struct rhs_terms *rhs, double rho, double v_theta, double menc, double eps_rho, double ra)</argsstring>
+        <name>f_hydro</name>
+        <param>
+          <type>struct <ref refid="structrhs__terms" kindref="compound">rhs_terms</ref> *</type>
+          <declname>rhs</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>rho</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>v_theta</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>menc</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>eps_rho</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>ra</declname>
+        </param>
+        <briefdescription>
+<para>Ram pressure drag force. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/model.h" line="68" column="8" bodyfile="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/model.c" bodystart="115" bodyend="124" declfile="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/model.h" declline="68" declcolumn="8"/>
+        <references refid="structrhs__terms_1aebefffdf507433a4e958bf302c49df65" compoundref="model_8h" startline="45">rhs_terms::cp_data</references>
+        <references refid="structrhs__terms_1a303e005485ab20b9778d064fd43ded3f" compoundref="model_8h" startline="47">rhs_terms::drag_data_dims</references>
+        <references refid="structrhs__terms_1a8ad51f73f9fc24cb4b878d4ac5361cc7" compoundref="model_8h" startline="51">rhs_terms::log_eps_rho_vals</references>
+        <references refid="structrhs__terms_1a04fab25e61816a44ef263ff83e046519" compoundref="model_8h" startline="49">rhs_terms::log_q_vals</references>
+        <references refid="structrhs__terms_1a77180908c43f26b69a47d40d2c081a92" compoundref="model_8h" startline="53">rhs_terms::log_rp_over_ra_vals</references>
+        <references refid="structrhs__terms_1ab2616c315e3e04aeeb268ad0a5cd2723" compoundref="model_8h" startline="33">rhs_terms::sigma_hydro</references>
+        <references refid="utils_8c_1a8f3cba07aa75b7320ae8bd6c0aeac498" compoundref="utils_8c" startline="91" endline="98">sign</references>
+        <references refid="utils_8c_1aca537472aac6353e383c279ab1cff9ff" compoundref="utils_8c" startline="51" endline="89">trilinear_interp</references>
+        <references refid="structrhs__terms_1ac364a399b048a1b67d986844d0fc7c99" compoundref="model_8h" startline="41">rhs_terms::use_drag_coefficients</references>
+        <referencedby refid="model_8c_1abca9d444b78fd82f9cfef8a367142d19" compoundref="model_8c" startline="140" endline="197">func</referencedby>
+        <referencedby refid="io_8c_1af789b6233c9122901decdf3fe596d917" compoundref="io_8c" startline="173" endline="204">write_output</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="model_8h_1aed72b2356c55894dc0a75d5e8d99a536" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double f_grav</definition>
+        <argsstring>(struct rhs_terms *rhs, double rho, double v_theta, double menc, double eps_rho, double ra)</argsstring>
+        <name>f_grav</name>
+        <param>
+          <type>struct <ref refid="structrhs__terms" kindref="compound">rhs_terms</ref> *</type>
+          <declname>rhs</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>rho</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>v_theta</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>menc</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>eps_rho</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>ra</declname>
+        </param>
+        <briefdescription>
+<para>Gravitational drag force. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/model.h" line="71" column="8" bodyfile="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/model.c" bodystart="104" bodyend="113" declfile="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/model.h" declline="71" declcolumn="8"/>
+        <references refid="structrhs__terms_1a63081a901688a91090165ce0f54aa353" compoundref="model_8h" startline="43">rhs_terms::cg_data</references>
+        <references refid="structrhs__terms_1a303e005485ab20b9778d064fd43ded3f" compoundref="model_8h" startline="47">rhs_terms::drag_data_dims</references>
+        <references refid="structrhs__terms_1a58e190d6c49e164fd7a2861bb2661586" compoundref="model_8h" startline="39">rhs_terms::G</references>
+        <references refid="structrhs__terms_1a8ad51f73f9fc24cb4b878d4ac5361cc7" compoundref="model_8h" startline="51">rhs_terms::log_eps_rho_vals</references>
+        <references refid="structrhs__terms_1a04fab25e61816a44ef263ff83e046519" compoundref="model_8h" startline="49">rhs_terms::log_q_vals</references>
+        <references refid="structrhs__terms_1a77180908c43f26b69a47d40d2c081a92" compoundref="model_8h" startline="53">rhs_terms::log_rp_over_ra_vals</references>
+        <references refid="structrhs__terms_1a23f99710c6e1d093311561f0c6df46ae" compoundref="model_8h" startline="37">rhs_terms::Msb</references>
+        <references refid="utils_8c_1a8f3cba07aa75b7320ae8bd6c0aeac498" compoundref="utils_8c" startline="91" endline="98">sign</references>
+        <references refid="utils_8c_1aca537472aac6353e383c279ab1cff9ff" compoundref="utils_8c" startline="51" endline="89">trilinear_interp</references>
+        <references refid="structrhs__terms_1ac364a399b048a1b67d986844d0fc7c99" compoundref="model_8h" startline="41">rhs_terms::use_drag_coefficients</references>
+        <referencedby refid="model_8c_1abca9d444b78fd82f9cfef8a367142d19" compoundref="model_8c" startline="140" endline="197">func</referencedby>
+        <referencedby refid="io_8c_1af789b6233c9122901decdf3fe596d917" compoundref="io_8c" startline="173" endline="204">write_output</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="model_8h_1a7413b3adbedc8ce3474a78d49a6b9721" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int compute_flow_parameters</definition>
+        <argsstring>(struct rhs_terms *rhs, const double *y, double menc, double hrho, double *q, double *eps_rho, double *rp_over_ra)</argsstring>
+        <name>compute_flow_parameters</name>
+        <param>
+          <type>struct <ref refid="structrhs__terms" kindref="compound">rhs_terms</ref> *</type>
+          <declname>rhs</declname>
+        </param>
+        <param>
+          <type>const double *</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>menc</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>hrho</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>q</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>eps_rho</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>rp_over_ra</declname>
+        </param>
+        <briefdescription>
+<para>Relevant dimensionless flow parameters (mass ratio, density gradient, and ratio between geometrical and gravitational radii) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/model.h" line="74" column="5" bodyfile="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/model.c" bodystart="126" bodyend="138" declfile="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/model.h" declline="74" declcolumn="5"/>
+        <references refid="global_8h_1a8c5a521dd2cb882da9a99937f79f5837" compoundref="star_8c" startline="27">acc_cs</references>
+        <references refid="structrhs__terms_1a58e190d6c49e164fd7a2861bb2661586" compoundref="model_8h" startline="39">rhs_terms::G</references>
+        <references refid="structrhs__terms_1a23f99710c6e1d093311561f0c6df46ae" compoundref="model_8h" startline="37">rhs_terms::Msb</references>
+        <references refid="structrhs__terms_1a2da4d507d1c55b7c925c8440ad059d87" compoundref="model_8h" startline="35">rhs_terms::Rsb</references>
+        <references refid="global_8h_1adebc07be0db5cfee6bf35217cc1f8936" compoundref="star_8c" startline="37">spline_cs</references>
+        <referencedby refid="model_8c_1abca9d444b78fd82f9cfef8a367142d19" compoundref="model_8c" startline="140" endline="197">func</referencedby>
+        <referencedby refid="io_8c_1af789b6233c9122901decdf3fe596d917" compoundref="io_8c" startline="173" endline="204">write_output</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Copyright<sp/>2021<sp/>Ricardo<sp/>Yarza.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>orbit-integrator</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>orbit-integrator<sp/>is<sp/>free<sp/>software:<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>the<sp/>Free<sp/>Software<sp/>Foundation,<sp/>either<sp/>version<sp/>3<sp/>of<sp/>the<sp/>License,<sp/>or</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/>orbit-integrator<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//<sp/>along<sp/>with<sp/>orbit-integrator.<sp/><sp/>If<sp/>not,<sp/>see<sp/>&lt;https://www.gnu.org/licenses/&gt;.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>MODEL_HEADER</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MODEL_HEADER</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="global_8h" kindref="compound">global.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="structrhs__terms" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structrhs__terms" kindref="compound">rhs_terms</ref>{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="structrhs__terms_1ac13ca99dc6b23ea6aefc0b4d8c063341" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structrhs__terms_1ac13ca99dc6b23ea6aefc0b4d8c063341" kindref="member">f_hydro</ref>;</highlight></codeline>
+<codeline lineno="29" refid="structrhs__terms_1abe610e4b414ddeede219782c0248c991" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structrhs__terms_1abe610e4b414ddeede219782c0248c991" kindref="member">f_grav</ref>;</highlight></codeline>
+<codeline lineno="31" refid="structrhs__terms_1a8e88fe897d46f15c82e2d9a35078d646" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structrhs__terms_1a8e88fe897d46f15c82e2d9a35078d646" kindref="member">f_buoyancy</ref>;</highlight></codeline>
+<codeline lineno="33" refid="structrhs__terms_1ab2616c315e3e04aeeb268ad0a5cd2723" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="structrhs__terms_1ab2616c315e3e04aeeb268ad0a5cd2723" kindref="member">sigma_hydro</ref>;</highlight></codeline>
+<codeline lineno="35" refid="structrhs__terms_1a2da4d507d1c55b7c925c8440ad059d87" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="structrhs__terms_1a2da4d507d1c55b7c925c8440ad059d87" kindref="member">Rsb</ref>;</highlight></codeline>
+<codeline lineno="37" refid="structrhs__terms_1a23f99710c6e1d093311561f0c6df46ae" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="structrhs__terms_1a23f99710c6e1d093311561f0c6df46ae" kindref="member">Msb</ref>;</highlight></codeline>
+<codeline lineno="39" refid="structrhs__terms_1a58e190d6c49e164fd7a2861bb2661586" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="structrhs__terms_1a58e190d6c49e164fd7a2861bb2661586" kindref="member">G</ref>;</highlight></codeline>
+<codeline lineno="41" refid="structrhs__terms_1ac364a399b048a1b67d986844d0fc7c99" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structrhs__terms_1ac364a399b048a1b67d986844d0fc7c99" kindref="member">use_drag_coefficients</ref>;</highlight></codeline>
+<codeline lineno="43" refid="structrhs__terms_1a63081a901688a91090165ce0f54aa353" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>***<ref refid="structrhs__terms_1a63081a901688a91090165ce0f54aa353" kindref="member">cg_data</ref>;</highlight></codeline>
+<codeline lineno="45" refid="structrhs__terms_1aebefffdf507433a4e958bf302c49df65" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>***<ref refid="structrhs__terms_1aebefffdf507433a4e958bf302c49df65" kindref="member">cp_data</ref>;</highlight></codeline>
+<codeline lineno="47" refid="structrhs__terms_1a303e005485ab20b9778d064fd43ded3f" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structrhs__terms_1a303e005485ab20b9778d064fd43ded3f" kindref="member">drag_data_dims</ref>[3];</highlight></codeline>
+<codeline lineno="49" refid="structrhs__terms_1a04fab25e61816a44ef263ff83e046519" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*<ref refid="structrhs__terms_1a04fab25e61816a44ef263ff83e046519" kindref="member">log_q_vals</ref>;</highlight></codeline>
+<codeline lineno="51" refid="structrhs__terms_1a8ad51f73f9fc24cb4b878d4ac5361cc7" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*<ref refid="structrhs__terms_1a8ad51f73f9fc24cb4b878d4ac5361cc7" kindref="member">log_eps_rho_vals</ref>;</highlight></codeline>
+<codeline lineno="53" refid="structrhs__terms_1a77180908c43f26b69a47d40d2c081a92" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*<ref refid="structrhs__terms_1a77180908c43f26b69a47d40d2c081a92" kindref="member">log_rp_over_ra_vals</ref>;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="model_8h_1a90c59eea1bc597d21ec511441cc3c925" kindref="member">jac</ref><sp/>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>t,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>y[],<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*dfdy,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>dfdt[],<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*params);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="model_8h_1abca9d444b78fd82f9cfef8a367142d19" kindref="member">func</ref><sp/>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>t,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>y[],<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>f[],<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*params);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="model_8h_1a5820dd0dc3a4b0513ac690f4408dc410" kindref="member">init_model_params</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structparameters" kindref="compound">parameters</ref><sp/>P,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structstar" kindref="compound">star</ref><sp/>S,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structunits" kindref="compound">units</ref><sp/>U,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structrhs__terms" kindref="compound">rhs_terms</ref><sp/>*rhs);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="model_8h_1a82bb8aa8ea3780f15e983b5c17a4ebb3" kindref="member">f_hydro</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structrhs__terms" kindref="compound">rhs_terms</ref><sp/>*rhs,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>rho,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>v_theta,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>menc,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>eps_rho,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>ra);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="model_8h_1aed72b2356c55894dc0a75d5e8d99a536" kindref="member">f_grav</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structrhs__terms" kindref="compound">rhs_terms</ref><sp/>*rhs,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>rho,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>v_theta,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>menc,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>eps_rho,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>ra);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="model_8h_1a7413b3adbedc8ce3474a78d49a6b9721" kindref="member">compute_flow_parameters</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structrhs__terms" kindref="compound">rhs_terms</ref><sp/>*rhs,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*y,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>menc,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>hrho,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*q,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*eps_rho,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*rp_over_ra);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/model.h"/>
+  </compounddef>
+</doxygen>

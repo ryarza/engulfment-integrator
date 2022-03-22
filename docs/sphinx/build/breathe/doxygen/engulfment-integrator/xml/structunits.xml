@@ -1,0 +1,152 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structunits" kind="struct" language="C++" prot="public">
+    <compoundname>units</compoundname>
+    <includes refid="global_8h" local="no">global.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structunits_1a658fc25ca175a048deec5ea31f66cf94" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double units::m_unit</definition>
+        <argsstring></argsstring>
+        <name>m_unit</name>
+        <briefdescription>
+<para>Mass unit. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/global.h" line="71" column="10" bodyfile="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/global.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structunits_1a195638052cff6af8ae117e2774b79551" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double units::l_unit</definition>
+        <argsstring></argsstring>
+        <name>l_unit</name>
+        <briefdescription>
+<para>Length unit. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/global.h" line="73" column="10" bodyfile="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/global.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structunits_1a70648d8ac5326c3a89f1a25e9216d71e" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double units::t_unit</definition>
+        <argsstring></argsstring>
+        <name>t_unit</name>
+        <briefdescription>
+<para>Time unit. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/global.h" line="75" column="10" bodyfile="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/global.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structunits_1a2de6f919eae3f6c3b9d88a8b3ada21b8" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double units::v_unit</definition>
+        <argsstring></argsstring>
+        <name>v_unit</name>
+        <briefdescription>
+<para>Speed unit. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/global.h" line="77" column="10" bodyfile="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/global.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structunits_1a42e5d4fc00fc1bac25c3169de1379b4c" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double units::rho_unit</definition>
+        <argsstring></argsstring>
+        <name>rho_unit</name>
+        <briefdescription>
+<para>Density unit. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/global.h" line="79" column="10" bodyfile="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/global.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structunits_1abd2211536105655e894177c38bea584f" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double units::G_CGS</definition>
+        <argsstring></argsstring>
+        <name>G_CGS</name>
+        <briefdescription>
+<para>Gravitational constant in CGS. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/global.h" line="82" column="10" bodyfile="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/global.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structunits_1af4d47f3749923d5153bdb1ae128eb049" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double units::MSUN_CGS</definition>
+        <argsstring></argsstring>
+        <name>MSUN_CGS</name>
+        <briefdescription>
+<para>Solar mass in CGS. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/global.h" line="84" column="10" bodyfile="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/global.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structunits_1ab7382fdcac9d6ee2c6f455351a0f2366" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double units::RSUN_CGS</definition>
+        <argsstring></argsstring>
+        <name>RSUN_CGS</name>
+        <briefdescription>
+<para>Solar radius in CGS. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/global.h" line="86" column="10" bodyfile="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/global.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structunits_1ab46825a17a984286d00a3a09bdf28571" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double units::G</definition>
+        <argsstring></argsstring>
+        <name>G</name>
+        <briefdescription>
+<para>Gravitational constant (in simulation units). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/global.h" line="89" column="10" bodyfile="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/global.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Values in CGS for units in each dimensions and physical constants. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/global.h" line="68" column="1" bodyfile="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/global.h" bodystart="68" bodyend="91"/>
+    <listofallmembers>
+      <member refid="structunits_1ab46825a17a984286d00a3a09bdf28571" prot="public" virt="non-virtual"><scope>units</scope><name>G</name></member>
+      <member refid="structunits_1abd2211536105655e894177c38bea584f" prot="public" virt="non-virtual"><scope>units</scope><name>G_CGS</name></member>
+      <member refid="structunits_1a195638052cff6af8ae117e2774b79551" prot="public" virt="non-virtual"><scope>units</scope><name>l_unit</name></member>
+      <member refid="structunits_1a658fc25ca175a048deec5ea31f66cf94" prot="public" virt="non-virtual"><scope>units</scope><name>m_unit</name></member>
+      <member refid="structunits_1af4d47f3749923d5153bdb1ae128eb049" prot="public" virt="non-virtual"><scope>units</scope><name>MSUN_CGS</name></member>
+      <member refid="structunits_1a42e5d4fc00fc1bac25c3169de1379b4c" prot="public" virt="non-virtual"><scope>units</scope><name>rho_unit</name></member>
+      <member refid="structunits_1ab7382fdcac9d6ee2c6f455351a0f2366" prot="public" virt="non-virtual"><scope>units</scope><name>RSUN_CGS</name></member>
+      <member refid="structunits_1a70648d8ac5326c3a89f1a25e9216d71e" prot="public" virt="non-virtual"><scope>units</scope><name>t_unit</name></member>
+      <member refid="structunits_1a2de6f919eae3f6c3b9d88a8b3ada21b8" prot="public" virt="non-virtual"><scope>units</scope><name>v_unit</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

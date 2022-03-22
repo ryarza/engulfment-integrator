@@ -1,0 +1,193 @@
+\hypertarget{structrhs__terms}{}\doxysection{rhs\+\_\+terms Struct Reference}
+\label{structrhs__terms}\index{rhs\_terms@{rhs\_terms}}
+
+
+Parameters needed when evaluating the right-\/hand-\/side of the GSL ODE system.  
+
+
+
+
+{\ttfamily \#include $<$model.\+h$>$}
+
+\doxysubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{structrhs__terms_ac13ca99dc6b23ea6aefc0b4d8c063341}{f\+\_\+hydro}}
+\begin{DoxyCompactList}\small\item\em Whether to include hydrodynamical drag. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{structrhs__terms_abe610e4b414ddeede219782c0248c991}{f\+\_\+grav}}
+\begin{DoxyCompactList}\small\item\em Whether to include gravitational drag. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{structrhs__terms_a8e88fe897d46f15c82e2d9a35078d646}{f\+\_\+buoyancy}}
+\begin{DoxyCompactList}\small\item\em Whether to include gravitational drag. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{structrhs__terms_ab2616c315e3e04aeeb268ad0a5cd2723}{sigma\+\_\+hydro}}
+\begin{DoxyCompactList}\small\item\em Geometrical cross section of the embedded object. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{structrhs__terms_a2da4d507d1c55b7c925c8440ad059d87}{Rsb}}
+\begin{DoxyCompactList}\small\item\em Radius of the embedded object. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{structrhs__terms_a23f99710c6e1d093311561f0c6df46ae}{Msb}}
+\begin{DoxyCompactList}\small\item\em Mass of the embedded object. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{structrhs__terms_a58e190d6c49e164fd7a2861bb2661586}{G}}
+\begin{DoxyCompactList}\small\item\em Gravitational constant in simulation units. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{structrhs__terms_ac364a399b048a1b67d986844d0fc7c99}{use\+\_\+drag\+\_\+coefficients}}
+\begin{DoxyCompactList}\small\item\em Whether to use numerical drag coefficients. \end{DoxyCompactList}\item 
+double $\ast$$\ast$$\ast$ \mbox{\hyperlink{structrhs__terms_a63081a901688a91090165ce0f54aa353}{cg\+\_\+data}}
+\begin{DoxyCompactList}\small\item\em Gravitational drag coefficient data. \end{DoxyCompactList}\item 
+double $\ast$$\ast$$\ast$ \mbox{\hyperlink{structrhs__terms_aebefffdf507433a4e958bf302c49df65}{cp\+\_\+data}}
+\begin{DoxyCompactList}\small\item\em Ram pressure drag coefficient data. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{structrhs__terms_a303e005485ab20b9778d064fd43ded3f}{drag\+\_\+data\+\_\+dims}} \mbox{[}3\mbox{]}
+\begin{DoxyCompactList}\small\item\em Dimensions of the grid in which the drag coefficient data is sampled. \end{DoxyCompactList}\item 
+double $\ast$ \mbox{\hyperlink{structrhs__terms_a04fab25e61816a44ef263ff83e046519}{log\+\_\+q\+\_\+vals}}
+\begin{DoxyCompactList}\small\item\em Mass ratio values at which the drag coefficient data is sampled. \end{DoxyCompactList}\item 
+double $\ast$ \mbox{\hyperlink{structrhs__terms_a8ad51f73f9fc24cb4b878d4ac5361cc7}{log\+\_\+eps\+\_\+rho\+\_\+vals}}
+\begin{DoxyCompactList}\small\item\em Density gradient values at which the drag coefficient data is sampled. \end{DoxyCompactList}\item 
+double $\ast$ \mbox{\hyperlink{structrhs__terms_a77180908c43f26b69a47d40d2c081a92}{log\+\_\+rp\+\_\+over\+\_\+ra\+\_\+vals}}
+\begin{DoxyCompactList}\small\item\em Rp / Ra values at which the drag coefficient data is sampled. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Parameters needed when evaluating the right-\/hand-\/side of the GSL ODE system. 
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{structrhs__terms_a63081a901688a91090165ce0f54aa353}\label{structrhs__terms_a63081a901688a91090165ce0f54aa353}} 
+\index{rhs\_terms@{rhs\_terms}!cg\_data@{cg\_data}}
+\index{cg\_data@{cg\_data}!rhs\_terms@{rhs\_terms}}
+\doxysubsubsection{\texorpdfstring{cg\_data}{cg\_data}}
+{\footnotesize\ttfamily double$\ast$$\ast$$\ast$ rhs\+\_\+terms\+::cg\+\_\+data}
+
+
+
+Gravitational drag coefficient data. 
+
+\mbox{\Hypertarget{structrhs__terms_aebefffdf507433a4e958bf302c49df65}\label{structrhs__terms_aebefffdf507433a4e958bf302c49df65}} 
+\index{rhs\_terms@{rhs\_terms}!cp\_data@{cp\_data}}
+\index{cp\_data@{cp\_data}!rhs\_terms@{rhs\_terms}}
+\doxysubsubsection{\texorpdfstring{cp\_data}{cp\_data}}
+{\footnotesize\ttfamily double$\ast$$\ast$$\ast$ rhs\+\_\+terms\+::cp\+\_\+data}
+
+
+
+Ram pressure drag coefficient data. 
+
+\mbox{\Hypertarget{structrhs__terms_a303e005485ab20b9778d064fd43ded3f}\label{structrhs__terms_a303e005485ab20b9778d064fd43ded3f}} 
+\index{rhs\_terms@{rhs\_terms}!drag\_data\_dims@{drag\_data\_dims}}
+\index{drag\_data\_dims@{drag\_data\_dims}!rhs\_terms@{rhs\_terms}}
+\doxysubsubsection{\texorpdfstring{drag\_data\_dims}{drag\_data\_dims}}
+{\footnotesize\ttfamily int rhs\+\_\+terms\+::drag\+\_\+data\+\_\+dims\mbox{[}3\mbox{]}}
+
+
+
+Dimensions of the grid in which the drag coefficient data is sampled. 
+
+\mbox{\Hypertarget{structrhs__terms_a8e88fe897d46f15c82e2d9a35078d646}\label{structrhs__terms_a8e88fe897d46f15c82e2d9a35078d646}} 
+\index{rhs\_terms@{rhs\_terms}!f\_buoyancy@{f\_buoyancy}}
+\index{f\_buoyancy@{f\_buoyancy}!rhs\_terms@{rhs\_terms}}
+\doxysubsubsection{\texorpdfstring{f\_buoyancy}{f\_buoyancy}}
+{\footnotesize\ttfamily int rhs\+\_\+terms\+::f\+\_\+buoyancy}
+
+
+
+Whether to include gravitational drag. 
+
+\mbox{\Hypertarget{structrhs__terms_abe610e4b414ddeede219782c0248c991}\label{structrhs__terms_abe610e4b414ddeede219782c0248c991}} 
+\index{rhs\_terms@{rhs\_terms}!f\_grav@{f\_grav}}
+\index{f\_grav@{f\_grav}!rhs\_terms@{rhs\_terms}}
+\doxysubsubsection{\texorpdfstring{f\_grav}{f\_grav}}
+{\footnotesize\ttfamily int rhs\+\_\+terms\+::f\+\_\+grav}
+
+
+
+Whether to include gravitational drag. 
+
+\mbox{\Hypertarget{structrhs__terms_ac13ca99dc6b23ea6aefc0b4d8c063341}\label{structrhs__terms_ac13ca99dc6b23ea6aefc0b4d8c063341}} 
+\index{rhs\_terms@{rhs\_terms}!f\_hydro@{f\_hydro}}
+\index{f\_hydro@{f\_hydro}!rhs\_terms@{rhs\_terms}}
+\doxysubsubsection{\texorpdfstring{f\_hydro}{f\_hydro}}
+{\footnotesize\ttfamily int rhs\+\_\+terms\+::f\+\_\+hydro}
+
+
+
+Whether to include hydrodynamical drag. 
+
+\mbox{\Hypertarget{structrhs__terms_a58e190d6c49e164fd7a2861bb2661586}\label{structrhs__terms_a58e190d6c49e164fd7a2861bb2661586}} 
+\index{rhs\_terms@{rhs\_terms}!G@{G}}
+\index{G@{G}!rhs\_terms@{rhs\_terms}}
+\doxysubsubsection{\texorpdfstring{G}{G}}
+{\footnotesize\ttfamily double rhs\+\_\+terms\+::G}
+
+
+
+Gravitational constant in simulation units. 
+
+\mbox{\Hypertarget{structrhs__terms_a8ad51f73f9fc24cb4b878d4ac5361cc7}\label{structrhs__terms_a8ad51f73f9fc24cb4b878d4ac5361cc7}} 
+\index{rhs\_terms@{rhs\_terms}!log\_eps\_rho\_vals@{log\_eps\_rho\_vals}}
+\index{log\_eps\_rho\_vals@{log\_eps\_rho\_vals}!rhs\_terms@{rhs\_terms}}
+\doxysubsubsection{\texorpdfstring{log\_eps\_rho\_vals}{log\_eps\_rho\_vals}}
+{\footnotesize\ttfamily double$\ast$ rhs\+\_\+terms\+::log\+\_\+eps\+\_\+rho\+\_\+vals}
+
+
+
+Density gradient values at which the drag coefficient data is sampled. 
+
+\mbox{\Hypertarget{structrhs__terms_a04fab25e61816a44ef263ff83e046519}\label{structrhs__terms_a04fab25e61816a44ef263ff83e046519}} 
+\index{rhs\_terms@{rhs\_terms}!log\_q\_vals@{log\_q\_vals}}
+\index{log\_q\_vals@{log\_q\_vals}!rhs\_terms@{rhs\_terms}}
+\doxysubsubsection{\texorpdfstring{log\_q\_vals}{log\_q\_vals}}
+{\footnotesize\ttfamily double$\ast$ rhs\+\_\+terms\+::log\+\_\+q\+\_\+vals}
+
+
+
+Mass ratio values at which the drag coefficient data is sampled. 
+
+\mbox{\Hypertarget{structrhs__terms_a77180908c43f26b69a47d40d2c081a92}\label{structrhs__terms_a77180908c43f26b69a47d40d2c081a92}} 
+\index{rhs\_terms@{rhs\_terms}!log\_rp\_over\_ra\_vals@{log\_rp\_over\_ra\_vals}}
+\index{log\_rp\_over\_ra\_vals@{log\_rp\_over\_ra\_vals}!rhs\_terms@{rhs\_terms}}
+\doxysubsubsection{\texorpdfstring{log\_rp\_over\_ra\_vals}{log\_rp\_over\_ra\_vals}}
+{\footnotesize\ttfamily double$\ast$ rhs\+\_\+terms\+::log\+\_\+rp\+\_\+over\+\_\+ra\+\_\+vals}
+
+
+
+Rp / Ra values at which the drag coefficient data is sampled. 
+
+\mbox{\Hypertarget{structrhs__terms_a23f99710c6e1d093311561f0c6df46ae}\label{structrhs__terms_a23f99710c6e1d093311561f0c6df46ae}} 
+\index{rhs\_terms@{rhs\_terms}!Msb@{Msb}}
+\index{Msb@{Msb}!rhs\_terms@{rhs\_terms}}
+\doxysubsubsection{\texorpdfstring{Msb}{Msb}}
+{\footnotesize\ttfamily double rhs\+\_\+terms\+::\+Msb}
+
+
+
+Mass of the embedded object. 
+
+\mbox{\Hypertarget{structrhs__terms_a2da4d507d1c55b7c925c8440ad059d87}\label{structrhs__terms_a2da4d507d1c55b7c925c8440ad059d87}} 
+\index{rhs\_terms@{rhs\_terms}!Rsb@{Rsb}}
+\index{Rsb@{Rsb}!rhs\_terms@{rhs\_terms}}
+\doxysubsubsection{\texorpdfstring{Rsb}{Rsb}}
+{\footnotesize\ttfamily double rhs\+\_\+terms\+::\+Rsb}
+
+
+
+Radius of the embedded object. 
+
+\mbox{\Hypertarget{structrhs__terms_ab2616c315e3e04aeeb268ad0a5cd2723}\label{structrhs__terms_ab2616c315e3e04aeeb268ad0a5cd2723}} 
+\index{rhs\_terms@{rhs\_terms}!sigma\_hydro@{sigma\_hydro}}
+\index{sigma\_hydro@{sigma\_hydro}!rhs\_terms@{rhs\_terms}}
+\doxysubsubsection{\texorpdfstring{sigma\_hydro}{sigma\_hydro}}
+{\footnotesize\ttfamily double rhs\+\_\+terms\+::sigma\+\_\+hydro}
+
+
+
+Geometrical cross section of the embedded object. 
+
+\mbox{\Hypertarget{structrhs__terms_ac364a399b048a1b67d986844d0fc7c99}\label{structrhs__terms_ac364a399b048a1b67d986844d0fc7c99}} 
+\index{rhs\_terms@{rhs\_terms}!use\_drag\_coefficients@{use\_drag\_coefficients}}
+\index{use\_drag\_coefficients@{use\_drag\_coefficients}!rhs\_terms@{rhs\_terms}}
+\doxysubsubsection{\texorpdfstring{use\_drag\_coefficients}{use\_drag\_coefficients}}
+{\footnotesize\ttfamily int rhs\+\_\+terms\+::use\+\_\+drag\+\_\+coefficients}
+
+
+
+Whether to use numerical drag coefficients. 
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{model_8h}{model.\+h}}\end{DoxyCompactItemize}

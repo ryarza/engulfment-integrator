@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir">
+    <compoundname>src</compoundname>
+    <innerfile refid="global_8h">global.h</innerfile>
+    <innerfile refid="io_8c">io.c</innerfile>
+    <innerfile refid="io_8h">io.h</innerfile>
+    <innerfile refid="main_8c">main.c</innerfile>
+    <innerfile refid="model_8c">model.c</innerfile>
+    <innerfile refid="model_8h">model.h</innerfile>
+    <innerfile refid="star_8c">star.c</innerfile>
+    <innerfile refid="star_8h">star.h</innerfile>
+    <innerfile refid="units_8c">units.c</innerfile>
+    <innerfile refid="units_8h">units.h</innerfile>
+    <innerfile refid="utils_8c">utils.c</innerfile>
+    <innerfile refid="utils_8h">utils.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/"/>
+  </compounddef>
+</doxygen>

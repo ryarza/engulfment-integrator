@@ -1,0 +1,408 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="global_8h" kind="file" language="C++">
+    <compoundname>global.h</compoundname>
+    <includes local="no">gsl/gsl_math.h</includes>
+    <includes local="no">gsl/gsl_spline.h</includes>
+    <includes local="yes">math.h</includes>
+    <includes local="yes">hdf5.h</includes>
+    <includedby refid="io_8h" local="yes">io.h</includedby>
+    <includedby refid="main_8c" local="yes">main.c</includedby>
+    <includedby refid="model_8h" local="yes">model.h</includedby>
+    <includedby refid="star_8h" local="yes">star.h</includedby>
+    <includedby refid="units_8h" local="yes">units.h</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>global.h</label>
+        <link refid="global_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>hdf5.h</label>
+      </node>
+      <node id="4">
+        <label>math.h</label>
+      </node>
+      <node id="2">
+        <label>gsl/gsl_math.h</label>
+      </node>
+      <node id="3">
+        <label>gsl/gsl_spline.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3">
+        <label>io.c</label>
+        <link refid="io_8c"/>
+      </node>
+      <node id="2">
+        <label>io.h</label>
+        <link refid="io_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>main.c</label>
+        <link refid="main_8c"/>
+      </node>
+      <node id="1">
+        <label>global.h</label>
+        <link refid="global_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>star.c</label>
+        <link refid="star_8c"/>
+      </node>
+      <node id="6">
+        <label>units.c</label>
+        <link refid="units_8c"/>
+      </node>
+      <node id="9">
+        <label>star.h</label>
+        <link refid="star_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>units.h</label>
+        <link refid="units_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>model.c</label>
+        <link refid="model_8c"/>
+      </node>
+      <node id="7">
+        <label>model.h</label>
+        <link refid="model_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structstar" prot="public">star</innerclass>
+    <innerclass refid="structparameters" prot="public">parameters</innerclass>
+    <innerclass refid="structunits" prot="public">units</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="global_8h_1ae6648cd71a8bd49d58ae8ed33ba910d1" prot="public" static="no">
+        <name>MAXLEN</name>
+        <initializer>500</initializer>
+        <briefdescription>
+<para>Maximum string length. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/global.h" line="13" column="9" bodyfile="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/global.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="global_8h_1acf79bf70f986b203fe7fd8eb3e91a634" prot="public" static="no" mutable="no">
+        <type>gsl_interp_accel *</type>
+        <definition>gsl_interp_accel* acc_rho</definition>
+        <argsstring></argsstring>
+        <name>acc_rho</name>
+        <briefdescription>
+<para>Globally accessible GSL interpolation accelerator for the density spline. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/global.h" line="94" column="25" bodyfile="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/star.c" bodystart="21" bodyend="-1" declfile="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/global.h" declline="94" declcolumn="25"/>
+        <referencedby refid="model_8c_1abca9d444b78fd82f9cfef8a367142d19" compoundref="model_8c" startline="140" endline="197">func</referencedby>
+        <referencedby refid="model_8c_1a90c59eea1bc597d21ec511441cc3c925" compoundref="model_8c" startline="26" endline="102">jac</referencedby>
+        <referencedby refid="io_8c_1af789b6233c9122901decdf3fe596d917" compoundref="io_8c" startline="173" endline="204">write_output</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="global_8h_1aedeba8fd92b0077b7c6724c0309ea62e" prot="public" static="no" mutable="no">
+        <type>gsl_interp_accel *</type>
+        <definition>gsl_interp_accel* acc_drhodr</definition>
+        <argsstring></argsstring>
+        <name>acc_drhodr</name>
+        <briefdescription>
+<para>Globally accessible GSL interpolation accelerator for the density gradient spline. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/global.h" line="96" column="25" bodyfile="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/star.c" bodystart="23" bodyend="-1" declfile="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/global.h" declline="96" declcolumn="25"/>
+        <referencedby refid="model_8c_1a90c59eea1bc597d21ec511441cc3c925" compoundref="model_8c" startline="26" endline="102">jac</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="global_8h_1a7b76ae9f39a443e206a410c051e557fe" prot="public" static="no" mutable="no">
+        <type>gsl_interp_accel *</type>
+        <definition>gsl_interp_accel* acc_menc</definition>
+        <argsstring></argsstring>
+        <name>acc_menc</name>
+        <briefdescription>
+<para>Globally accessible GSL interpolation accelerator for the mass spline. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/global.h" line="98" column="25" bodyfile="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/star.c" bodystart="25" bodyend="-1" declfile="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/global.h" declline="98" declcolumn="25"/>
+        <referencedby refid="model_8c_1abca9d444b78fd82f9cfef8a367142d19" compoundref="model_8c" startline="140" endline="197">func</referencedby>
+        <referencedby refid="model_8c_1a90c59eea1bc597d21ec511441cc3c925" compoundref="model_8c" startline="26" endline="102">jac</referencedby>
+        <referencedby refid="main_8c_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="main_8c" startline="33" endline="126">main</referencedby>
+        <referencedby refid="io_8c_1af789b6233c9122901decdf3fe596d917" compoundref="io_8c" startline="173" endline="204">write_output</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="global_8h_1a8c5a521dd2cb882da9a99937f79f5837" prot="public" static="no" mutable="no">
+        <type>gsl_interp_accel *</type>
+        <definition>gsl_interp_accel* acc_cs</definition>
+        <argsstring></argsstring>
+        <name>acc_cs</name>
+        <briefdescription>
+<para>Globally accessible GSL interpolation accelerator for the sound speed spline. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/global.h" line="100" column="25" bodyfile="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/star.c" bodystart="27" bodyend="-1" declfile="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/global.h" declline="100" declcolumn="25"/>
+        <referencedby refid="model_8c_1a7413b3adbedc8ce3474a78d49a6b9721" compoundref="model_8c" startline="126" endline="138">compute_flow_parameters</referencedby>
+        <referencedby refid="model_8c_1abca9d444b78fd82f9cfef8a367142d19" compoundref="model_8c" startline="140" endline="197">func</referencedby>
+        <referencedby refid="io_8c_1af789b6233c9122901decdf3fe596d917" compoundref="io_8c" startline="173" endline="204">write_output</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="global_8h_1a4f47520db4595782a0ea2d8dbceb7f48" prot="public" static="no" mutable="no">
+        <type>gsl_interp_accel *</type>
+        <definition>gsl_interp_accel* acc_hrho</definition>
+        <argsstring></argsstring>
+        <name>acc_hrho</name>
+        <briefdescription>
+<para>Globally accessible GSL interpolation accelerator for the density scale height spline. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/global.h" line="102" column="25" bodyfile="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/star.c" bodystart="29" bodyend="-1" declfile="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/global.h" declline="102" declcolumn="25"/>
+        <referencedby refid="model_8c_1abca9d444b78fd82f9cfef8a367142d19" compoundref="model_8c" startline="140" endline="197">func</referencedby>
+        <referencedby refid="io_8c_1af789b6233c9122901decdf3fe596d917" compoundref="io_8c" startline="173" endline="204">write_output</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="global_8h_1a78d5a9eaea222c102b5f9ead2eba41ef" prot="public" static="no" mutable="no">
+        <type>gsl_spline *</type>
+        <definition>gsl_spline* spline_rho</definition>
+        <argsstring></argsstring>
+        <name>spline_rho</name>
+        <briefdescription>
+<para>Globally accessible GSL density spline. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/global.h" line="104" column="19" bodyfile="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/star.c" bodystart="31" bodyend="-1" declfile="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/global.h" declline="104" declcolumn="19"/>
+        <referencedby refid="model_8c_1abca9d444b78fd82f9cfef8a367142d19" compoundref="model_8c" startline="140" endline="197">func</referencedby>
+        <referencedby refid="star_8c_1ad5607f6cce0e1dfabd08a38eaa1a3798" compoundref="star_8c" startline="41" endline="61">init_stellar_profile_splines</referencedby>
+        <referencedby refid="model_8c_1a90c59eea1bc597d21ec511441cc3c925" compoundref="model_8c" startline="26" endline="102">jac</referencedby>
+        <referencedby refid="io_8c_1af789b6233c9122901decdf3fe596d917" compoundref="io_8c" startline="173" endline="204">write_output</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="global_8h_1a4c4bdddddcd903509ed2ecf7c9cff218" prot="public" static="no" mutable="no">
+        <type>gsl_spline *</type>
+        <definition>gsl_spline* spline_drhodr</definition>
+        <argsstring></argsstring>
+        <name>spline_drhodr</name>
+        <briefdescription>
+<para>Globally accessible GSL density gradient spline. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/global.h" line="106" column="19" bodyfile="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/star.c" bodystart="33" bodyend="-1" declfile="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/global.h" declline="106" declcolumn="19"/>
+        <referencedby refid="star_8c_1ad5607f6cce0e1dfabd08a38eaa1a3798" compoundref="star_8c" startline="41" endline="61">init_stellar_profile_splines</referencedby>
+        <referencedby refid="model_8c_1a90c59eea1bc597d21ec511441cc3c925" compoundref="model_8c" startline="26" endline="102">jac</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="global_8h_1abb8a871881d465e7625f07eddffa6785" prot="public" static="no" mutable="no">
+        <type>gsl_spline *</type>
+        <definition>gsl_spline* spline_menc</definition>
+        <argsstring></argsstring>
+        <name>spline_menc</name>
+        <briefdescription>
+<para>Globally accessible GSL enclosed mass spline. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/global.h" line="108" column="19" bodyfile="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/star.c" bodystart="35" bodyend="-1" declfile="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/global.h" declline="108" declcolumn="19"/>
+        <referencedby refid="model_8c_1abca9d444b78fd82f9cfef8a367142d19" compoundref="model_8c" startline="140" endline="197">func</referencedby>
+        <referencedby refid="star_8c_1ad5607f6cce0e1dfabd08a38eaa1a3798" compoundref="star_8c" startline="41" endline="61">init_stellar_profile_splines</referencedby>
+        <referencedby refid="model_8c_1a90c59eea1bc597d21ec511441cc3c925" compoundref="model_8c" startline="26" endline="102">jac</referencedby>
+        <referencedby refid="main_8c_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="main_8c" startline="33" endline="126">main</referencedby>
+        <referencedby refid="io_8c_1af789b6233c9122901decdf3fe596d917" compoundref="io_8c" startline="173" endline="204">write_output</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="global_8h_1adebc07be0db5cfee6bf35217cc1f8936" prot="public" static="no" mutable="no">
+        <type>gsl_spline *</type>
+        <definition>gsl_spline* spline_cs</definition>
+        <argsstring></argsstring>
+        <name>spline_cs</name>
+        <briefdescription>
+<para>Globally accessible GSL sound speed spline. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/global.h" line="110" column="19" bodyfile="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/star.c" bodystart="37" bodyend="-1" declfile="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/global.h" declline="110" declcolumn="19"/>
+        <referencedby refid="model_8c_1a7413b3adbedc8ce3474a78d49a6b9721" compoundref="model_8c" startline="126" endline="138">compute_flow_parameters</referencedby>
+        <referencedby refid="model_8c_1abca9d444b78fd82f9cfef8a367142d19" compoundref="model_8c" startline="140" endline="197">func</referencedby>
+        <referencedby refid="star_8c_1ad5607f6cce0e1dfabd08a38eaa1a3798" compoundref="star_8c" startline="41" endline="61">init_stellar_profile_splines</referencedby>
+        <referencedby refid="io_8c_1af789b6233c9122901decdf3fe596d917" compoundref="io_8c" startline="173" endline="204">write_output</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="global_8h_1ad9933c0d0863db02128a37ab15bccd56" prot="public" static="no" mutable="no">
+        <type>gsl_spline *</type>
+        <definition>gsl_spline* spline_hrho</definition>
+        <argsstring></argsstring>
+        <name>spline_hrho</name>
+        <briefdescription>
+<para>Globally accessible GSL density scale height spline. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/global.h" line="112" column="19" bodyfile="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/star.c" bodystart="39" bodyend="-1" declfile="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/global.h" declline="112" declcolumn="19"/>
+        <referencedby refid="model_8c_1abca9d444b78fd82f9cfef8a367142d19" compoundref="model_8c" startline="140" endline="197">func</referencedby>
+        <referencedby refid="star_8c_1ad5607f6cce0e1dfabd08a38eaa1a3798" compoundref="star_8c" startline="41" endline="61">init_stellar_profile_splines</referencedby>
+        <referencedby refid="io_8c_1af789b6233c9122901decdf3fe596d917" compoundref="io_8c" startline="173" endline="204">write_output</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="global_8h_1ad2753c8a41f8a7a0f8b707fe3316f2dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void h5safecall</definition>
+        <argsstring>(herr_t status)</argsstring>
+        <name>h5safecall</name>
+        <param>
+          <type>herr_t</type>
+          <declname>status</declname>
+        </param>
+        <briefdescription>
+<para>Exits if HDF5 operation was not successful. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/global.h" line="16" column="6" bodyfile="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/io.c" bodystart="206" bodyend="208" declfile="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/global.h" declline="16" declcolumn="6"/>
+        <referencedby refid="model_8c_1a5820dd0dc3a4b0513ac690f4408dc410" compoundref="model_8c" startline="199" endline="317">init_model_params</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>GLOBAL_HEADER</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GLOBAL_HEADER</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>M_PI</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Make<sp/>sure<sp/>M_PI<sp/>is<sp/>defined</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;gsl/gsl_math.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;gsl/gsl_spline.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;math.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;hdf5.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="global_8h_1ae6648cd71a8bd49d58ae8ed33ba910d1" refkind="member"><highlight class="preprocessor">#define<sp/>MAXLEN<sp/>500</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="global_8h_1ad2753c8a41f8a7a0f8b707fe3316f2dd" kindref="member">h5safecall</ref>(herr_t<sp/>status);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="structstar" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structstar" kindref="compound">star</ref>{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="structstar_1aee104a290f877136a610e2e5d8044fae" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structstar_1aee104a290f877136a610e2e5d8044fae" kindref="member">ncells</ref>;</highlight></codeline>
+<codeline lineno="24" refid="structstar_1a54cc4e813708a93c56465e96269a0fe7" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*<ref refid="structstar_1a54cc4e813708a93c56465e96269a0fe7" kindref="member">r</ref>;</highlight></codeline>
+<codeline lineno="26" refid="structstar_1ab3f45e19f98283cc73f8f890db888dbb" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*<ref refid="structstar_1ab3f45e19f98283cc73f8f890db888dbb" kindref="member">rho</ref>;</highlight></codeline>
+<codeline lineno="28" refid="structstar_1aa3d46671aba75d6d247013090b96f003" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*<ref refid="structstar_1aa3d46671aba75d6d247013090b96f003" kindref="member">drhodr</ref>;</highlight></codeline>
+<codeline lineno="30" refid="structstar_1a0b482cc62f5872828e9f9b53da186c23" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*<ref refid="structstar_1a0b482cc62f5872828e9f9b53da186c23" kindref="member">menc</ref>;</highlight></codeline>
+<codeline lineno="32" refid="structstar_1a5065d00361a69ec6809704e3ee2c5ad2" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*<ref refid="structstar_1a5065d00361a69ec6809704e3ee2c5ad2" kindref="member">cs</ref>;</highlight></codeline>
+<codeline lineno="34" refid="structstar_1a83c0290c8527de09a6cf98bc33c2b177" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*<ref refid="structstar_1a83c0290c8527de09a6cf98bc33c2b177" kindref="member">hrho</ref>;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="structparameters" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structparameters" kindref="compound">parameters</ref>{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="structparameters_1a6960e6f48d147c12441609628d186b35" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structparameters_1a6960e6f48d147c12441609628d186b35" kindref="member">f_hydro</ref>;</highlight></codeline>
+<codeline lineno="44" refid="structparameters_1a44b8f833c7ff07dc990a137b49d306f3" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structparameters_1a44b8f833c7ff07dc990a137b49d306f3" kindref="member">f_grav</ref>;</highlight></codeline>
+<codeline lineno="46" refid="structparameters_1a65676f4e46da862a87074caa262f7352" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structparameters_1a65676f4e46da862a87074caa262f7352" kindref="member">f_buoyancy</ref>;</highlight></codeline>
+<codeline lineno="48" refid="structparameters_1ab5115d22be6204fdc5bbf6445269efa0" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="structparameters_1ab5115d22be6204fdc5bbf6445269efa0" kindref="member">Msb</ref>;</highlight></codeline>
+<codeline lineno="50" refid="structparameters_1a44dd01bc440a7226465b0e38310929b1" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="structparameters_1a44dd01bc440a7226465b0e38310929b1" kindref="member">Rsb</ref>;</highlight></codeline>
+<codeline lineno="52" refid="structparameters_1ad3fbd800d02ad97f32af7c8daf157dfa" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="structparameters_1ad3fbd800d02ad97f32af7c8daf157dfa" kindref="member">rho_av_sb</ref>;</highlight></codeline>
+<codeline lineno="54" refid="structparameters_1ad05bdbed10f508a28eced6b3f2479081" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="structparameters_1ad05bdbed10f508a28eced6b3f2479081" kindref="member">r0</ref>;</highlight></codeline>
+<codeline lineno="56" refid="structparameters_1a6d652c74fe298f831dd1e8f1b3cecbe2" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="structparameters_1a6d652c74fe298f831dd1e8f1b3cecbe2" kindref="member">mesa_profile_path</ref>[<ref refid="global_8h_1ae6648cd71a8bd49d58ae8ed33ba910d1" kindref="member">MAXLEN</ref>];</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Drag<sp/>coefficient<sp/>stuff</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="structparameters_1ab8ff76e9250a51d11724566a9fe840ca" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structparameters_1ab8ff76e9250a51d11724566a9fe840ca" kindref="member">use_drag_coefficients</ref>;</highlight></codeline>
+<codeline lineno="63" refid="structparameters_1a222e7500d94731b8efdae777c71ca8d9" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="structparameters_1a222e7500d94731b8efdae777c71ca8d9" kindref="member">drag_data_path</ref>[<ref refid="global_8h_1ae6648cd71a8bd49d58ae8ed33ba910d1" kindref="member">MAXLEN</ref>];</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68" refid="structunits" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structunits" kindref="compound">units</ref>{</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71" refid="structunits_1a658fc25ca175a048deec5ea31f66cf94" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="structunits_1a658fc25ca175a048deec5ea31f66cf94" kindref="member">m_unit</ref>;</highlight></codeline>
+<codeline lineno="73" refid="structunits_1a195638052cff6af8ae117e2774b79551" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="structunits_1a195638052cff6af8ae117e2774b79551" kindref="member">l_unit</ref>;</highlight></codeline>
+<codeline lineno="75" refid="structunits_1a70648d8ac5326c3a89f1a25e9216d71e" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="structunits_1a70648d8ac5326c3a89f1a25e9216d71e" kindref="member">t_unit</ref>;</highlight></codeline>
+<codeline lineno="77" refid="structunits_1a2de6f919eae3f6c3b9d88a8b3ada21b8" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="structunits_1a2de6f919eae3f6c3b9d88a8b3ada21b8" kindref="member">v_unit</ref>;</highlight></codeline>
+<codeline lineno="79" refid="structunits_1a42e5d4fc00fc1bac25c3169de1379b4c" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="structunits_1a42e5d4fc00fc1bac25c3169de1379b4c" kindref="member">rho_unit</ref>;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82" refid="structunits_1abd2211536105655e894177c38bea584f" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="structunits_1abd2211536105655e894177c38bea584f" kindref="member">G_CGS</ref>;</highlight></codeline>
+<codeline lineno="84" refid="structunits_1af4d47f3749923d5153bdb1ae128eb049" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="structunits_1af4d47f3749923d5153bdb1ae128eb049" kindref="member">MSUN_CGS</ref>;</highlight></codeline>
+<codeline lineno="86" refid="structunits_1ab7382fdcac9d6ee2c6f455351a0f2366" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="structunits_1ab7382fdcac9d6ee2c6f455351a0f2366" kindref="member">RSUN_CGS</ref>;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89" refid="structunits_1ab46825a17a984286d00a3a09bdf28571" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="structunits_1ab46825a17a984286d00a3a09bdf28571" kindref="member">G</ref>;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>gsl_interp_accel<sp/>*<ref refid="global_8h_1acf79bf70f986b203fe7fd8eb3e91a634" kindref="member">acc_rho</ref>;</highlight></codeline>
+<codeline lineno="96"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>gsl_interp_accel<sp/>*<ref refid="global_8h_1aedeba8fd92b0077b7c6724c0309ea62e" kindref="member">acc_drhodr</ref>;</highlight></codeline>
+<codeline lineno="98"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>gsl_interp_accel<sp/>*<ref refid="global_8h_1a7b76ae9f39a443e206a410c051e557fe" kindref="member">acc_menc</ref>;</highlight></codeline>
+<codeline lineno="100"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>gsl_interp_accel<sp/>*<ref refid="global_8h_1a8c5a521dd2cb882da9a99937f79f5837" kindref="member">acc_cs</ref>;</highlight></codeline>
+<codeline lineno="102"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>gsl_interp_accel<sp/>*<ref refid="global_8h_1a4f47520db4595782a0ea2d8dbceb7f48" kindref="member">acc_hrho</ref>;</highlight></codeline>
+<codeline lineno="104"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>gsl_spline<sp/>*<ref refid="global_8h_1a78d5a9eaea222c102b5f9ead2eba41ef" kindref="member">spline_rho</ref>;</highlight></codeline>
+<codeline lineno="106"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>gsl_spline<sp/>*<ref refid="global_8h_1a4c4bdddddcd903509ed2ecf7c9cff218" kindref="member">spline_drhodr</ref>;</highlight></codeline>
+<codeline lineno="108"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>gsl_spline<sp/>*<ref refid="global_8h_1abb8a871881d465e7625f07eddffa6785" kindref="member">spline_menc</ref>;</highlight></codeline>
+<codeline lineno="110"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>gsl_spline<sp/>*<ref refid="global_8h_1adebc07be0db5cfee6bf35217cc1f8936" kindref="member">spline_cs</ref>;</highlight></codeline>
+<codeline lineno="112"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>gsl_spline<sp/>*<ref refid="global_8h_1ad9933c0d0863db02128a37ab15bccd56" kindref="member">spline_hrho</ref>;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/global.h"/>
+  </compounddef>
+</doxygen>

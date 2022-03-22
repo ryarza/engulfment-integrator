@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>global.h &mdash; engulfment-integrator  documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="io.h" href="io.html" />
+    <link rel="prev" title="Header files" href="files.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> engulfment-integrator
+            <img src="_static/insp.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="files.html">Header files</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">global.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="io.html">io.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="model.html">model.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="star.html">star.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="units.html">units.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="utils.html">utils.h</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="files.html#indices-and-tables">Indices and tables</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">engulfment-integrator</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="files.html">Header files</a> &raquo;</li>
+      <li>global.h</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/ryarza/engulfment-integrator/blob/global.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="global-h">
+<h1>global.h<a class="headerlink" href="#global-h" title="Permalink to this headline"></a></h1>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-defines">Defines</p>
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.MAXLEN">
+<span class="target" id="global_8h_1ae6648cd71a8bd49d58ae8ed33ba910d1"></span><span class="sig-name descname"><span class="n"><span class="pre">MAXLEN</span></span></span><a class="headerlink" href="#c.MAXLEN" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Maximum string length. </p>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-functions">Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv410h5safecall6herr_t">
+<span id="_CPPv310h5safecall6herr_t"></span><span id="_CPPv210h5safecall6herr_t"></span><span id="h5safecall__herr_t"></span><span class="target" id="global_8h_1ad2753c8a41f8a7a0f8b707fe3316f2dd"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">h5safecall</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">herr_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">status</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv410h5safecall6herr_t" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Exits if HDF5 operation was not successful. </p>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-variables">Variables</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv47acc_rho">
+<span id="_CPPv37acc_rho"></span><span id="_CPPv27acc_rho"></span><span id="acc_rho__gsl_interp_accelP"></span><span class="target" id="global_8h_1acf79bf70f986b203fe7fd8eb3e91a634"></span><span class="n"><span class="pre">gsl_interp_accel</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">acc_rho</span></span></span><a class="headerlink" href="#_CPPv47acc_rho" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Globally accessible GSL interpolation accelerator for the density spline. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv410acc_drhodr">
+<span id="_CPPv310acc_drhodr"></span><span id="_CPPv210acc_drhodr"></span><span id="acc_drhodr__gsl_interp_accelP"></span><span class="target" id="global_8h_1aedeba8fd92b0077b7c6724c0309ea62e"></span><span class="n"><span class="pre">gsl_interp_accel</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">acc_drhodr</span></span></span><a class="headerlink" href="#_CPPv410acc_drhodr" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Globally accessible GSL interpolation accelerator for the density gradient spline. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv48acc_menc">
+<span id="_CPPv38acc_menc"></span><span id="_CPPv28acc_menc"></span><span id="acc_menc__gsl_interp_accelP"></span><span class="target" id="global_8h_1a7b76ae9f39a443e206a410c051e557fe"></span><span class="n"><span class="pre">gsl_interp_accel</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">acc_menc</span></span></span><a class="headerlink" href="#_CPPv48acc_menc" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Globally accessible GSL interpolation accelerator for the mass spline. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv46acc_cs">
+<span id="_CPPv36acc_cs"></span><span id="_CPPv26acc_cs"></span><span id="acc_cs__gsl_interp_accelP"></span><span class="target" id="global_8h_1a8c5a521dd2cb882da9a99937f79f5837"></span><span class="n"><span class="pre">gsl_interp_accel</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">acc_cs</span></span></span><a class="headerlink" href="#_CPPv46acc_cs" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Globally accessible GSL interpolation accelerator for the sound speed spline. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv48acc_hrho">
+<span id="_CPPv38acc_hrho"></span><span id="_CPPv28acc_hrho"></span><span id="acc_hrho__gsl_interp_accelP"></span><span class="target" id="global_8h_1a4f47520db4595782a0ea2d8dbceb7f48"></span><span class="n"><span class="pre">gsl_interp_accel</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">acc_hrho</span></span></span><a class="headerlink" href="#_CPPv48acc_hrho" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Globally accessible GSL interpolation accelerator for the density scale height spline. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv410spline_rho">
+<span id="_CPPv310spline_rho"></span><span id="_CPPv210spline_rho"></span><span id="spline_rho__gsl_splineP"></span><span class="target" id="global_8h_1a78d5a9eaea222c102b5f9ead2eba41ef"></span><span class="n"><span class="pre">gsl_spline</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">spline_rho</span></span></span><a class="headerlink" href="#_CPPv410spline_rho" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Globally accessible GSL density spline. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv413spline_drhodr">
+<span id="_CPPv313spline_drhodr"></span><span id="_CPPv213spline_drhodr"></span><span id="spline_drhodr__gsl_splineP"></span><span class="target" id="global_8h_1a4c4bdddddcd903509ed2ecf7c9cff218"></span><span class="n"><span class="pre">gsl_spline</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">spline_drhodr</span></span></span><a class="headerlink" href="#_CPPv413spline_drhodr" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Globally accessible GSL density gradient spline. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv411spline_menc">
+<span id="_CPPv311spline_menc"></span><span id="_CPPv211spline_menc"></span><span id="spline_menc__gsl_splineP"></span><span class="target" id="global_8h_1abb8a871881d465e7625f07eddffa6785"></span><span class="n"><span class="pre">gsl_spline</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">spline_menc</span></span></span><a class="headerlink" href="#_CPPv411spline_menc" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Globally accessible GSL enclosed mass spline. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv49spline_cs">
+<span id="_CPPv39spline_cs"></span><span id="_CPPv29spline_cs"></span><span id="spline_cs__gsl_splineP"></span><span class="target" id="global_8h_1adebc07be0db5cfee6bf35217cc1f8936"></span><span class="n"><span class="pre">gsl_spline</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">spline_cs</span></span></span><a class="headerlink" href="#_CPPv49spline_cs" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Globally accessible GSL sound speed spline. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv411spline_hrho">
+<span id="_CPPv311spline_hrho"></span><span id="_CPPv211spline_hrho"></span><span id="spline_hrho__gsl_splineP"></span><span class="target" id="global_8h_1ad9933c0d0863db02128a37ab15bccd56"></span><span class="n"><span class="pre">gsl_spline</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">spline_hrho</span></span></span><a class="headerlink" href="#_CPPv411spline_hrho" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Globally accessible GSL density scale height spline. </p>
+</dd></dl>
+
+</div>
+<dl class="cpp struct">
+<dt class="sig sig-object cpp" id="_CPPv44star">
+<span id="_CPPv34star"></span><span id="_CPPv24star"></span><span id="star"></span><span class="target" id="structstar"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">star</span></span></span><a class="headerlink" href="#_CPPv44star" title="Permalink to this definition"></a><br /></dt>
+<dd><em>#include &lt;global.h&gt;</em><p>Properties of the stellar profile. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N4star6ncellsE">
+<span id="_CPPv3N4star6ncellsE"></span><span id="_CPPv2N4star6ncellsE"></span><span id="star::ncells__i"></span><span class="target" id="structstar_1aee104a290f877136a610e2e5d8044fae"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ncells</span></span></span><a class="headerlink" href="#_CPPv4N4star6ncellsE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Number of cells in the profile. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N4star1rE">
+<span id="_CPPv3N4star1rE"></span><span id="_CPPv2N4star1rE"></span><span id="star::r__doubleP"></span><span class="target" id="structstar_1a54cc4e813708a93c56465e96269a0fe7"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">r</span></span></span><a class="headerlink" href="#_CPPv4N4star1rE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Array with radius values. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N4star3rhoE">
+<span id="_CPPv3N4star3rhoE"></span><span id="_CPPv2N4star3rhoE"></span><span id="star::rho__doubleP"></span><span class="target" id="structstar_1ab3f45e19f98283cc73f8f890db888dbb"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">rho</span></span></span><a class="headerlink" href="#_CPPv4N4star3rhoE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Array with density values as a function of radius. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N4star6drhodrE">
+<span id="_CPPv3N4star6drhodrE"></span><span id="_CPPv2N4star6drhodrE"></span><span id="star::drhodr__doubleP"></span><span class="target" id="structstar_1aa3d46671aba75d6d247013090b96f003"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">drhodr</span></span></span><a class="headerlink" href="#_CPPv4N4star6drhodrE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Array with density gradient values as a function of radius. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N4star4mencE">
+<span id="_CPPv3N4star4mencE"></span><span id="_CPPv2N4star4mencE"></span><span id="star::menc__doubleP"></span><span class="target" id="structstar_1a0b482cc62f5872828e9f9b53da186c23"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">menc</span></span></span><a class="headerlink" href="#_CPPv4N4star4mencE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Array with enclosed mass as a function of radius. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N4star2csE">
+<span id="_CPPv3N4star2csE"></span><span id="_CPPv2N4star2csE"></span><span id="star::cs__doubleP"></span><span class="target" id="structstar_1a5065d00361a69ec6809704e3ee2c5ad2"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">cs</span></span></span><a class="headerlink" href="#_CPPv4N4star2csE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Array with sound speed as a function of radius. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N4star4hrhoE">
+<span id="_CPPv3N4star4hrhoE"></span><span id="_CPPv2N4star4hrhoE"></span><span id="star::hrho__doubleP"></span><span class="target" id="structstar_1a83c0290c8527de09a6cf98bc33c2b177"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">hrho</span></span></span><a class="headerlink" href="#_CPPv4N4star4hrhoE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Array with density scale height as a function of radius. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="cpp struct">
+<dt class="sig sig-object cpp" id="_CPPv410parameters">
+<span id="_CPPv310parameters"></span><span id="_CPPv210parameters"></span><span id="parameters"></span><span class="target" id="structparameters"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">parameters</span></span></span><a class="headerlink" href="#_CPPv410parameters" title="Permalink to this definition"></a><br /></dt>
+<dd><em>#include &lt;global.h&gt;</em><p>Input parameters read from text file. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N10parameters7f_hydroE">
+<span id="_CPPv3N10parameters7f_hydroE"></span><span id="_CPPv2N10parameters7f_hydroE"></span><span id="parameters::f_hydro__i"></span><span class="target" id="structparameters_1a6960e6f48d147c12441609628d186b35"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">f_hydro</span></span></span><a class="headerlink" href="#_CPPv4N10parameters7f_hydroE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Whether to include hydrodynamical drag. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N10parameters6f_gravE">
+<span id="_CPPv3N10parameters6f_gravE"></span><span id="_CPPv2N10parameters6f_gravE"></span><span id="parameters::f_grav__i"></span><span class="target" id="structparameters_1a44b8f833c7ff07dc990a137b49d306f3"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">f_grav</span></span></span><a class="headerlink" href="#_CPPv4N10parameters6f_gravE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Whether to include gravitational drag. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N10parameters10f_buoyancyE">
+<span id="_CPPv3N10parameters10f_buoyancyE"></span><span id="_CPPv2N10parameters10f_buoyancyE"></span><span id="parameters::f_buoyancy__i"></span><span class="target" id="structparameters_1a65676f4e46da862a87074caa262f7352"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">f_buoyancy</span></span></span><a class="headerlink" href="#_CPPv4N10parameters10f_buoyancyE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Whether to include buoyancy. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N10parameters3MsbE">
+<span id="_CPPv3N10parameters3MsbE"></span><span id="_CPPv2N10parameters3MsbE"></span><span id="parameters::Msb__double"></span><span class="target" id="structparameters_1ab5115d22be6204fdc5bbf6445269efa0"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Msb</span></span></span><a class="headerlink" href="#_CPPv4N10parameters3MsbE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Mass of the embedded object. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N10parameters3RsbE">
+<span id="_CPPv3N10parameters3RsbE"></span><span id="_CPPv2N10parameters3RsbE"></span><span id="parameters::Rsb__double"></span><span class="target" id="structparameters_1a44dd01bc440a7226465b0e38310929b1"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Rsb</span></span></span><a class="headerlink" href="#_CPPv4N10parameters3RsbE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Radius of the embedded object. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N10parameters9rho_av_sbE">
+<span id="_CPPv3N10parameters9rho_av_sbE"></span><span id="_CPPv2N10parameters9rho_av_sbE"></span><span id="parameters::rho_av_sb__double"></span><span class="target" id="structparameters_1ad3fbd800d02ad97f32af7c8daf157dfa"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">rho_av_sb</span></span></span><a class="headerlink" href="#_CPPv4N10parameters9rho_av_sbE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Derived quantity: average density of the embedded object. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N10parameters2r0E">
+<span id="_CPPv3N10parameters2r0E"></span><span id="_CPPv2N10parameters2r0E"></span><span id="parameters::r0__double"></span><span class="target" id="structparameters_1ad05bdbed10f508a28eced6b3f2479081"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">r0</span></span></span><a class="headerlink" href="#_CPPv4N10parameters2r0E" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Initial orbital separation. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N10parameters17mesa_profile_pathE">
+<span id="_CPPv3N10parameters17mesa_profile_pathE"></span><span id="_CPPv2N10parameters17mesa_profile_pathE"></span><span id="parameters::mesa_profile_path__cA"></span><span class="target" id="structparameters_1a6d652c74fe298f831dd1e8f1b3cecbe2"></span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">mesa_profile_path</span></span></span><span class="p"><span class="pre">[</span></span><span class="n"><span class="pre">MAXLEN</span></span><span class="p"><span class="pre">]</span></span><a class="headerlink" href="#_CPPv4N10parameters17mesa_profile_pathE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Path to MESA profile. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N10parameters21use_drag_coefficientsE">
+<span id="_CPPv3N10parameters21use_drag_coefficientsE"></span><span id="_CPPv2N10parameters21use_drag_coefficientsE"></span><span id="parameters::use_drag_coefficients__i"></span><span class="target" id="structparameters_1ab8ff76e9250a51d11724566a9fe840ca"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">use_drag_coefficients</span></span></span><a class="headerlink" href="#_CPPv4N10parameters21use_drag_coefficientsE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Whether to use numerical drag coefficients. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N10parameters14drag_data_pathE">
+<span id="_CPPv3N10parameters14drag_data_pathE"></span><span id="_CPPv2N10parameters14drag_data_pathE"></span><span id="parameters::drag_data_path__cA"></span><span class="target" id="structparameters_1a222e7500d94731b8efdae777c71ca8d9"></span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">drag_data_path</span></span></span><span class="p"><span class="pre">[</span></span><span class="n"><span class="pre">MAXLEN</span></span><span class="p"><span class="pre">]</span></span><a class="headerlink" href="#_CPPv4N10parameters14drag_data_pathE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Path to drag coefficient data. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="cpp struct">
+<dt class="sig sig-object cpp" id="_CPPv45units">
+<span id="_CPPv35units"></span><span id="_CPPv25units"></span><span id="units"></span><span class="target" id="structunits"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">units</span></span></span><a class="headerlink" href="#_CPPv45units" title="Permalink to this definition"></a><br /></dt>
+<dd><em>#include &lt;global.h&gt;</em><p>Values in CGS for units in each dimensions and physical constants. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5units6m_unitE">
+<span id="_CPPv3N5units6m_unitE"></span><span id="_CPPv2N5units6m_unitE"></span><span id="units::m_unit__double"></span><span class="target" id="structunits_1a658fc25ca175a048deec5ea31f66cf94"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">m_unit</span></span></span><a class="headerlink" href="#_CPPv4N5units6m_unitE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Mass unit. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5units6l_unitE">
+<span id="_CPPv3N5units6l_unitE"></span><span id="_CPPv2N5units6l_unitE"></span><span id="units::l_unit__double"></span><span class="target" id="structunits_1a195638052cff6af8ae117e2774b79551"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">l_unit</span></span></span><a class="headerlink" href="#_CPPv4N5units6l_unitE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Length unit. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5units6t_unitE">
+<span id="_CPPv3N5units6t_unitE"></span><span id="_CPPv2N5units6t_unitE"></span><span id="units::t_unit__double"></span><span class="target" id="structunits_1a70648d8ac5326c3a89f1a25e9216d71e"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">t_unit</span></span></span><a class="headerlink" href="#_CPPv4N5units6t_unitE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Time unit. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5units6v_unitE">
+<span id="_CPPv3N5units6v_unitE"></span><span id="_CPPv2N5units6v_unitE"></span><span id="units::v_unit__double"></span><span class="target" id="structunits_1a2de6f919eae3f6c3b9d88a8b3ada21b8"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">v_unit</span></span></span><a class="headerlink" href="#_CPPv4N5units6v_unitE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Speed unit. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5units8rho_unitE">
+<span id="_CPPv3N5units8rho_unitE"></span><span id="_CPPv2N5units8rho_unitE"></span><span id="units::rho_unit__double"></span><span class="target" id="structunits_1a42e5d4fc00fc1bac25c3169de1379b4c"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">rho_unit</span></span></span><a class="headerlink" href="#_CPPv4N5units8rho_unitE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Density unit. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5units5G_CGSE">
+<span id="_CPPv3N5units5G_CGSE"></span><span id="_CPPv2N5units5G_CGSE"></span><span id="units::G_CGS__double"></span><span class="target" id="structunits_1abd2211536105655e894177c38bea584f"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">G_CGS</span></span></span><a class="headerlink" href="#_CPPv4N5units5G_CGSE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Gravitational constant in CGS. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5units8MSUN_CGSE">
+<span id="_CPPv3N5units8MSUN_CGSE"></span><span id="_CPPv2N5units8MSUN_CGSE"></span><span id="units::MSUN_CGS__double"></span><span class="target" id="structunits_1af4d47f3749923d5153bdb1ae128eb049"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">MSUN_CGS</span></span></span><a class="headerlink" href="#_CPPv4N5units8MSUN_CGSE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Solar mass in CGS. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5units8RSUN_CGSE">
+<span id="_CPPv3N5units8RSUN_CGSE"></span><span id="_CPPv2N5units8RSUN_CGSE"></span><span id="units::RSUN_CGS__double"></span><span class="target" id="structunits_1ab7382fdcac9d6ee2c6f455351a0f2366"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">RSUN_CGS</span></span></span><a class="headerlink" href="#_CPPv4N5units8RSUN_CGSE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Solar radius in CGS. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5units1GE">
+<span id="_CPPv3N5units1GE"></span><span id="_CPPv2N5units1GE"></span><span id="units::G__double"></span><span class="target" id="structunits_1ab46825a17a984286d00a3a09bdf28571"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">G</span></span></span><a class="headerlink" href="#_CPPv4N5units1GE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Gravitational constant (in simulation units). </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="files.html" class="btn btn-neutral float-left" title="Header files" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="io.html" class="btn btn-neutral float-right" title="io.h" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Ricardo Yarza.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

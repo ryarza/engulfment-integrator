@@ -1,0 +1,167 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structparameters" kind="struct" language="C++" prot="public">
+    <compoundname>parameters</compoundname>
+    <includes refid="global_8h" local="no">global.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structparameters_1a6960e6f48d147c12441609628d186b35" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int parameters::f_hydro</definition>
+        <argsstring></argsstring>
+        <name>f_hydro</name>
+        <briefdescription>
+<para>Whether to include hydrodynamical drag. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/global.h" line="42" column="7" bodyfile="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/global.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structparameters_1a44b8f833c7ff07dc990a137b49d306f3" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int parameters::f_grav</definition>
+        <argsstring></argsstring>
+        <name>f_grav</name>
+        <briefdescription>
+<para>Whether to include gravitational drag. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/global.h" line="44" column="7" bodyfile="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/global.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structparameters_1a65676f4e46da862a87074caa262f7352" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int parameters::f_buoyancy</definition>
+        <argsstring></argsstring>
+        <name>f_buoyancy</name>
+        <briefdescription>
+<para>Whether to include buoyancy. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/global.h" line="46" column="7" bodyfile="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/global.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structparameters_1ab5115d22be6204fdc5bbf6445269efa0" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double parameters::Msb</definition>
+        <argsstring></argsstring>
+        <name>Msb</name>
+        <briefdescription>
+<para>Mass of the embedded object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/global.h" line="48" column="10" bodyfile="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/global.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structparameters_1a44dd01bc440a7226465b0e38310929b1" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double parameters::Rsb</definition>
+        <argsstring></argsstring>
+        <name>Rsb</name>
+        <briefdescription>
+<para>Radius of the embedded object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/global.h" line="50" column="10" bodyfile="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/global.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structparameters_1ad3fbd800d02ad97f32af7c8daf157dfa" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double parameters::rho_av_sb</definition>
+        <argsstring></argsstring>
+        <name>rho_av_sb</name>
+        <briefdescription>
+<para>Derived quantity: average density of the embedded object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/global.h" line="52" column="10" bodyfile="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/global.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structparameters_1ad05bdbed10f508a28eced6b3f2479081" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double parameters::r0</definition>
+        <argsstring></argsstring>
+        <name>r0</name>
+        <briefdescription>
+<para>Initial orbital separation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/global.h" line="54" column="10" bodyfile="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/global.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structparameters_1a6d652c74fe298f831dd1e8f1b3cecbe2" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char parameters::mesa_profile_path[MAXLEN]</definition>
+        <argsstring>[MAXLEN]</argsstring>
+        <name>mesa_profile_path</name>
+        <briefdescription>
+<para>Path to MESA profile. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/global.h" line="56" column="8" bodyfile="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/global.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structparameters_1ab8ff76e9250a51d11724566a9fe840ca" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int parameters::use_drag_coefficients</definition>
+        <argsstring></argsstring>
+        <name>use_drag_coefficients</name>
+        <briefdescription>
+<para>Whether to use numerical drag coefficients. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/global.h" line="61" column="7" bodyfile="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/global.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structparameters_1a222e7500d94731b8efdae777c71ca8d9" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char parameters::drag_data_path[MAXLEN]</definition>
+        <argsstring>[MAXLEN]</argsstring>
+        <name>drag_data_path</name>
+        <briefdescription>
+<para>Path to drag coefficient data. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/global.h" line="63" column="8" bodyfile="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/global.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Input parameters read from text file. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/global.h" line="39" column="1" bodyfile="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/global.h" bodystart="39" bodyend="65"/>
+    <listofallmembers>
+      <member refid="structparameters_1a222e7500d94731b8efdae777c71ca8d9" prot="public" virt="non-virtual"><scope>parameters</scope><name>drag_data_path</name></member>
+      <member refid="structparameters_1a65676f4e46da862a87074caa262f7352" prot="public" virt="non-virtual"><scope>parameters</scope><name>f_buoyancy</name></member>
+      <member refid="structparameters_1a44b8f833c7ff07dc990a137b49d306f3" prot="public" virt="non-virtual"><scope>parameters</scope><name>f_grav</name></member>
+      <member refid="structparameters_1a6960e6f48d147c12441609628d186b35" prot="public" virt="non-virtual"><scope>parameters</scope><name>f_hydro</name></member>
+      <member refid="structparameters_1a6d652c74fe298f831dd1e8f1b3cecbe2" prot="public" virt="non-virtual"><scope>parameters</scope><name>mesa_profile_path</name></member>
+      <member refid="structparameters_1ab5115d22be6204fdc5bbf6445269efa0" prot="public" virt="non-virtual"><scope>parameters</scope><name>Msb</name></member>
+      <member refid="structparameters_1ad05bdbed10f508a28eced6b3f2479081" prot="public" virt="non-virtual"><scope>parameters</scope><name>r0</name></member>
+      <member refid="structparameters_1ad3fbd800d02ad97f32af7c8daf157dfa" prot="public" virt="non-virtual"><scope>parameters</scope><name>rho_av_sb</name></member>
+      <member refid="structparameters_1a44dd01bc440a7226465b0e38310929b1" prot="public" virt="non-virtual"><scope>parameters</scope><name>Rsb</name></member>
+      <member refid="structparameters_1ab8ff76e9250a51d11724566a9fe840ca" prot="public" virt="non-virtual"><scope>parameters</scope><name>use_drag_coefficients</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

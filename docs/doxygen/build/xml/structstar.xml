@@ -1,0 +1,146 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structstar" kind="struct" language="C++" prot="public">
+    <compoundname>star</compoundname>
+    <includes refid="global_8h" local="no">global.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structstar_1aee104a290f877136a610e2e5d8044fae" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int star::ncells</definition>
+        <argsstring></argsstring>
+        <name>ncells</name>
+        <briefdescription>
+<para>Number of cells in the profile. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/global.h" line="22" column="7" bodyfile="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/global.h" bodystart="22" bodyend="-1"/>
+        <referencedby refid="star_8c_1ad5607f6cce0e1dfabd08a38eaa1a3798" compoundref="star_8c" startline="41" endline="61">init_stellar_profile_splines</referencedby>
+        <referencedby refid="main_8c_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="main_8c" startline="33" endline="126">main</referencedby>
+        <referencedby refid="io_8c_1a8d9485fd3054e691b09938ba0d4d0ec8" compoundref="io_8c" startline="104" endline="154">read_stellar_profile</referencedby>
+        <referencedby refid="units_8c_1af86fb32334a75c01bd1fd4689b8e118f" compoundref="units_8c" startline="22" endline="62">set_units</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structstar_1a54cc4e813708a93c56465e96269a0fe7" prot="public" static="no" mutable="no">
+        <type>double *</type>
+        <definition>double* star::r</definition>
+        <argsstring></argsstring>
+        <name>r</name>
+        <briefdescription>
+<para>Array with radius values. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/global.h" line="24" column="10" bodyfile="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/global.h" bodystart="24" bodyend="-1"/>
+        <referencedby refid="star_8c_1ad5607f6cce0e1dfabd08a38eaa1a3798" compoundref="star_8c" startline="41" endline="61">init_stellar_profile_splines</referencedby>
+        <referencedby refid="main_8c_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="main_8c" startline="33" endline="126">main</referencedby>
+        <referencedby refid="io_8c_1a8d9485fd3054e691b09938ba0d4d0ec8" compoundref="io_8c" startline="104" endline="154">read_stellar_profile</referencedby>
+        <referencedby refid="units_8c_1af86fb32334a75c01bd1fd4689b8e118f" compoundref="units_8c" startline="22" endline="62">set_units</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structstar_1ab3f45e19f98283cc73f8f890db888dbb" prot="public" static="no" mutable="no">
+        <type>double *</type>
+        <definition>double* star::rho</definition>
+        <argsstring></argsstring>
+        <name>rho</name>
+        <briefdescription>
+<para>Array with density values as a function of radius. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/global.h" line="26" column="10" bodyfile="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/global.h" bodystart="26" bodyend="-1"/>
+        <referencedby refid="star_8c_1ad5607f6cce0e1dfabd08a38eaa1a3798" compoundref="star_8c" startline="41" endline="61">init_stellar_profile_splines</referencedby>
+        <referencedby refid="io_8c_1a8d9485fd3054e691b09938ba0d4d0ec8" compoundref="io_8c" startline="104" endline="154">read_stellar_profile</referencedby>
+        <referencedby refid="units_8c_1af86fb32334a75c01bd1fd4689b8e118f" compoundref="units_8c" startline="22" endline="62">set_units</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structstar_1aa3d46671aba75d6d247013090b96f003" prot="public" static="no" mutable="no">
+        <type>double *</type>
+        <definition>double* star::drhodr</definition>
+        <argsstring></argsstring>
+        <name>drhodr</name>
+        <briefdescription>
+<para>Array with density gradient values as a function of radius. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/global.h" line="28" column="10" bodyfile="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/global.h" bodystart="28" bodyend="-1"/>
+        <referencedby refid="star_8c_1ad5607f6cce0e1dfabd08a38eaa1a3798" compoundref="star_8c" startline="41" endline="61">init_stellar_profile_splines</referencedby>
+        <referencedby refid="io_8c_1a8d9485fd3054e691b09938ba0d4d0ec8" compoundref="io_8c" startline="104" endline="154">read_stellar_profile</referencedby>
+        <referencedby refid="units_8c_1af86fb32334a75c01bd1fd4689b8e118f" compoundref="units_8c" startline="22" endline="62">set_units</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structstar_1a0b482cc62f5872828e9f9b53da186c23" prot="public" static="no" mutable="no">
+        <type>double *</type>
+        <definition>double* star::menc</definition>
+        <argsstring></argsstring>
+        <name>menc</name>
+        <briefdescription>
+<para>Array with enclosed mass as a function of radius. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/global.h" line="30" column="10" bodyfile="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/global.h" bodystart="30" bodyend="-1"/>
+        <referencedby refid="star_8c_1ad5607f6cce0e1dfabd08a38eaa1a3798" compoundref="star_8c" startline="41" endline="61">init_stellar_profile_splines</referencedby>
+        <referencedby refid="main_8c_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="main_8c" startline="33" endline="126">main</referencedby>
+        <referencedby refid="io_8c_1a8d9485fd3054e691b09938ba0d4d0ec8" compoundref="io_8c" startline="104" endline="154">read_stellar_profile</referencedby>
+        <referencedby refid="units_8c_1af86fb32334a75c01bd1fd4689b8e118f" compoundref="units_8c" startline="22" endline="62">set_units</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structstar_1a5065d00361a69ec6809704e3ee2c5ad2" prot="public" static="no" mutable="no">
+        <type>double *</type>
+        <definition>double* star::cs</definition>
+        <argsstring></argsstring>
+        <name>cs</name>
+        <briefdescription>
+<para>Array with sound speed as a function of radius. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/global.h" line="32" column="10" bodyfile="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/global.h" bodystart="32" bodyend="-1"/>
+        <referencedby refid="star_8c_1ad5607f6cce0e1dfabd08a38eaa1a3798" compoundref="star_8c" startline="41" endline="61">init_stellar_profile_splines</referencedby>
+        <referencedby refid="io_8c_1a8d9485fd3054e691b09938ba0d4d0ec8" compoundref="io_8c" startline="104" endline="154">read_stellar_profile</referencedby>
+        <referencedby refid="units_8c_1af86fb32334a75c01bd1fd4689b8e118f" compoundref="units_8c" startline="22" endline="62">set_units</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structstar_1a83c0290c8527de09a6cf98bc33c2b177" prot="public" static="no" mutable="no">
+        <type>double *</type>
+        <definition>double* star::hrho</definition>
+        <argsstring></argsstring>
+        <name>hrho</name>
+        <briefdescription>
+<para>Array with density scale height as a function of radius. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/global.h" line="34" column="10" bodyfile="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/global.h" bodystart="34" bodyend="-1"/>
+        <referencedby refid="star_8c_1ad5607f6cce0e1dfabd08a38eaa1a3798" compoundref="star_8c" startline="41" endline="61">init_stellar_profile_splines</referencedby>
+        <referencedby refid="io_8c_1a8d9485fd3054e691b09938ba0d4d0ec8" compoundref="io_8c" startline="104" endline="154">read_stellar_profile</referencedby>
+        <referencedby refid="units_8c_1af86fb32334a75c01bd1fd4689b8e118f" compoundref="units_8c" startline="22" endline="62">set_units</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Properties of the stellar profile. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/global.h" line="19" column="1" bodyfile="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/global.h" bodystart="19" bodyend="36"/>
+    <listofallmembers>
+      <member refid="structstar_1a5065d00361a69ec6809704e3ee2c5ad2" prot="public" virt="non-virtual"><scope>star</scope><name>cs</name></member>
+      <member refid="structstar_1aa3d46671aba75d6d247013090b96f003" prot="public" virt="non-virtual"><scope>star</scope><name>drhodr</name></member>
+      <member refid="structstar_1a83c0290c8527de09a6cf98bc33c2b177" prot="public" virt="non-virtual"><scope>star</scope><name>hrho</name></member>
+      <member refid="structstar_1a0b482cc62f5872828e9f9b53da186c23" prot="public" virt="non-virtual"><scope>star</scope><name>menc</name></member>
+      <member refid="structstar_1aee104a290f877136a610e2e5d8044fae" prot="public" virt="non-virtual"><scope>star</scope><name>ncells</name></member>
+      <member refid="structstar_1a54cc4e813708a93c56465e96269a0fe7" prot="public" virt="non-virtual"><scope>star</scope><name>r</name></member>
+      <member refid="structstar_1ab3f45e19f98283cc73f8f890db888dbb" prot="public" virt="non-virtual"><scope>star</scope><name>rho</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

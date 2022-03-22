@@ -1,0 +1,143 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="star_8h" kind="file" language="C++">
+    <compoundname>star.h</compoundname>
+    <includes refid="global_8h" local="yes">global.h</includes>
+    <includes local="no">gsl/gsl_spline.h</includes>
+    <includedby refid="main_8c" local="yes">main.c</includedby>
+    <includedby refid="star_8c" local="yes">star.c</includedby>
+    <includedby refid="units_8h" local="yes">units.h</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>global.h</label>
+        <link refid="global_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>star.h</label>
+        <link refid="star_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>hdf5.h</label>
+      </node>
+      <node id="5">
+        <label>math.h</label>
+      </node>
+      <node id="3">
+        <label>gsl/gsl_math.h</label>
+      </node>
+      <node id="4">
+        <label>gsl/gsl_spline.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>main.c</label>
+        <link refid="main_8c"/>
+      </node>
+      <node id="3">
+        <label>star.c</label>
+        <link refid="star_8c"/>
+      </node>
+      <node id="5">
+        <label>units.c</label>
+        <link refid="units_8c"/>
+      </node>
+      <node id="1">
+        <label>star.h</label>
+        <link refid="star_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>units.h</label>
+        <link refid="units_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="star_8h_1ad5607f6cce0e1dfabd08a38eaa1a3798" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int init_stellar_profile_splines</definition>
+        <argsstring>(struct star S)</argsstring>
+        <name>init_stellar_profile_splines</name>
+        <param>
+          <type>struct <ref refid="structstar" kindref="compound">star</ref></type>
+          <declname>S</declname>
+        </param>
+        <briefdescription>
+<para>Uses profile data to initialize GSL splines. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/star.h" line="25" column="5" bodyfile="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/star.c" bodystart="41" bodyend="61" declfile="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/star.h" declline="25" declcolumn="5"/>
+        <references refid="structstar_1a5065d00361a69ec6809704e3ee2c5ad2" compoundref="global_8h" startline="32">star::cs</references>
+        <references refid="structstar_1aa3d46671aba75d6d247013090b96f003" compoundref="global_8h" startline="28">star::drhodr</references>
+        <references refid="structstar_1a83c0290c8527de09a6cf98bc33c2b177" compoundref="global_8h" startline="34">star::hrho</references>
+        <references refid="structstar_1a0b482cc62f5872828e9f9b53da186c23" compoundref="global_8h" startline="30">star::menc</references>
+        <references refid="structstar_1aee104a290f877136a610e2e5d8044fae" compoundref="global_8h" startline="22">star::ncells</references>
+        <references refid="structstar_1a54cc4e813708a93c56465e96269a0fe7" compoundref="global_8h" startline="24">star::r</references>
+        <references refid="structstar_1ab3f45e19f98283cc73f8f890db888dbb" compoundref="global_8h" startline="26">star::rho</references>
+        <references refid="star_8c_1adebc07be0db5cfee6bf35217cc1f8936" compoundref="star_8c" startline="37">spline_cs</references>
+        <references refid="star_8c_1a4c4bdddddcd903509ed2ecf7c9cff218" compoundref="star_8c" startline="33">spline_drhodr</references>
+        <references refid="star_8c_1ad9933c0d0863db02128a37ab15bccd56" compoundref="star_8c" startline="39">spline_hrho</references>
+        <references refid="star_8c_1abb8a871881d465e7625f07eddffa6785" compoundref="star_8c" startline="35">spline_menc</references>
+        <references refid="star_8c_1a78d5a9eaea222c102b5f9ead2eba41ef" compoundref="star_8c" startline="31">spline_rho</references>
+        <referencedby refid="main_8c_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="main_8c" startline="33" endline="126">main</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Copyright<sp/>2021<sp/>Ricardo<sp/>Yarza.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>orbit-integrator</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>orbit-integrator<sp/>is<sp/>free<sp/>software:<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>the<sp/>Free<sp/>Software<sp/>Foundation,<sp/>either<sp/>version<sp/>3<sp/>of<sp/>the<sp/>License,<sp/>or</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/>orbit-integrator<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//<sp/>along<sp/>with<sp/>orbit-integrator.<sp/><sp/>If<sp/>not,<sp/>see<sp/>&lt;https://www.gnu.org/licenses/&gt;.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>STAR_HEADER</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STAR_HEADER</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="global_8h" kindref="compound">global.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;gsl/gsl_spline.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="star_8h_1ad5607f6cce0e1dfabd08a38eaa1a3798" kindref="member">init_stellar_profile_splines</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structstar" kindref="compound">star</ref><sp/>S);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/star.h"/>
+  </compounddef>
+</doxygen>

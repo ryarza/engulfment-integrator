@@ -1,0 +1,174 @@
+\hypertarget{model_8h}{}\doxysection{model.\+h File Reference}
+\label{model_8h}\index{model.h@{model.h}}
+{\ttfamily \#include \char`\"{}global.\+h\char`\"{}}\newline
+Include dependency graph for model.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{model_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=284pt]{model_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structrhs__terms}{rhs\+\_\+terms}}
+\begin{DoxyCompactList}\small\item\em Parameters needed when evaluating the right-\/hand-\/side of the GSL ODE system. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{model_8h_a90c59eea1bc597d21ec511441cc3c925}{jac}} (double t, const double y\mbox{[}$\,$\mbox{]}, double $\ast$dfdy, double dfdt\mbox{[}$\,$\mbox{]}, void $\ast$params)
+\begin{DoxyCompactList}\small\item\em Jacobian of the system of equations. Useful for ODE integrators that require it. Untested! \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{model_8h_abca9d444b78fd82f9cfef8a367142d19}{func}} (double t, const double y\mbox{[}$\,$\mbox{]}, double f\mbox{[}$\,$\mbox{]}, void $\ast$params)
+\begin{DoxyCompactList}\small\item\em Evaluates the vector right-\/hand-\/side of the GSL ODE system. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{model_8h_a5820dd0dc3a4b0513ac690f4408dc410}{init\+\_\+model\+\_\+params}} (struct \mbox{\hyperlink{structparameters}{parameters}} P, struct \mbox{\hyperlink{structstar}{star}} S, struct \mbox{\hyperlink{structunits}{units}} U, struct \mbox{\hyperlink{structrhs__terms}{rhs\+\_\+terms}} $\ast$rhs)
+\begin{DoxyCompactList}\small\item\em Initializes the right-\/hand-\/side parameter struct and copies the required parameters from other structs. Members of this struct are never modified and hold the value they had in the struct they were read from. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{model_8h_a82bb8aa8ea3780f15e983b5c17a4ebb3}{f\+\_\+hydro}} (struct \mbox{\hyperlink{structrhs__terms}{rhs\+\_\+terms}} $\ast$rhs, double rho, double v\+\_\+theta, double menc, double eps\+\_\+rho, double ra)
+\begin{DoxyCompactList}\small\item\em Ram pressure drag force. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{model_8h_aed72b2356c55894dc0a75d5e8d99a536}{f\+\_\+grav}} (struct \mbox{\hyperlink{structrhs__terms}{rhs\+\_\+terms}} $\ast$rhs, double rho, double v\+\_\+theta, double menc, double eps\+\_\+rho, double ra)
+\begin{DoxyCompactList}\small\item\em Gravitational drag force. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{model_8h_a7413b3adbedc8ce3474a78d49a6b9721}{compute\+\_\+flow\+\_\+parameters}} (struct \mbox{\hyperlink{structrhs__terms}{rhs\+\_\+terms}} $\ast$rhs, const double $\ast$y, double menc, double hrho, double $\ast$q, double $\ast$eps\+\_\+rho, double $\ast$rp\+\_\+over\+\_\+ra)
+\begin{DoxyCompactList}\small\item\em Relevant dimensionless flow parameters (mass ratio, density gradient, and ratio between geometrical and gravitational radii) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{model_8h_a7413b3adbedc8ce3474a78d49a6b9721}\label{model_8h_a7413b3adbedc8ce3474a78d49a6b9721}} 
+\index{model.h@{model.h}!compute\_flow\_parameters@{compute\_flow\_parameters}}
+\index{compute\_flow\_parameters@{compute\_flow\_parameters}!model.h@{model.h}}
+\doxysubsubsection{\texorpdfstring{compute\_flow\_parameters()}{compute\_flow\_parameters()}}
+{\footnotesize\ttfamily int compute\+\_\+flow\+\_\+parameters (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structrhs__terms}{rhs\+\_\+terms}} $\ast$}]{rhs,  }\item[{const double $\ast$}]{y,  }\item[{double}]{menc,  }\item[{double}]{hrho,  }\item[{double $\ast$}]{q,  }\item[{double $\ast$}]{eps\+\_\+rho,  }\item[{double $\ast$}]{rp\+\_\+over\+\_\+ra }\end{DoxyParamCaption})}
+
+
+
+Relevant dimensionless flow parameters (mass ratio, density gradient, and ratio between geometrical and gravitational radii) 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{model_8h_a7413b3adbedc8ce3474a78d49a6b9721_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{model_8h_aed72b2356c55894dc0a75d5e8d99a536}\label{model_8h_aed72b2356c55894dc0a75d5e8d99a536}} 
+\index{model.h@{model.h}!f\_grav@{f\_grav}}
+\index{f\_grav@{f\_grav}!model.h@{model.h}}
+\doxysubsubsection{\texorpdfstring{f\_grav()}{f\_grav()}}
+{\footnotesize\ttfamily double f\+\_\+grav (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structrhs__terms}{rhs\+\_\+terms}} $\ast$}]{rhs,  }\item[{double}]{rho,  }\item[{double}]{v\+\_\+theta,  }\item[{double}]{menc,  }\item[{double}]{eps\+\_\+rho,  }\item[{double}]{ra }\end{DoxyParamCaption})}
+
+
+
+Gravitational drag force. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{model_8h_aed72b2356c55894dc0a75d5e8d99a536_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{model_8h_aed72b2356c55894dc0a75d5e8d99a536_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{model_8h_a82bb8aa8ea3780f15e983b5c17a4ebb3}\label{model_8h_a82bb8aa8ea3780f15e983b5c17a4ebb3}} 
+\index{model.h@{model.h}!f\_hydro@{f\_hydro}}
+\index{f\_hydro@{f\_hydro}!model.h@{model.h}}
+\doxysubsubsection{\texorpdfstring{f\_hydro()}{f\_hydro()}}
+{\footnotesize\ttfamily double f\+\_\+hydro (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structrhs__terms}{rhs\+\_\+terms}} $\ast$}]{rhs,  }\item[{double}]{rho,  }\item[{double}]{v\+\_\+theta,  }\item[{double}]{menc,  }\item[{double}]{eps\+\_\+rho,  }\item[{double}]{ra }\end{DoxyParamCaption})}
+
+
+
+Ram pressure drag force. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{model_8h_a82bb8aa8ea3780f15e983b5c17a4ebb3_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{model_8h_a82bb8aa8ea3780f15e983b5c17a4ebb3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{model_8h_abca9d444b78fd82f9cfef8a367142d19}\label{model_8h_abca9d444b78fd82f9cfef8a367142d19}} 
+\index{model.h@{model.h}!func@{func}}
+\index{func@{func}!model.h@{model.h}}
+\doxysubsubsection{\texorpdfstring{func()}{func()}}
+{\footnotesize\ttfamily int func (\begin{DoxyParamCaption}\item[{double}]{t,  }\item[{const double}]{y\mbox{[}$\,$\mbox{]},  }\item[{double}]{f\mbox{[}$\,$\mbox{]},  }\item[{void $\ast$}]{params }\end{DoxyParamCaption})}
+
+
+
+Evaluates the vector right-\/hand-\/side of the GSL ODE system. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{model_8h_abca9d444b78fd82f9cfef8a367142d19_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=195pt]{model_8h_abca9d444b78fd82f9cfef8a367142d19_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{model_8h_a5820dd0dc3a4b0513ac690f4408dc410}\label{model_8h_a5820dd0dc3a4b0513ac690f4408dc410}} 
+\index{model.h@{model.h}!init\_model\_params@{init\_model\_params}}
+\index{init\_model\_params@{init\_model\_params}!model.h@{model.h}}
+\doxysubsubsection{\texorpdfstring{init\_model\_params()}{init\_model\_params()}}
+{\footnotesize\ttfamily int init\+\_\+model\+\_\+params (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structparameters}{parameters}}}]{P,  }\item[{struct \mbox{\hyperlink{structstar}{star}}}]{S,  }\item[{struct \mbox{\hyperlink{structunits}{units}}}]{U,  }\item[{struct \mbox{\hyperlink{structrhs__terms}{rhs\+\_\+terms}} $\ast$}]{rhs }\end{DoxyParamCaption})}
+
+
+
+Initializes the right-\/hand-\/side parameter struct and copies the required parameters from other structs. Members of this struct are never modified and hold the value they had in the struct they were read from. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=293pt]{model_8h_a5820dd0dc3a4b0513ac690f4408dc410_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=267pt]{model_8h_a5820dd0dc3a4b0513ac690f4408dc410_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{model_8h_a90c59eea1bc597d21ec511441cc3c925}\label{model_8h_a90c59eea1bc597d21ec511441cc3c925}} 
+\index{model.h@{model.h}!jac@{jac}}
+\index{jac@{jac}!model.h@{model.h}}
+\doxysubsubsection{\texorpdfstring{jac()}{jac()}}
+{\footnotesize\ttfamily int jac (\begin{DoxyParamCaption}\item[{double}]{t,  }\item[{const double}]{y\mbox{[}$\,$\mbox{]},  }\item[{double $\ast$}]{dfdy,  }\item[{double}]{dfdt\mbox{[}$\,$\mbox{]},  }\item[{void $\ast$}]{params }\end{DoxyParamCaption})}
+
+
+
+Jacobian of the system of equations. Useful for ODE integrators that require it. Untested! 
+

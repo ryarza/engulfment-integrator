@@ -1,0 +1,491 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="io_8c" kind="file" language="C++">
+    <compoundname>io.c</compoundname>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">stdlib.h</includes>
+    <includes local="no">string.h</includes>
+    <includes local="no">ctype.h</includes>
+    <includes refid="io_8h" local="yes">io.h</includes>
+    <includes local="yes">hdf5.h</includes>
+    <includes refid="utils_8h" local="yes">utils.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>io.c</label>
+        <link refid="io_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>io.h</label>
+        <link refid="io_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>stdlib.h</label>
+      </node>
+      <node id="13">
+        <label>utils.h</label>
+        <link refid="utils_8h"/>
+      </node>
+      <node id="7">
+        <label>global.h</label>
+        <link refid="global_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>string.h</label>
+      </node>
+      <node id="11">
+        <label>hdf5.h</label>
+      </node>
+      <node id="10">
+        <label>math.h</label>
+      </node>
+      <node id="5">
+        <label>ctype.h</label>
+      </node>
+      <node id="8">
+        <label>gsl/gsl_math.h</label>
+      </node>
+      <node id="2">
+        <label>stdio.h</label>
+      </node>
+      <node id="12">
+        <label>model.h</label>
+        <link refid="model_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>gsl/gsl_spline.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="io_8c_1a8bd9dd70049fb4e00071d0d73bb8d2a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* trim</definition>
+        <argsstring>(char *s)</argsstring>
+        <name>trim</name>
+        <param>
+          <type>char *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+<para>Removes whitespace from a string. Based on Cholla. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/io.c" line="27" column="6" bodyfile="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/io.c" bodystart="27" bodyend="44"/>
+        <referencedby refid="io_8c_1aa30f39ea8db65e7e2b11e3ddf1636f72" compoundref="io_8c" startline="46" endline="102">parse_params</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="io_8c_1aa30f39ea8db65e7e2b11e3ddf1636f72" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void parse_params</definition>
+        <argsstring>(char *param_file, struct parameters *parms)</argsstring>
+        <name>parse_params</name>
+        <param>
+          <type>char *</type>
+          <declname>param_file</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structparameters" kindref="compound">parameters</ref> *</type>
+          <declname>parms</declname>
+        </param>
+        <briefdescription>
+<para>Reads parameters from a text file. Based on Cholla. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/io.c" line="46" column="6" bodyfile="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/io.c" bodystart="46" bodyend="102"/>
+        <references refid="structparameters_1a222e7500d94731b8efdae777c71ca8d9" compoundref="global_8h" startline="63">parameters::drag_data_path</references>
+        <references refid="structparameters_1a65676f4e46da862a87074caa262f7352" compoundref="global_8h" startline="46">parameters::f_buoyancy</references>
+        <references refid="structparameters_1a44b8f833c7ff07dc990a137b49d306f3" compoundref="global_8h" startline="44">parameters::f_grav</references>
+        <references refid="structparameters_1a6960e6f48d147c12441609628d186b35" compoundref="global_8h" startline="42">parameters::f_hydro</references>
+        <references refid="global_8h_1ae6648cd71a8bd49d58ae8ed33ba910d1" compoundref="global_8h" startline="13">MAXLEN</references>
+        <references refid="structparameters_1a6d652c74fe298f831dd1e8f1b3cecbe2" compoundref="global_8h" startline="56">parameters::mesa_profile_path</references>
+        <references refid="structparameters_1ab5115d22be6204fdc5bbf6445269efa0" compoundref="global_8h" startline="48">parameters::Msb</references>
+        <references refid="structparameters_1ad05bdbed10f508a28eced6b3f2479081" compoundref="global_8h" startline="54">parameters::r0</references>
+        <references refid="structparameters_1a44dd01bc440a7226465b0e38310929b1" compoundref="global_8h" startline="50">parameters::Rsb</references>
+        <references refid="io_8c_1a8bd9dd70049fb4e00071d0d73bb8d2a0" compoundref="io_8c" startline="27" endline="44">trim</references>
+        <references refid="structparameters_1ab8ff76e9250a51d11724566a9fe840ca" compoundref="global_8h" startline="61">parameters::use_drag_coefficients</references>
+        <referencedby refid="main_8c_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="main_8c" startline="33" endline="126">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="io_8c_1a8d9485fd3054e691b09938ba0d4d0ec8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int read_stellar_profile</definition>
+        <argsstring>(struct parameters P, struct star *S)</argsstring>
+        <name>read_stellar_profile</name>
+        <param>
+          <type>struct <ref refid="structparameters" kindref="compound">parameters</ref></type>
+          <declname>P</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structstar" kindref="compound">star</ref> *</type>
+          <declname>S</declname>
+        </param>
+        <briefdescription>
+<para>Reads stellar profile from an HDF5 file. The path is contained in the parameter struct, and the properties of the profile are stored in the star struct. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/io.c" line="104" column="5" bodyfile="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/io.c" bodystart="104" bodyend="154"/>
+        <references refid="structstar_1a5065d00361a69ec6809704e3ee2c5ad2" compoundref="global_8h" startline="32">star::cs</references>
+        <references refid="structstar_1aa3d46671aba75d6d247013090b96f003" compoundref="global_8h" startline="28">star::drhodr</references>
+        <references refid="structstar_1a83c0290c8527de09a6cf98bc33c2b177" compoundref="global_8h" startline="34">star::hrho</references>
+        <references refid="structstar_1a0b482cc62f5872828e9f9b53da186c23" compoundref="global_8h" startline="30">star::menc</references>
+        <references refid="structparameters_1a6d652c74fe298f831dd1e8f1b3cecbe2" compoundref="global_8h" startline="56">parameters::mesa_profile_path</references>
+        <references refid="structstar_1aee104a290f877136a610e2e5d8044fae" compoundref="global_8h" startline="22">star::ncells</references>
+        <references refid="structstar_1a54cc4e813708a93c56465e96269a0fe7" compoundref="global_8h" startline="24">star::r</references>
+        <references refid="structstar_1ab3f45e19f98283cc73f8f890db888dbb" compoundref="global_8h" startline="26">star::rho</references>
+        <referencedby refid="main_8c_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="main_8c" startline="33" endline="126">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="io_8c_1ad265c996dc61a0416b2705dddd679087" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int write_scalars</definition>
+        <argsstring>(struct units U, struct parameters P)</argsstring>
+        <name>write_scalars</name>
+        <param>
+          <type>struct <ref refid="structunits" kindref="compound">units</ref></type>
+          <declname>U</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structparameters" kindref="compound">parameters</ref></type>
+          <declname>P</declname>
+        </param>
+        <briefdescription>
+<para>One-time output operation that saves the simulation units and parameters. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/io.c" line="156" column="5" bodyfile="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/io.c" bodystart="156" bodyend="171"/>
+        <references refid="structparameters_1a65676f4e46da862a87074caa262f7352" compoundref="global_8h" startline="46">parameters::f_buoyancy</references>
+        <references refid="structparameters_1a44b8f833c7ff07dc990a137b49d306f3" compoundref="global_8h" startline="44">parameters::f_grav</references>
+        <references refid="structparameters_1a6960e6f48d147c12441609628d186b35" compoundref="global_8h" startline="42">parameters::f_hydro</references>
+        <references refid="structunits_1a195638052cff6af8ae117e2774b79551" compoundref="global_8h" startline="73">units::l_unit</references>
+        <references refid="structunits_1a658fc25ca175a048deec5ea31f66cf94" compoundref="global_8h" startline="71">units::m_unit</references>
+        <references refid="structparameters_1a6d652c74fe298f831dd1e8f1b3cecbe2" compoundref="global_8h" startline="56">parameters::mesa_profile_path</references>
+        <references refid="structparameters_1ab5115d22be6204fdc5bbf6445269efa0" compoundref="global_8h" startline="48">parameters::Msb</references>
+        <references refid="structparameters_1a44dd01bc440a7226465b0e38310929b1" compoundref="global_8h" startline="50">parameters::Rsb</references>
+        <references refid="structunits_1a70648d8ac5326c3a89f1a25e9216d71e" compoundref="global_8h" startline="75">units::t_unit</references>
+        <references refid="structparameters_1ab8ff76e9250a51d11724566a9fe840ca" compoundref="global_8h" startline="61">parameters::use_drag_coefficients</references>
+        <referencedby refid="main_8c_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="main_8c" startline="33" endline="126">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="io_8c_1af789b6233c9122901decdf3fe596d917" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int write_output</definition>
+        <argsstring>(struct units U, struct rhs_terms *rhs, double t, double *y)</argsstring>
+        <name>write_output</name>
+        <param>
+          <type>struct <ref refid="structunits" kindref="compound">units</ref></type>
+          <declname>U</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structrhs__terms" kindref="compound">rhs_terms</ref> *</type>
+          <declname>rhs</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>Writes values of important variables for one step into the output text file. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/io.c" line="173" column="5" bodyfile="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/io.c" bodystart="173" bodyend="204"/>
+        <references refid="global_8h_1a8c5a521dd2cb882da9a99937f79f5837" compoundref="star_8c" startline="27">acc_cs</references>
+        <references refid="global_8h_1a4f47520db4595782a0ea2d8dbceb7f48" compoundref="star_8c" startline="29">acc_hrho</references>
+        <references refid="global_8h_1a7b76ae9f39a443e206a410c051e557fe" compoundref="star_8c" startline="25">acc_menc</references>
+        <references refid="global_8h_1acf79bf70f986b203fe7fd8eb3e91a634" compoundref="star_8c" startline="21">acc_rho</references>
+        <references refid="structrhs__terms_1a63081a901688a91090165ce0f54aa353" compoundref="model_8h" startline="43">rhs_terms::cg_data</references>
+        <references refid="model_8c_1a7413b3adbedc8ce3474a78d49a6b9721" compoundref="model_8c" startline="126" endline="138">compute_flow_parameters</references>
+        <references refid="structrhs__terms_1aebefffdf507433a4e958bf302c49df65" compoundref="model_8h" startline="45">rhs_terms::cp_data</references>
+        <references refid="structrhs__terms_1a303e005485ab20b9778d064fd43ded3f" compoundref="model_8h" startline="47">rhs_terms::drag_data_dims</references>
+        <references refid="model_8c_1a52123df6ff7716db1b9bc37a231b9705" compoundref="model_8c" startline="104" endline="113">f_grav</references>
+        <references refid="structrhs__terms_1abe610e4b414ddeede219782c0248c991" compoundref="model_8h" startline="29">rhs_terms::f_grav</references>
+        <references refid="model_8c_1af133e6d3b99c19b9b1ffba51e05adc50" compoundref="model_8c" startline="115" endline="124">f_hydro</references>
+        <references refid="structrhs__terms_1ac13ca99dc6b23ea6aefc0b4d8c063341" compoundref="model_8h" startline="27">rhs_terms::f_hydro</references>
+        <references refid="structrhs__terms_1a8ad51f73f9fc24cb4b878d4ac5361cc7" compoundref="model_8h" startline="51">rhs_terms::log_eps_rho_vals</references>
+        <references refid="structrhs__terms_1a04fab25e61816a44ef263ff83e046519" compoundref="model_8h" startline="49">rhs_terms::log_q_vals</references>
+        <references refid="structrhs__terms_1a77180908c43f26b69a47d40d2c081a92" compoundref="model_8h" startline="53">rhs_terms::log_rp_over_ra_vals</references>
+        <references refid="global_8h_1adebc07be0db5cfee6bf35217cc1f8936" compoundref="star_8c" startline="37">spline_cs</references>
+        <references refid="global_8h_1ad9933c0d0863db02128a37ab15bccd56" compoundref="star_8c" startline="39">spline_hrho</references>
+        <references refid="global_8h_1abb8a871881d465e7625f07eddffa6785" compoundref="star_8c" startline="35">spline_menc</references>
+        <references refid="global_8h_1a78d5a9eaea222c102b5f9ead2eba41ef" compoundref="star_8c" startline="31">spline_rho</references>
+        <references refid="utils_8c_1aca537472aac6353e383c279ab1cff9ff" compoundref="utils_8c" startline="51" endline="89">trilinear_interp</references>
+        <references refid="structrhs__terms_1ac364a399b048a1b67d986844d0fc7c99" compoundref="model_8h" startline="41">rhs_terms::use_drag_coefficients</references>
+        <referencedby refid="main_8c_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="main_8c" startline="33" endline="126">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="io_8c_1ad2753c8a41f8a7a0f8b707fe3316f2dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void h5safecall</definition>
+        <argsstring>(herr_t status)</argsstring>
+        <name>h5safecall</name>
+        <param>
+          <type>herr_t</type>
+          <declname>status</declname>
+        </param>
+        <briefdescription>
+<para>Exits if HDF5 operation was not successful. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/io.c" line="206" column="6" bodyfile="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/io.c" bodystart="206" bodyend="208"/>
+        <referencedby refid="model_8c_1a5820dd0dc3a4b0513ac690f4408dc410" compoundref="model_8c" startline="199" endline="317">init_model_params</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Copyright<sp/>2021<sp/>Ricardo<sp/>Yarza.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>orbit-integrator</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>orbit-integrator<sp/>is<sp/>free<sp/>software:<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>the<sp/>Free<sp/>Software<sp/>Foundation,<sp/>either<sp/>version<sp/>3<sp/>of<sp/>the<sp/>License,<sp/>or</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/>orbit-integrator<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//<sp/>along<sp/>with<sp/>orbit-integrator.<sp/><sp/>If<sp/>not,<sp/>see<sp/>&lt;https://www.gnu.org/licenses/&gt;.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;ctype.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="io_8h" kindref="compound">io.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;hdf5.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="utils_8h" kindref="compound">utils.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="io_8c_1a8bd9dd70049fb4e00071d0d73bb8d2a0" refkind="member"><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="io_8c_1a8bd9dd70049fb4e00071d0d73bb8d2a0" kindref="member">trim</ref><sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>s)</highlight></codeline>
+<codeline lineno="28"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Initialize<sp/>start,<sp/>end<sp/>pointers<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*s1<sp/>=<sp/>s,<sp/>*s2<sp/>=<sp/>&amp;s[strlen<sp/>(s)<sp/>-<sp/>1];</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Trim<sp/>and<sp/>delimit<sp/>right<sp/>side<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(<sp/>(isspace<sp/>(*s2))<sp/>&amp;&amp;<sp/>(s2<sp/>&gt;=<sp/>s1)<sp/>)</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>s2--;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/>*(s2+1)<sp/>=<sp/></highlight><highlight class="charliteral">&apos;\0&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Trim<sp/>left<sp/>side<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(<sp/>(isspace<sp/>(*s1))<sp/>&amp;&amp;<sp/>(s1<sp/>&lt;<sp/>s2)<sp/>)</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>s1++;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Copy<sp/>finished<sp/>string<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/>strcpy<sp/>(s,<sp/>s1);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>s;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="io_8c_1aa30f39ea8db65e7e2b11e3ddf1636f72" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="io_8c_1aa30f39ea8db65e7e2b11e3ddf1636f72" kindref="member">parse_params</ref><sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*param_file,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structparameters" kindref="compound">parameters</ref><sp/>*<sp/>parms)</highlight></codeline>
+<codeline lineno="47"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*s,<sp/>buff[<ref refid="global_8h_1ae6648cd71a8bd49d58ae8ed33ba910d1" kindref="member">MAXLEN</ref>-1];</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/>FILE<sp/>*fp<sp/>=<sp/>fopen<sp/>(param_file,<sp/></highlight><highlight class="stringliteral">&quot;r&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(fp<sp/>==<sp/>NULL){</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>perror(</highlight><highlight class="stringliteral">&quot;Couldn&apos;t<sp/>load<sp/>parameter<sp/>file&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>exit(-1);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Read<sp/>next<sp/>line<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>((s<sp/>=<sp/>fgets<sp/>(buff,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal"><sp/>buff,<sp/>fp))<sp/>!=<sp/>NULL)</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Skip<sp/>blank<sp/>lines<sp/>and<sp/>comments<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(buff[0]<sp/>==<sp/></highlight><highlight class="charliteral">&apos;\n&apos;</highlight><highlight class="normal"><sp/>||<sp/>buff[0]<sp/>==<sp/></highlight><highlight class="charliteral">&apos;#&apos;</highlight><highlight class="normal">)<sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Parse<sp/>name/value<sp/>pair<sp/>from<sp/>line<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>name[<ref refid="global_8h_1ae6648cd71a8bd49d58ae8ed33ba910d1" kindref="member">MAXLEN</ref>],<sp/>value[<ref refid="global_8h_1ae6648cd71a8bd49d58ae8ed33ba910d1" kindref="member">MAXLEN</ref>];</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>s<sp/>=<sp/>strtok<sp/>(buff,<sp/></highlight><highlight class="stringliteral">&quot;=&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(s==NULL)</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>strncpy<sp/>(name,<sp/>s,<sp/><ref refid="global_8h_1ae6648cd71a8bd49d58ae8ed33ba910d1" kindref="member">MAXLEN</ref>-1);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>s<sp/>=<sp/>strtok<sp/>(NULL,<sp/></highlight><highlight class="stringliteral">&quot;=&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(s==NULL)</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>strncpy<sp/>(value,<sp/>s,<sp/><ref refid="global_8h_1ae6648cd71a8bd49d58ae8ed33ba910d1" kindref="member">MAXLEN</ref>-1);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="io_8c_1a8bd9dd70049fb4e00071d0d73bb8d2a0" kindref="member">trim</ref><sp/>(value);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="io_8c_1a8bd9dd70049fb4e00071d0d73bb8d2a0" kindref="member">trim</ref><sp/>(name);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>printf(&quot;%s<sp/>%s\n&quot;,<sp/>name,<sp/>value);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Copy<sp/>into<sp/>correct<sp/>entry<sp/>in<sp/>parameters<sp/>struct<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(strcmp(name,<sp/></highlight><highlight class="stringliteral">&quot;Msb&quot;</highlight><highlight class="normal">)==0)</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>parms-&gt;<ref refid="structparameters_1ab5115d22be6204fdc5bbf6445269efa0" kindref="member">Msb</ref><sp/>=<sp/>atof(value);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(strcmp(name,<sp/></highlight><highlight class="stringliteral">&quot;Rsb&quot;</highlight><highlight class="normal">)==0)</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>parms-&gt;<ref refid="structparameters_1a44dd01bc440a7226465b0e38310929b1" kindref="member">Rsb</ref><sp/>=<sp/>atof(value);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(strcmp(name,<sp/></highlight><highlight class="stringliteral">&quot;f_hydro&quot;</highlight><highlight class="normal">)==0)</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>parms-&gt;<ref refid="structparameters_1a6960e6f48d147c12441609628d186b35" kindref="member">f_hydro</ref><sp/>=<sp/>atoi(value);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(strcmp(name,<sp/></highlight><highlight class="stringliteral">&quot;f_buoyancy&quot;</highlight><highlight class="normal">)==0)</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>parms-&gt;<ref refid="structparameters_1a65676f4e46da862a87074caa262f7352" kindref="member">f_buoyancy</ref><sp/>=<sp/>atoi(value);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(strcmp(name,<sp/></highlight><highlight class="stringliteral">&quot;f_grav&quot;</highlight><highlight class="normal">)==0)</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>parms-&gt;<ref refid="structparameters_1a44b8f833c7ff07dc990a137b49d306f3" kindref="member">f_grav</ref><sp/>=<sp/>atoi(value);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(strcmp(name,<sp/></highlight><highlight class="stringliteral">&quot;r0&quot;</highlight><highlight class="normal">)==0)</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>parms-&gt;<ref refid="structparameters_1ad05bdbed10f508a28eced6b3f2479081" kindref="member">r0</ref><sp/>=<sp/>atof(value);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(strcmp(name,<sp/></highlight><highlight class="stringliteral">&quot;mesa_profile_path&quot;</highlight><highlight class="normal">)==0)</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>strncpy<sp/>(parms-&gt;<ref refid="structparameters_1a6d652c74fe298f831dd1e8f1b3cecbe2" kindref="member">mesa_profile_path</ref>,<sp/>value,<sp/><ref refid="global_8h_1ae6648cd71a8bd49d58ae8ed33ba910d1" kindref="member">MAXLEN</ref>);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(strcmp(name,<sp/></highlight><highlight class="stringliteral">&quot;drag_data_path&quot;</highlight><highlight class="normal">)==0)</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>strncpy<sp/>(parms-&gt;<ref refid="structparameters_1a222e7500d94731b8efdae777c71ca8d9" kindref="member">drag_data_path</ref>,<sp/>value,<sp/><ref refid="global_8h_1ae6648cd71a8bd49d58ae8ed33ba910d1" kindref="member">MAXLEN</ref>);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(strcmp(name,<sp/></highlight><highlight class="stringliteral">&quot;use_drag_coefficients&quot;</highlight><highlight class="normal">)==0)</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>parms-&gt;<ref refid="structparameters_1ab8ff76e9250a51d11724566a9fe840ca" kindref="member">use_drag_coefficients</ref><sp/>=<sp/>atoi(value);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>printf<sp/>(</highlight><highlight class="stringliteral">&quot;WARNING:<sp/>%s/%s:<sp/>Unknown<sp/>parameter/value<sp/>pair!\n&quot;</highlight><highlight class="normal">,<sp/>name,<sp/>value);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Close<sp/>file<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/>fclose<sp/>(fp);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104" refid="io_8c_1a8d9485fd3054e691b09938ba0d4d0ec8" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="io_8c_1a8d9485fd3054e691b09938ba0d4d0ec8" kindref="member">read_stellar_profile</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structparameters" kindref="compound">parameters</ref><sp/>P,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structstar" kindref="compound">star</ref><sp/>*S){</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/>hid_t<sp/>file_id,<sp/>dataset_id;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/>herr_t<sp/>status;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/>hid_t<sp/>attr;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Open<sp/>file</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/>file_id<sp/>=<sp/>H5Fopen(P.<ref refid="structparameters_1a6d652c74fe298f831dd1e8f1b3cecbe2" kindref="member">mesa_profile_path</ref>,<sp/>H5F_ACC_RDONLY,<sp/>H5P_DEFAULT);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Get<sp/>number<sp/>of<sp/>cells</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/>attr<sp/>=<sp/>H5Aopen(file_id,<sp/></highlight><highlight class="stringliteral">&quot;ncells&quot;</highlight><highlight class="normal">,<sp/>H5P_DEFAULT);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/>status<sp/><sp/>=<sp/>H5Aread(attr,<sp/>H5T_NATIVE_INT,<sp/>&amp;S-&gt;<ref refid="structstar_1aee104a290f877136a610e2e5d8044fae" kindref="member">ncells</ref>);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/>status<sp/>=<sp/>H5Aclose(attr);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Allocate<sp/>variables<sp/>along<sp/>profile</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/>S-&gt;<ref refid="structstar_1a54cc4e813708a93c56465e96269a0fe7" kindref="member">r</ref><sp/>=<sp/>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*)<sp/>malloc(S-&gt;<ref refid="structstar_1aee104a290f877136a610e2e5d8044fae" kindref="member">ncells</ref><sp/>*<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/>S-&gt;<ref refid="structstar_1ab3f45e19f98283cc73f8f890db888dbb" kindref="member">rho</ref><sp/>=<sp/>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*)<sp/>malloc(S-&gt;<ref refid="structstar_1aee104a290f877136a610e2e5d8044fae" kindref="member">ncells</ref><sp/>*<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/>S-&gt;<ref refid="structstar_1aa3d46671aba75d6d247013090b96f003" kindref="member">drhodr</ref><sp/>=<sp/>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*)<sp/>malloc(S-&gt;<ref refid="structstar_1aee104a290f877136a610e2e5d8044fae" kindref="member">ncells</ref><sp/>*<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/>S-&gt;<ref refid="structstar_1a0b482cc62f5872828e9f9b53da186c23" kindref="member">menc</ref><sp/>=<sp/>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*)<sp/>malloc(S-&gt;<ref refid="structstar_1aee104a290f877136a610e2e5d8044fae" kindref="member">ncells</ref><sp/>*<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/>S-&gt;<ref refid="structstar_1a5065d00361a69ec6809704e3ee2c5ad2" kindref="member">cs</ref><sp/>=<sp/>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*)<sp/>malloc(S-&gt;<ref refid="structstar_1aee104a290f877136a610e2e5d8044fae" kindref="member">ncells</ref><sp/>*<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/>S-&gt;<ref refid="structstar_1a83c0290c8527de09a6cf98bc33c2b177" kindref="member">hrho</ref><sp/>=<sp/>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*)<sp/>malloc(S-&gt;<ref refid="structstar_1aee104a290f877136a610e2e5d8044fae" kindref="member">ncells</ref><sp/>*<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Load<sp/>each<sp/>variable</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/>dataset_id<sp/>=<sp/>H5Dopen2(file_id,<sp/></highlight><highlight class="stringliteral">&quot;/r&quot;</highlight><highlight class="normal">,<sp/>H5P_DEFAULT);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/>status<sp/>=<sp/>H5Dread(dataset_id,<sp/>H5T_NATIVE_DOUBLE,<sp/>H5S_ALL,<sp/>H5S_ALL,<sp/>H5P_DEFAULT,<sp/>S-&gt;<ref refid="structstar_1a54cc4e813708a93c56465e96269a0fe7" kindref="member">r</ref>);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>status<sp/>!=<sp/>0)<sp/>printf(</highlight><highlight class="stringliteral">&quot;Couldn&apos;t<sp/>read<sp/>r<sp/>from<sp/>profile\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/>dataset_id<sp/>=<sp/>H5Dopen2(file_id,<sp/></highlight><highlight class="stringliteral">&quot;/rho&quot;</highlight><highlight class="normal">,<sp/>H5P_DEFAULT);</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/>status<sp/>=<sp/>H5Dread(dataset_id,<sp/>H5T_NATIVE_DOUBLE,<sp/>H5S_ALL,<sp/>H5S_ALL,<sp/>H5P_DEFAULT,<sp/>S-&gt;<ref refid="structstar_1ab3f45e19f98283cc73f8f890db888dbb" kindref="member">rho</ref>);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/>dataset_id<sp/>=<sp/>H5Dopen2(file_id,<sp/></highlight><highlight class="stringliteral">&quot;/drhodr&quot;</highlight><highlight class="normal">,<sp/>H5P_DEFAULT);</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/>status<sp/>=<sp/>H5Dread(dataset_id,<sp/>H5T_NATIVE_DOUBLE,<sp/>H5S_ALL,<sp/>H5S_ALL,<sp/>H5P_DEFAULT,<sp/>S-&gt;<ref refid="structstar_1aa3d46671aba75d6d247013090b96f003" kindref="member">drhodr</ref>);</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/>dataset_id<sp/>=<sp/>H5Dopen2(file_id,<sp/></highlight><highlight class="stringliteral">&quot;/menc&quot;</highlight><highlight class="normal">,<sp/>H5P_DEFAULT);</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/>status<sp/>=<sp/>H5Dread(dataset_id,<sp/>H5T_NATIVE_DOUBLE,<sp/>H5S_ALL,<sp/>H5S_ALL,<sp/>H5P_DEFAULT,<sp/>S-&gt;<ref refid="structstar_1a0b482cc62f5872828e9f9b53da186c23" kindref="member">menc</ref>);</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/>dataset_id<sp/>=<sp/>H5Dopen2(file_id,<sp/></highlight><highlight class="stringliteral">&quot;/cs&quot;</highlight><highlight class="normal">,<sp/>H5P_DEFAULT);</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/>status<sp/>=<sp/>H5Dread(dataset_id,<sp/>H5T_NATIVE_DOUBLE,<sp/>H5S_ALL,<sp/>H5S_ALL,<sp/>H5P_DEFAULT,<sp/>S-&gt;<ref refid="structstar_1a5065d00361a69ec6809704e3ee2c5ad2" kindref="member">cs</ref>);</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/>dataset_id<sp/>=<sp/>H5Dopen2(file_id,<sp/></highlight><highlight class="stringliteral">&quot;/hrho&quot;</highlight><highlight class="normal">,<sp/>H5P_DEFAULT);</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/>status<sp/>=<sp/>H5Dread(dataset_id,<sp/>H5T_NATIVE_DOUBLE,<sp/>H5S_ALL,<sp/>H5S_ALL,<sp/>H5P_DEFAULT,<sp/>S-&gt;<ref refid="structstar_1a83c0290c8527de09a6cf98bc33c2b177" kindref="member">hrho</ref>);</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Close<sp/>the<sp/>dataset</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/>status<sp/>=<sp/>H5Dclose(dataset_id);</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Close<sp/>the<sp/>file</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/>status<sp/>=<sp/>H5Fclose(file_id);</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156" refid="io_8c_1ad265c996dc61a0416b2705dddd679087" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="io_8c_1ad265c996dc61a0416b2705dddd679087" kindref="member">write_scalars</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structunits" kindref="compound">units</ref><sp/>U,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structparameters" kindref="compound">parameters</ref><sp/>P){</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/>FILE<sp/>*fp;</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/>fp<sp/>=<sp/>fopen(</highlight><highlight class="stringliteral">&quot;scalars.txt&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;w+&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>fp<sp/>==<sp/>NULL<sp/>){</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/>perror(</highlight><highlight class="stringliteral">&quot;Couldn&apos;t<sp/>open<sp/>file<sp/>to<sp/>write<sp/>scalars&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/>exit(-1);</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/>fprintf(fp,<sp/></highlight><highlight class="stringliteral">&quot;%22s<sp/>%22s<sp/>%22s<sp/>%22s<sp/>%22s<sp/>%22s<sp/>%22s<sp/>%22s<sp/>%22s<sp/>%100s\n&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;l_unit&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;t_unit&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;m_unit&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Msb&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Rsb&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;f_hydro&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;f_grav&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;f_buoyancy&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;use_drag_coefficients&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;profile_path&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/>fprintf(fp,<sp/></highlight><highlight class="stringliteral">&quot;%22.15e<sp/>%22.15e<sp/>%22.15e<sp/>%22.15e<sp/>%22.15e<sp/>%22i<sp/>%22i<sp/>%22i<sp/>%22i<sp/>%100s\n&quot;</highlight><highlight class="normal">,<sp/>U.<ref refid="structunits_1a195638052cff6af8ae117e2774b79551" kindref="member">l_unit</ref>,<sp/>U.<ref refid="structunits_1a70648d8ac5326c3a89f1a25e9216d71e" kindref="member">t_unit</ref>,<sp/>U.<ref refid="structunits_1a658fc25ca175a048deec5ea31f66cf94" kindref="member">m_unit</ref>,<sp/>P.<ref refid="structparameters_1ab5115d22be6204fdc5bbf6445269efa0" kindref="member">Msb</ref>,<sp/>P.<ref refid="structparameters_1a44dd01bc440a7226465b0e38310929b1" kindref="member">Rsb</ref>,<sp/>P.<ref refid="structparameters_1a6960e6f48d147c12441609628d186b35" kindref="member">f_hydro</ref>,<sp/>P.<ref refid="structparameters_1a44b8f833c7ff07dc990a137b49d306f3" kindref="member">f_grav</ref>,<sp/>P.<ref refid="structparameters_1a65676f4e46da862a87074caa262f7352" kindref="member">f_buoyancy</ref>,<sp/>P.<ref refid="structparameters_1ab8ff76e9250a51d11724566a9fe840ca" kindref="member">use_drag_coefficients</ref>,<sp/>P.<ref refid="structparameters_1a6d652c74fe298f831dd1e8f1b3cecbe2" kindref="member">mesa_profile_path</ref>);</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/>fclose(fp);</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="171"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="173" refid="io_8c_1af789b6233c9122901decdf3fe596d917" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="io_8c_1af789b6233c9122901decdf3fe596d917" kindref="member">write_output</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structunits" kindref="compound">units</ref><sp/>U,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structrhs__terms" kindref="compound">rhs_terms</ref><sp/>*rhs,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>t,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*y){</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/>FILE<sp/>*fp;</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>menc<sp/>=<sp/>gsl_spline_eval(<ref refid="global_8h_1abb8a871881d465e7625f07eddffa6785" kindref="member">spline_menc</ref>,<sp/>y[0],<sp/><ref refid="global_8h_1a7b76ae9f39a443e206a410c051e557fe" kindref="member">acc_menc</ref>);</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>rho<sp/>=<sp/>gsl_spline_eval(<ref refid="global_8h_1a78d5a9eaea222c102b5f9ead2eba41ef" kindref="member">spline_rho</ref>,<sp/>y[0],<sp/><ref refid="global_8h_1acf79bf70f986b203fe7fd8eb3e91a634" kindref="member">acc_rho</ref>);</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>hrho<sp/>=<sp/>gsl_spline_eval(<ref refid="global_8h_1ad9933c0d0863db02128a37ab15bccd56" kindref="member">spline_hrho</ref>,<sp/>y[0],<sp/><ref refid="global_8h_1a4f47520db4595782a0ea2d8dbceb7f48" kindref="member">acc_hrho</ref>);</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>cs<sp/>=<sp/>gsl_spline_eval(<ref refid="global_8h_1adebc07be0db5cfee6bf35217cc1f8936" kindref="member">spline_cs</ref>,<sp/>y[0],<sp/><ref refid="global_8h_1a8c5a521dd2cb882da9a99937f79f5837" kindref="member">acc_cs</ref>);</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>v_theta<sp/>=<sp/>y[0]<sp/>*<sp/>y[3];</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>cg<sp/>=<sp/>1.;</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>cp<sp/>=<sp/>0.25;</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>mach<sp/>=<sp/>fabs(v_theta<sp/>/<sp/>cs);</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>q,<sp/>eps_rho,<sp/>rp_over_ra;</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><ref refid="model_8c_1a7413b3adbedc8ce3474a78d49a6b9721" kindref="member">compute_flow_parameters</ref>(rhs,<sp/>y,<sp/>menc,<sp/>hrho,<sp/>&amp;q,<sp/>&amp;eps_rho,<sp/>&amp;rp_over_ra);</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>rhs-&gt;<ref refid="structrhs__terms_1ac364a399b048a1b67d986844d0fc7c99" kindref="member">use_drag_coefficients</ref><sp/>==<sp/>1<sp/>)</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/>cg<sp/>=<sp/><ref refid="utils_8c_1aca537472aac6353e383c279ab1cff9ff" kindref="member">trilinear_interp</ref>(rhs-&gt;<ref refid="structrhs__terms_1a63081a901688a91090165ce0f54aa353" kindref="member">cg_data</ref>,<sp/>rhs-&gt;<ref refid="structrhs__terms_1a04fab25e61816a44ef263ff83e046519" kindref="member">log_q_vals</ref>,<sp/>rhs-&gt;<ref refid="structrhs__terms_1a8ad51f73f9fc24cb4b878d4ac5361cc7" kindref="member">log_eps_rho_vals</ref>,<sp/>rhs-&gt;<ref refid="structrhs__terms_1a77180908c43f26b69a47d40d2c081a92" kindref="member">log_rp_over_ra_vals</ref>,<sp/>rhs-&gt;<ref refid="structrhs__terms_1a303e005485ab20b9778d064fd43ded3f" kindref="member">drag_data_dims</ref>,<sp/>log10(q),<sp/>log10(eps_rho),<sp/>log10(rp_over_ra));</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/>cp<sp/>=<sp/><ref refid="utils_8c_1aca537472aac6353e383c279ab1cff9ff" kindref="member">trilinear_interp</ref>(rhs-&gt;<ref refid="structrhs__terms_1aebefffdf507433a4e958bf302c49df65" kindref="member">cp_data</ref>,<sp/>rhs-&gt;<ref refid="structrhs__terms_1a04fab25e61816a44ef263ff83e046519" kindref="member">log_q_vals</ref>,<sp/>rhs-&gt;<ref refid="structrhs__terms_1a8ad51f73f9fc24cb4b878d4ac5361cc7" kindref="member">log_eps_rho_vals</ref>,<sp/>rhs-&gt;<ref refid="structrhs__terms_1a77180908c43f26b69a47d40d2c081a92" kindref="member">log_rp_over_ra_vals</ref>,<sp/>rhs-&gt;<ref refid="structrhs__terms_1a303e005485ab20b9778d064fd43ded3f" kindref="member">drag_data_dims</ref>,<sp/>log10(q),<sp/>log10(eps_rho),<sp/>log10(rp_over_ra));</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>forceg<sp/>=<sp/>0.;</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>forcep<sp/>=<sp/>0.;</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>rhs-&gt;<ref refid="structrhs__terms_1abe610e4b414ddeede219782c0248c991" kindref="member">f_grav</ref><sp/>&amp;&amp;<sp/>mach<sp/>&gt;<sp/>0.25<sp/>)<sp/>forceg<sp/>=<sp/><ref refid="model_8c_1a52123df6ff7716db1b9bc37a231b9705" kindref="member">f_grav</ref>(rhs,<sp/>rho,<sp/>v_theta,<sp/>q,<sp/>eps_rho,<sp/>rp_over_ra);</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>rhs-&gt;<ref refid="structrhs__terms_1ac13ca99dc6b23ea6aefc0b4d8c063341" kindref="member">f_hydro</ref>)<sp/>forcep<sp/>=<sp/><ref refid="model_8c_1af133e6d3b99c19b9b1ffba51e05adc50" kindref="member">f_hydro</ref>(rhs,<sp/>rho,<sp/>v_theta,<sp/>q,<sp/>eps_rho,<sp/>rp_over_ra);</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/>fp<sp/>=<sp/>fopen(</highlight><highlight class="stringliteral">&quot;output.txt&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;a+&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/>fprintf(fp,<sp/></highlight><highlight class="stringliteral">&quot;%22.15e<sp/>%22.15e<sp/>%22.15e<sp/>%22.15e<sp/>%22.15e<sp/>%22.15e<sp/>%22.15e<sp/>%22.15e<sp/>%22.15e<sp/>%22.15e<sp/>%22.15e<sp/>%22.15e<sp/>%22.15e<sp/>%22.15e\n&quot;</highlight><highlight class="normal">,<sp/>t,<sp/>y[0],<sp/>y[1],<sp/>y[2],<sp/>y[3],<sp/>menc,<sp/>rho,<sp/>q,<sp/>eps_rho,<sp/>rp_over_ra,<sp/>cp,<sp/>cg,<sp/>forceg,<sp/>forcep);</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/>fclose(fp);</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="204"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"></highlight></codeline>
+<codeline lineno="206" refid="global_8h_1ad2753c8a41f8a7a0f8b707fe3316f2dd" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="io_8c_1ad2753c8a41f8a7a0f8b707fe3316f2dd" kindref="member">h5safecall</ref>(herr_t<sp/>status){</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>status<sp/>!=<sp/>0<sp/>)<sp/>exit(-1);</highlight></codeline>
+<codeline lineno="208"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/ryarza/Downloads/research/planets-ce/code/engulfment-integrator/src/io.c"/>
+  </compounddef>
+</doxygen>
