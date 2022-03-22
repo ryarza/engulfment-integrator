@@ -1,0 +1,23 @@
+# Mass of the embedded object in grams
+Msb = 1.9e+30
+
+# Mass of the embedded object in cm
+Rsb = 7.150e9
+
+# Initial position in simulation units (Rstar by default)
+r0 = 9.000e-1
+
+# Filenames for stellar profile
+mesa_profile_path = stellar_profiles/point.h5
+
+# Whether to include ram pressure drag
+f_hydro = 0
+
+# Whether to include gravitational drag
+f_grav = 0
+
+# Whether to include buoyancy
+f_buoyancy = 0
+
+# Whether to use drag coefficients
+use_drag_coefficients = 0
